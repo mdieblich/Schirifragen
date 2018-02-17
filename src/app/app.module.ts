@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
 import { QuestionService } from './question.service';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.compo
     LoadingSpinnerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     QuestionService
