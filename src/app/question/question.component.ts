@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Question } from '../question';
 import { QuestionService } from '../question.service';
 import { QUESTIONS } from '../question-mock';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-question',
@@ -12,17 +14,20 @@ export class QuestionComponent implements OnInit {
 
   question: Question;
 
-  constructor(private questionService: QuestionService) { 
+  constructor(
+    private route: ActivatedRoute,
+    private questionService: QuestionService,
+    private location: Location) { 
   }
 
   ngOnInit() {
-    this.getQuestion(2);
+    this.getQuestion();
   }
 
-  getQuestion(id: number): void{
-    this.questionService.getQuestion(id).subscribe(
-      question => this.question = question
-    );
+  getQuestion(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.questionService.getQuestion(id)
+      .subscribe(receivedQuestion => this.question = receivedQuestion);
   }
 
 }

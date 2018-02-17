@@ -5,8 +5,8 @@ import { QuestionComponent } from './question/question.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: AppComponent},
+  { path: '', redirectTo: '/question/1', pathMatch: 'full' },
+  // { path: 'dashboard', component: TODO: Dashboard},
   { path: 'question/:id', component: QuestionComponent}
 ];
 
