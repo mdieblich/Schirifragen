@@ -1,3 +1,4 @@
+<app-loading-spinner *ngIf="!question"></app-loading-spinner>
 <div *ngIf="question">
   <h2>{{question.question}}</h2>
   <ol type="a">
