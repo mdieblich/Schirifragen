@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Question } from '../question';
+import { QuestionService } from '../question.service';
+import { QUESTIONS } from '../question-mock';
 
 @Component({
   selector: 'app-question',
@@ -10,20 +12,17 @@ export class QuestionComponent implements OnInit {
 
   question: Question;
 
-  constructor() { 
+  constructor(private questionService: QuestionService) { 
   }
 
   ngOnInit() {
-    this.question = {
-      id: 1,
-      question:  "Welche Abmessungen sehen die Spielregeln für die Spielfläche vor?",
-      answers: [
-        "40 x 20 Meter",
-        "42 x 20 Meter",
-        "38 x 18 Meter",
-        "Länge zwischen 38 und 42, Breite zwischen 18 und 22 Metern."],
-      correctAnswers: [0]
-    };
+    this.getQuestion(2);
+  }
+
+  getQuestion(id: number): void{
+    this.questionService.getQuestion(id).subscribe(
+      question => this.question = question
+    );
   }
 
 }
