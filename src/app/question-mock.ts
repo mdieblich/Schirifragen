@@ -10,7 +10,7 @@ export const QUESTIONS: Question[] = [
             "38 x 18 Meter",
             "Länge zwischen 38 und 42, Breite zwischen 18 und 22 Metern."],
         correctAnswers: [0]
-    }, 
+    },
     {
         id: 2,
         question:  "Welche Höhe und welche Breite (im Lichten) müssen die Tore haben?",
@@ -20,5 +20,14 @@ export const QUESTIONS: Question[] = [
             "2,05 x 3,05 Meter",
             "2,08 x 3,08 Meter"],
         correctAnswers: [1]
+    },
+    {
+        id: 3,
+        question:  "Während der Ausführung eines Abwurfs berührt Torwart A seine Torraumlinie mit ei-nem Fuß. Richtige Entscheidung?",
+        answers: [
+            "Wiederholung des Abwurfs mit Anpfiff",
+            "Freiwurf für Mannschaft B",
+            "Weiterspielen lassen"],
+        correctAnswers: [2]
     }
 ];
