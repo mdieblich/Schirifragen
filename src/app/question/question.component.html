@@ -2,6 +2,10 @@
 <div *ngIf="question">
   <h2>{{question.id}}. {{question.question}}</h2>
   <ol type="a">
-    <li *ngFor="let answer of question.answers">{{answer}}</li>
+    <li *ngFor="let answer of question.answers; let i = index">
+      <input type="checkbox" name="answer" value="{{i}}">
+      {{answer}}
+    </li>
   </ol>
+  <button (click)="checkAnswers()">Prüfen</button>
 </div>

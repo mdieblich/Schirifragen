@@ -13,6 +13,7 @@ import { Location } from '@angular/common';
 export class QuestionComponent implements OnInit {
 
   question: Question;
+  selectedAnswers: boolean[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -21,13 +22,33 @@ export class QuestionComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getQuestion();
+    this.loadQuestion();
   }
 
-  getQuestion(): void {
+  loadQuestion(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.questionService.getQuestion(id)
-      .subscribe(receivedQuestion => this.question = receivedQuestion);
+      .subscribe(receivedQuestion => this.setQuestion(receivedQuestion));
+  }
+
+  setQuestion(question: Question){
+    this.question = question;
+    for(let i:number=0; i<this.question.answers.length; i++){
+      this.selectedAnswers[i] = false;
+    }
+    console.log(this.selectedAnswers);
+  }
+
+  checkAnswers(): void{
+    let selectedAnswersString:string = "";
+    for(let i:number=0; i<this.selectedAnswers.length; i++){
+      console.log("checke" + i);
+      if(this.selectedAnswers[i]){
+        console.log("match!");
+        selectedAnswersString += i + ", ";
+      }
+    }
+    console.log(selectedAnswersString);
   }
 
 }

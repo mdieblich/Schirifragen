@@ -23,7 +23,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 3,
-        question:  "Während der Ausführung eines Abwurfs berührt Torwart A seine Torraumlinie mit ei-nem Fuß. Richtige Entscheidung?",
+        question:  "Während der Ausführung eines Abwurfs berührt Torwart A seine Torraumlinie mit einem Fuß. Richtige Entscheidung?",
         answers: [
             "Wiederholung des Abwurfs mit Anpfiff",
             "Freiwurf für Mannschaft B",
