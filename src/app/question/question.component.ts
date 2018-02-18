@@ -14,6 +14,7 @@ export class QuestionComponent implements OnInit {
 
   question: Question;
   selectedAnswers: boolean[] = [];
+  correctAnswers: boolean[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -31,24 +32,21 @@ export class QuestionComponent implements OnInit {
       .subscribe(receivedQuestion => this.setQuestion(receivedQuestion));
   }
 
-  setQuestion(question: Question){
+  setQuestion(question: Question): void {
     this.question = question;
-    for(let i:number=0; i<this.question.answers.length; i++){
-      this.selectedAnswers[i] = false;
-    }
-    console.log(this.selectedAnswers);
+
+    this.selectedAnswers = new Array(this.question.answers.length);
+    this.selectedAnswers.fill(false);
+    this.correctAnswers = new Array(this.question.answers.length);
+    this.correctAnswers.fill(false);
+
+    this.question.correctAnswers.forEach(index => {
+      this.correctAnswers[index] = true;
+    });
   }
 
-  checkAnswers(): void{
-    let selectedAnswersString:string = "";
-    for(let i:number=0; i<this.selectedAnswers.length; i++){
-      console.log("checke" + i);
-      if(this.selectedAnswers[i]){
-        console.log("match!");
-        selectedAnswersString += i + ", ";
-      }
-    }
-    console.log(selectedAnswersString);
+  checkAnswers(): void {
+    console.log("gesetzt: " + this.selectedAnswers);
+    console.log("korrekt: " + this.correctAnswers);
   }
-
 }

@@ -3,9 +3,9 @@
   <h2>{{question.id}}. {{question.question}}</h2>
   <ol type="a">
     <li *ngFor="let answer of question.answers; let i = index">
-      <input type="checkbox" name="answer" value="{{i}}">
+      <input type="checkbox" name="answer" value="{{i}}" [(ngModel)]="selectedAnswers[i]">
       {{answer}}
     </li>
   </ol>
-  <button (click)="checkAnswers()">Prüfen</button>
+  <button (click)="checkAnswers()">Prüfen</button><br>
 </div>

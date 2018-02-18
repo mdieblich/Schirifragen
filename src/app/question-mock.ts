@@ -29,5 +29,26 @@ export const QUESTIONS: Question[] = [
             "Freiwurf für Mannschaft B",
             "Weiterspielen lassen"],
         correctAnswers: [2]
+    },
+    {
+        id: 4,
+        question:  "Der Ball liegt auf der Torraumlinie. Angriffsspieler A7 nimmt ihn auf und will aus klarer Torgelegenheit auf das Tor werfen, als er regelwidrig angegriffen wird. Richtige Entscheidung?",
+        answers: [
+            "Freiwurf für Mannschaft B",
+            "Freiwurf für Mannschaft A",
+            "7-Meter Wurf für Mannschaft A",
+            "Abwurf für Mannschaft B"],
+        correctAnswers: [3]
+    },
+    {
+        id: 5,
+        question:  "Nach dem Anpfiff eines 7-Meter-Wurfs tritt Torwart A mit einem Fuß auf die Torwartgrenzlinie. Der Ball geht über das Tor. Richtige Entscheidung?",
+        answers: [
+            "Wiederholung mit Anpfiff",
+            "Da kein Tor, Spielfortsetzung mit Abwurf",
+            "Stellung des Torwarts war korrekt"],
+        correctAnswers: [1,2]
     }
+
+    
 ];
