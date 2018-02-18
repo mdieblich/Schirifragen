@@ -4,6 +4,7 @@ import { QuestionService } from '../question.service';
 import { QUESTIONS } from '../question-mock';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import { QuestionResult } from '../question-result';
 
 @Component({
   selector: 'app-question',
@@ -15,6 +16,8 @@ export class QuestionComponent implements OnInit {
   question: Question;
   selectedAnswers: boolean[] = [];
   correctAnswers: boolean[] = [];
+
+  result?: QuestionResult;
 
   constructor(
     private route: ActivatedRoute,
@@ -46,7 +49,6 @@ export class QuestionComponent implements OnInit {
   }
 
   checkAnswers(): void {
-    console.log("gesetzt: " + this.selectedAnswers);
-    console.log("korrekt: " + this.correctAnswers);
+    this.result = new QuestionResult(this.correctAnswers, this.selectedAnswers);
   }
 }

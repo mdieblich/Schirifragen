@@ -7,5 +7,15 @@
       {{answer}}
     </li>
   </ol>
-  <button (click)="checkAnswers()">Prüfen</button><br>
+  <button (click)="checkAnswers()">Prüfen</button>
+  <div *ngIf="result">
+    Ergebnis: {{result.score | number}}
+      <ol type="a">
+        <li *ngFor="let correctSelection of result.correctSelections; let i = index">
+            <input type="checkbox" name="correctSelections" value="{{i}}" [(ngModel)]="result.correctSelections[i]" disabled>
+            <input type="checkbox" name="selectionMissing" value="{{i}}" [(ngModel)]="result.selectionMissing[i]" disabled>
+            <input type="checkbox" name="wronglySelected" value="{{i}}" [(ngModel)]="result.wronglySelected[i]" disabled>
+        </li>
+      </ol>
+  </div>
 </div>
