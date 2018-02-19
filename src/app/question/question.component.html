@@ -1,22 +1,40 @@
 <app-loading-spinner *ngIf="!question"></app-loading-spinner>
-<div *ngIf="question">
-  <h2>{{question.id}}. {{question.question}}</h2>
-  <ol type="a">
-    <li *ngFor="let answer of question.answers; let i = index">
-        <input type="checkbox" name="answer" [(ngModel)]="selectedAnswers[i]">
-        <input *ngIf="result" type="checkbox" name="correctAnswer" [(ngModel)]="correctAnswers[i]" disabled>
-      {{answer}}
-    </li>
-  </ol>
-  <button (click)="checkAnswers()">Prüfen</button>
+<div class="container" *ngIf="question">
+  <div class="row">
+    <div class="col-12 question-text">
+      {{question.id}}. {{question.question}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div *ngIf="!result" class="col-12">&nbsp;</div>
+    <div *ngIf="result" class="col-1 center-text">Lösung</div>
+  </div>
+
+  <div class="row" *ngFor="let answer of question.answers; let i = index">
+    <div class="col-1 center-text">
+      <mat-checkbox *ngIf="result" [(ngModel)]="correctAnswers[i]" disabled></mat-checkbox>
+    </div>
+    <mat-checkbox class="col-11" [(ngModel)]="selectedAnswers[i]" [disabled]="result">
+      {{toLetter(i)}}) {{answer}}
+    </mat-checkbox>
+  </div>
+
+  <button *ngIf="!result" (click)="checkAnswers()">Prüfen</button>
   <div *ngIf="result">
+    <button (click)="reset()">Reset</button>
     Ergebnis: {{result.score | number}}
-      <ol type="a">
-        <li *ngFor="let correctSelection of result.correctSelections; let i = index">
-            <input type="checkbox" name="correctSelections" value="{{i}}" [(ngModel)]="result.correctSelections[i]" disabled>
-            <input type="checkbox" name="selectionMissing" value="{{i}}" [(ngModel)]="result.selectionMissing[i]" disabled>
-            <input type="checkbox" name="wronglySelected" value="{{i}}" [(ngModel)]="result.wronglySelected[i]" disabled>
-        </li>
-      </ol>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">Korrekt</div>
+        <div class="col">Fehlt</div>
+        <div class="col">Zu viel</div>
+      </div>
+      <div class="row" *ngFor="let correctSelection of result.correctSelections; let i = index">
+        <mat-checkbox class="col" [(ngModel)]="result.correctSelections[i]" disabled></mat-checkbox>
+        <mat-checkbox class="col" [(ngModel)]="result.selectionMissing[i]" disabled></mat-checkbox>
+        <mat-checkbox class="col" [(ngModel)]="result.wronglySelected[i]" disabled></mat-checkbox>
+      </div>
+    </div>
   </div>
 </div>

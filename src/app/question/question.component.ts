@@ -5,6 +5,7 @@ import { QUESTIONS } from '../question-mock';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { QuestionResult } from '../question-result';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-question',
@@ -23,6 +24,11 @@ export class QuestionComponent implements OnInit {
     private route: ActivatedRoute,
     private questionService: QuestionService,
     private location: Location) { 
+  }
+
+  toLetter(i: number){
+    let firstLowerLetterCharCode: number = 'a'.charCodeAt(0);
+    return String.fromCharCode(firstLowerLetterCharCode+i);
   }
 
   ngOnInit() {
@@ -50,5 +56,9 @@ export class QuestionComponent implements OnInit {
 
   checkAnswers(): void {
     this.result = new QuestionResult(this.correctAnswers, this.selectedAnswers);
+  }
+
+  reset(): void {
+    this.result = undefined;
   }
 }

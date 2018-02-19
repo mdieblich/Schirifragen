@@ -7,6 +7,7 @@ import { QuestionComponent } from './question/question.component';
 import { QuestionService } from './question.service';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './/app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatCheckboxModule
   ],
   providers: [
     QuestionService
