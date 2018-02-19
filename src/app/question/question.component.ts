@@ -4,7 +4,6 @@ import { QuestionService } from '../question.service';
 import { QUESTIONS } from '../question-mock';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { QuestionResult } from '../question-result';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @Component({
@@ -18,7 +17,8 @@ export class QuestionComponent implements OnInit {
   selectedAnswers: boolean[] = [];
   correctAnswers: boolean[] = [];
 
-  result?: QuestionResult;
+  finished: boolean = false;
+  score?: number;
 
   constructor(
     private route: ActivatedRoute,
@@ -55,10 +55,16 @@ export class QuestionComponent implements OnInit {
   }
 
   checkAnswers(): void {
-    this.result = new QuestionResult(this.correctAnswers, this.selectedAnswers);
+    let correctChoicesCount = 0;
+    for(let i=0; i<this.correctAnswers.length; i++){
+        correctChoicesCount += this.correctAnswers[i] === this.selectedAnswers[i] ? 1 : 0;
+    }
+    this.score = correctChoicesCount / this.correctAnswers.length;
+    this.finished = true;
   }
 
   reset(): void {
-    this.result = undefined;
+    this.score = undefined;
+    this.finished = false;
   }
 }

@@ -7,34 +7,22 @@
   </div>
 
   <div class="row">
-    <div *ngIf="!result" class="col-12">&nbsp;</div>
-    <div *ngIf="result" class="col-1 center-text">Lösung</div>
+    <div *ngIf="!finished" class="col-12">&nbsp;</div>
+    <div *ngIf="finished" class="col-1 center-text">Lösung</div>
   </div>
 
   <div class="row" *ngFor="let answer of question.answers; let i = index">
     <div class="col-1 center-text">
-      <mat-checkbox *ngIf="result" [(ngModel)]="correctAnswers[i]" disabled></mat-checkbox>
+      <mat-checkbox *ngIf="finished" [(ngModel)]="correctAnswers[i]" disabled></mat-checkbox>
     </div>
-    <mat-checkbox class="col-11" [(ngModel)]="selectedAnswers[i]" [disabled]="result">
+    <mat-checkbox class="col-11" [(ngModel)]="selectedAnswers[i]" [disabled]="finished">
       {{toLetter(i)}}) {{answer}}
     </mat-checkbox>
   </div>
+</div>
 
-  <button *ngIf="!result" (click)="checkAnswers()">Prüfen</button>
-  <div *ngIf="result">
-    <button (click)="reset()">Reset</button>
-    Ergebnis: {{result.score | number}}
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">Korrekt</div>
-        <div class="col">Fehlt</div>
-        <div class="col">Zu viel</div>
-      </div>
-      <div class="row" *ngFor="let correctSelection of result.correctSelections; let i = index">
-        <mat-checkbox class="col" [(ngModel)]="result.correctSelections[i]" disabled></mat-checkbox>
-        <mat-checkbox class="col" [(ngModel)]="result.selectionMissing[i]" disabled></mat-checkbox>
-        <mat-checkbox class="col" [(ngModel)]="result.wronglySelected[i]" disabled></mat-checkbox>
-      </div>
-    </div>
-  </div>
+<button *ngIf="!finished" (click)="checkAnswers()">Prüfen</button>
+<div *ngIf="finished">
+  <button (click)="reset()">Reset</button>
+  Ergebnis: {{score | number}}
 </div>
