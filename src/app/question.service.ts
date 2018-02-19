@@ -14,4 +14,8 @@ export class QuestionService {
     return of(QUESTIONS.find(question => question.id == id)).delay(250);
   }
 
+  getMaxId(): Observable<number> {
+    return of(QUESTIONS.length).delay(250);
+  }
+
 }

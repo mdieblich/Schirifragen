@@ -35,10 +35,26 @@ export class QuestionComponent implements OnInit {
   }
 
   ngOnInit() {
-    if(!this.id){
-      this.id = Number(this.route.snapshot.paramMap.get('id'));
+    if(this.id){
+      this.loadQuestion();
     }
+    else{
+      if (this.route.snapshot.paramMap.has('id')) {
+        this.setId(Number(this.route.snapshot.paramMap.get('id')));
+      } else {
+        this.questionService.getMaxId().subscribe(
+          maxId => this.setId(this.getRandomInt(1,maxId))
+        );
+      }
+    }
+  }
+  setId(id: number){
+    this.id = id;
     this.loadQuestion();
+  }
+
+  getRandomInt(min: number, max: number): number {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   loadQuestion(): void {

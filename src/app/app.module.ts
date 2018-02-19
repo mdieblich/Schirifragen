@@ -13,15 +13,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { RandomQuestionComponent } from './random-question/random-question.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionComponent,
-    PointsPipe,
-    RandomQuestionComponent
+    PointsPipe
   ],
   imports: [
     BrowserModule,
