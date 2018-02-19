@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Question } from '../question';
 import { QuestionService } from '../question.service';
 import { QUESTIONS } from '../question-mock';
@@ -15,7 +15,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 })
 export class QuestionComponent implements OnInit {
 
-  id: number;
+  @Input() id?: number;
   question: Question;
   selectedAnswers: boolean[] = [];
   correctAnswers: boolean[] = [];
@@ -35,7 +35,9 @@ export class QuestionComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.id = Number(this.route.snapshot.paramMap.get('id'));
+    if(!this.id){
+      this.id = Number(this.route.snapshot.paramMap.get('id'));
+    }
     this.loadQuestion();
   }
 
