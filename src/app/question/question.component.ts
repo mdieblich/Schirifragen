@@ -15,6 +15,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 })
 export class QuestionComponent implements OnInit {
 
+  id: number;
   question: Question;
   selectedAnswers: boolean[] = [];
   correctAnswers: boolean[] = [];
@@ -34,12 +35,12 @@ export class QuestionComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.id = Number(this.route.snapshot.paramMap.get('id'));
     this.loadQuestion();
   }
 
   loadQuestion(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.questionService.getQuestion(id)
+    this.questionService.getQuestion(this.id)
       .subscribe(receivedQuestion => this.setQuestion(receivedQuestion));
   }
 
