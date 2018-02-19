@@ -11,7 +11,7 @@ export class QuestionService {
   constructor() { }
 
   getQuestion(id: number): Observable<Question>{
-    return of(QUESTIONS.find(question => question.id == id)).delay(1000);
+    return of(QUESTIONS.find(question => question.id == id)).delay(250);
   }
 
 }
