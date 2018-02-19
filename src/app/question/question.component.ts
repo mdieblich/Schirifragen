@@ -5,6 +5,8 @@ import { QUESTIONS } from '../question-mock';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 
 @Component({
   selector: 'app-question',

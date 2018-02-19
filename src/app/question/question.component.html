@@ -1,28 +1,44 @@
-<app-loading-spinner *ngIf="!question"></app-loading-spinner>
-<div class="container" *ngIf="question">
-  <div class="row">
-    <div class="col-12 question-text">
-      {{question.id}}. {{question.question}}
+
+<mat-card class="question-card">
+
+  <mat-card-header>
+    <div mat-card-avatar>
+      <button mat-fab disabled class="question-number">
+          <span *ngIf="!question">?</span>
+          <span *ngIf="question">{{question.id}}</span>
+      </button>
     </div>
-  </div>
+    <mat-card-title class="question-text">
+        <span *ngIf="!question">&nbsp;<br>&nbsp;</span>
+        <span *ngIf="question" >{{question.question}}</span>
+    </mat-card-title>
+  </mat-card-header>
 
-  <div class="row">
-    <div *ngIf="!finished" class="col-12">&nbsp;</div>
-    <div *ngIf="finished" class="col-1 center-text">Lösung</div>
-  </div>
+  <mat-card-content>
+    <mat-progress-bar mode="buffer" *ngIf="!question"></mat-progress-bar>
 
-  <div class="row" *ngFor="let answer of question.answers; let i = index">
-    <div class="col-1 center-text">
-      <mat-checkbox *ngIf="finished" [(ngModel)]="correctAnswers[i]" disabled></mat-checkbox>
+    <div *ngIf="question" class="container">
+      <div class="row">
+        <div *ngIf="!finished" class="col-12">&nbsp;</div>
+        <div *ngIf="finished" class="col-1 center-text">Lösung</div>
+      </div>
+
+      <div class="row" *ngFor="let answer of question.answers; let i = index">
+        <div class="col-1 center-text">
+          <mat-checkbox *ngIf="finished" [(ngModel)]="correctAnswers[i]" disabled></mat-checkbox>
+        </div>
+        <mat-checkbox class="col-11" [(ngModel)]="selectedAnswers[i]" [disabled]="finished">
+          {{toLetter(i)}}) {{answer}}
+        </mat-checkbox>
+      </div>
     </div>
-    <mat-checkbox class="col-11" [(ngModel)]="selectedAnswers[i]" [disabled]="finished">
-      {{toLetter(i)}}) {{answer}}
-    </mat-checkbox>
-  </div>
-</div>
+  </mat-card-content>
 
-<button *ngIf="!finished" (click)="checkAnswers()">Prüfen</button>
-<div *ngIf="finished">
-  <button (click)="reset()">Reset</button>
-  Ergebnis: {{score | number}}
-</div>
+  <mat-card-actions class="question-actions">
+    <button mat-raised-button color="primary" (click)="checkAnswers()" [disabled]="finished">Prüfen</button>
+    <button mat-raised-button color="primary" (click)="reset()" [disabled]="!finished">Weiter...</button>
+    <span *ngIf="finished">
+      Ergebnis: {{score | points}}
+    </span>
+  </mat-card-actions>
+</mat-card>
