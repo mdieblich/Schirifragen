@@ -16,6 +16,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { QuestionSuggestionService } from './question-suggestion.service';
 
 import { LocalStorageModule } from 'angular-2-local-storage';
+import { UserService } from './user.service';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { LocalStorageModule } from 'angular-2-local-storage';
   ],
   providers: [
     QuestionService,
-    QuestionSuggestionService
+    QuestionSuggestionService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

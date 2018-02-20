@@ -11,8 +11,8 @@ import { QuestionService } from '../question.service';
 import { QuestionSuggestionService } from '../question-suggestion.service';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { QuestionResult } from '../question-result';
-import { User } from '../user';
 import { UserData } from '../user-data';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-question',
@@ -34,7 +34,7 @@ export class QuestionComponent implements OnInit {
     private location: Location,
     private questionService: QuestionService,
     private suggestionService: QuestionSuggestionService,
-    private localStorageService: LocalStorageService) {
+    private userService: UserService) {
   }
 
   toLetter(i: number) {
@@ -101,16 +101,7 @@ export class QuestionComponent implements OnInit {
     }
     this.score = correctChoicesCount / this.correctAnswers.length;
 
-    const result = new QuestionResult(this.selectedAnswers);
-    let userData: UserData = this.localStorageService.get("user");
-    if(!userData){
-      userData = {results: {}};
-    }
-    const user =  new User(userData);
-    user.addQuestionResult(this.id, result);
-    this.localStorageService.set("user", userData);
-
-    console.log("abc:", user);
+    this.userService.addQuestionResult(this.id, new QuestionResult(this.selectedAnswers));
 
     this.finished = true;
   }
