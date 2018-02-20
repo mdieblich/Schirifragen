@@ -98,12 +98,18 @@ export class QuestionComponent implements OnInit {
     this.finished = true;
   }
 
-  next(): void {
-    this.score = undefined;
-    this.question = undefined
+  clear(): void {
     this.id = undefined;
-    this.finished = false;
     this.location.go("/question");
+
+    this.question = undefined;
+
+    this.score = undefined;
+    this.finished = false;
+  }
+
+  next(): void {
+    this.clear();
     this.suggestQuestionId();
   }
 }
