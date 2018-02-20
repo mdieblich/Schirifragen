@@ -1,16 +1,16 @@
-
 <mat-card class="question-card">
 
   <mat-card-header>
     <div mat-card-avatar>
       <button mat-fab disabled class="question-number">
-          <span *ngIf="!id">?</span>
-          <span *ngIf="id">{{id}}</span>
+        <span *ngIf="!id">?</span>
+        <span *ngIf="id">{{id}}</span>
       </button>
     </div>
     <mat-card-title class="question-text">
-        <span *ngIf="!question">&nbsp;<br>&nbsp;</span>
-        <span *ngIf="question" >{{question.question}}</span>
+      <span *ngIf="!question">&nbsp;
+        <br>&nbsp;</span>
+      <span *ngIf="question">{{question.question}}</span>
     </mat-card-title>
   </mat-card-header>
 
@@ -31,6 +31,19 @@
         <mat-checkbox class="col-11" [(ngModel)]="selectedAnswers[i]" [disabled]="finished">
           {{toLetter(i)}}) {{answer}}
         </mat-checkbox>
+      </div>
+
+      <div class="row justify-content-start rule-reference">
+        <div class="col-1 center-text">
+          <button mat-button disabled>
+            {{finished?"Regeln:":"&nbsp;"}}
+          </button>
+        </div>
+        <div class="col-1" *ngFor="let rule of question.ruleReferences">
+          <button *ngIf="finished" mat-button color="accent">
+            {{rule}}
+          </button>
+        </div>
       </div>
     </div>
   </mat-card-content>

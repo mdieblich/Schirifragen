@@ -31,11 +31,6 @@ export class QuestionComponent implements OnInit {
     private userService: UserService) {
   }
 
-  toLetter(i: number) {
-    let firstLowerLetterCharCode: number = 'a'.charCodeAt(0);
-    return String.fromCharCode(firstLowerLetterCharCode + i);
-  }
-
   ngOnInit() {
     if (this.id) {
       this.loadQuestion();
@@ -114,5 +109,10 @@ export class QuestionComponent implements OnInit {
   next(): void {
     this.clear();
     this.suggestQuestionId();
+  }
+
+  toLetter(i: number) {
+    let firstLowerLetterCharCode: number = 'a'.charCodeAt(0);
+    return String.fromCharCode(firstLowerLetterCharCode + i);
   }
 }

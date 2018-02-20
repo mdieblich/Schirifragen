@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatChipsModule } from '@angular/material/chips';
 
 // Weitere Drittanbieter-Bibliotheken
 // aktuell nix mehr
@@ -18,28 +19,31 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AppRoutingModule } from './/app-routing.module';
 import { AppComponent } from './app.component';
 import { PointsPipe } from './points.pipe';
+import { QuestionComponent } from './question/question.component';
 import { QuestionService } from './question.service';
 import { QuestionSuggestionService } from './question-suggestion.service';
 import { UserService } from './user.service';
-import { QuestionComponent } from './question/question.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuestionComponent,
-    PointsPipe
+    PointsPipe,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
-    MatSidenavModule,
+
     MatCheckboxModule,
     MatButtonModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    MatProgressBarModule
+    MatSidenavModule,
+    MatProgressBarModule,
+    MatChipsModule,
+
+    AppRoutingModule
   ],
   providers: [
     QuestionService,
