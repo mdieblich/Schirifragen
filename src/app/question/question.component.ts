@@ -9,6 +9,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { Question } from '../question';
 import { QuestionService } from '../question.service';
 import { QuestionSuggestionService } from '../question-suggestion.service';
+import { LocalStorageService } from 'angular-2-local-storage';
+import { QuestionResult } from '../question-result';
+import { User } from '../user';
+import { UserData } from '../user-data';
 
 @Component({
   selector: 'app-question',
@@ -29,7 +33,8 @@ export class QuestionComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location,
     private questionService: QuestionService,
-    private suggestionService: QuestionSuggestionService) {
+    private suggestionService: QuestionSuggestionService,
+    private localStorageService: LocalStorageService) {
   }
 
   toLetter(i: number) {
@@ -95,6 +100,18 @@ export class QuestionComponent implements OnInit {
       correctChoicesCount += this.correctAnswers[i] === this.selectedAnswers[i] ? 1 : 0;
     }
     this.score = correctChoicesCount / this.correctAnswers.length;
+
+    const result = new QuestionResult(this.selectedAnswers);
+    let userData: UserData = this.localStorageService.get("user");
+    if(!userData){
+      userData = {results: {}};
+    }
+    const user =  new User(userData);
+    user.addQuestionResult(this.id, result);
+    this.localStorageService.set("user", userData);
+
+    console.log("abc:", user);
+
     this.finished = true;
   }
 

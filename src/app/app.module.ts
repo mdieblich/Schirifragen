@@ -15,6 +15,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { QuestionSuggestionService } from './question-suggestion.service';
 
+import { LocalStorageModule } from 'angular-2-local-storage';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,11 @@ import { QuestionSuggestionService } from './question-suggestion.service';
     MatButtonModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    LocalStorageModule.withConfig({
+      prefix: 'schirifragen',
+      storageType: 'localStorage'
+  })
   ],
   providers: [
     QuestionService,
