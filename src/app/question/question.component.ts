@@ -2,16 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatButtonModule } from '@angular/material/button';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
-
 import { Question } from '../question';
 import { QuestionService } from '../question.service';
 import { QuestionSuggestionService } from '../question-suggestion.service';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { QuestionResult } from '../question-result';
-import { UserData } from '../user-data';
 import { UserService } from '../user.service';
 
 @Component({

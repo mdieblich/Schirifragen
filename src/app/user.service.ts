@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
+
 import { LocalStorageService } from 'angular-2-local-storage';
+
 import { UserData } from './user-data';
 import { QuestionResult } from './question-result';
 import { QuestionResultHistory } from './question-result-history';

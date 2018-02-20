@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { QuestionService } from './question.service';
+
 import { Observable } from 'rxjs/Observable';
 import "rxjs/add/operator/map";
+
+import { QuestionService } from './question.service';
 
 @Injectable()
 export class QuestionSuggestionService {
