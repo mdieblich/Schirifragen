@@ -1,12 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Question } from '../question';
-import { QuestionService } from '../question.service';
-import { QUESTIONS } from '../question-mock';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+
+import { Question } from '../question';
+import { QuestionService } from '../question.service';
+import { QuestionSuggestionService } from '../question-suggestion.service';
 
 @Component({
   selector: 'app-question',
@@ -26,12 +28,13 @@ export class QuestionComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private questionService: QuestionService,
-    private location: Location) { 
+    private suggestionService: QuestionSuggestionService,
+    private location: Location) {
   }
 
-  toLetter(i: number){
+  toLetter(i: number) {
     let firstLowerLetterCharCode: number = 'a'.charCodeAt(0);
-    return String.fromCharCode(firstLowerLetterCharCode+i);
+    return String.fromCharCode(firstLowerLetterCharCode + i);
   }
 
   ngOnInit() {
@@ -42,7 +45,8 @@ export class QuestionComponent implements OnInit {
       if (this.idIsInRoute()) {
         this.setIdFromRoute();
       } else {
-        this.setRandomId();
+        this.suggestQuestionId();
+        // this.setRandomId();
       }
     }
   }
@@ -55,19 +59,15 @@ export class QuestionComponent implements OnInit {
     this.setId(Number(this.route.snapshot.paramMap.get('id')));
   }
 
-  setId(id: number){
+  setId(id: number) {
     this.id = id;
     this.loadQuestion();
   }
-  
-  setRandomId(): void {
-    this.questionService.getMaxId().subscribe(
-      maxId => this.setId(this.getRandomInt(1,maxId))
-    );
-  }
 
-  getRandomInt(min: number, max: number): number {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  suggestQuestionId(): void {
+    this.suggestionService.suggestQuestion().subscribe(
+      suggestedId => this.setId(suggestedId)
+    );
   }
 
   loadQuestion(): void {
@@ -90,8 +90,8 @@ export class QuestionComponent implements OnInit {
 
   checkAnswers(): void {
     let correctChoicesCount = 0;
-    for(let i=0; i<this.correctAnswers.length; i++){
-        correctChoicesCount += this.correctAnswers[i] === this.selectedAnswers[i] ? 1 : 0;
+    for (let i = 0; i < this.correctAnswers.length; i++) {
+      correctChoicesCount += this.correctAnswers[i] === this.selectedAnswers[i] ? 1 : 0;
     }
     this.score = correctChoicesCount / this.correctAnswers.length;
     this.finished = true;

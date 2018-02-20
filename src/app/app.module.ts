@@ -13,6 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { QuestionSuggestionService } from './question-suggestion.service';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatProgressBarModule
   ],
   providers: [
-    QuestionService
+    QuestionService,
+    QuestionSuggestionService
   ],
   bootstrap: [AppComponent]
 })
