@@ -1,3 +1,3 @@
 export interface SessionUserData {
-    questionsAnswered: boolean[];
+    questionsAnswered: number[];
 }

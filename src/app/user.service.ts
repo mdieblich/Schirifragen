@@ -55,19 +55,23 @@ export class UserService {
     });
 
     this.operateOnSessionData(sessionData => {
-      sessionData.questionsAnswered[questionId] = true;
+      sessionData.questionsAnswered.push(questionId);
     });
   }
 
   getAnsweredQuestions(): Set<number> {
     let answeredQuestions = new Set<number>();
     this.readSessionData(sessionData => {
-      sessionData.questionsAnswered.forEach((answered, id) => {
-        if(answered){
-          answeredQuestions.add(id);
-        }
-      });
+      sessionData.questionsAnswered.forEach(questionId => answeredQuestions.add(questionId));
     });
     return answeredQuestions;
+  }
+
+  clearOldAnsweredQuestions(): void {
+    this.operateOnSessionData(
+      sessionData => {
+        sessionData.questionsAnswered = sessionData.questionsAnswered.slice(3);
+      }
+    );
   }
 }

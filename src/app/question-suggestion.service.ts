@@ -18,7 +18,11 @@ export class QuestionSuggestionService {
     const maxId: Observable<number> = this.questionService.getMaxId();
     return maxId.map(
       maxId => {
-        const remainingQuestions: number[] = this.getRemainingQuestions(maxId);
+        let remainingQuestions: number[] = this.getRemainingQuestions(maxId);
+        if(remainingQuestions.length == 0){
+          this.userService.clearOldAnsweredQuestions();
+          remainingQuestions = this.getRemainingQuestions(maxId);
+        }
         return this.selectRandomId(remainingQuestions);
       }
     );
