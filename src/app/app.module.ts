@@ -12,7 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 // Weitere Drittanbieter-Bibliotheken
-import { LocalStorageModule } from 'angular-2-local-storage';
+// aktuell nix mehr
 
 // Eigene Module, Komponenten, Pipes, Services....
 import { AppRoutingModule } from './/app-routing.module';
@@ -39,11 +39,7 @@ import { QuestionComponent } from './question/question.component';
     MatButtonModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    MatProgressBarModule,
-    LocalStorageModule.withConfig({
-      prefix: 'schirifragen',
-      storageType: 'localStorage'
-  })
+    MatProgressBarModule
   ],
   providers: [
     QuestionService,

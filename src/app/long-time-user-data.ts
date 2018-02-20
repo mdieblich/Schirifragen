@@ -1,5 +1,5 @@
 import { QuestionResultHistory } from "./question-result-history";
 
-export interface UserData {
+export interface LongTimeUserData {
     results: { [id: number]: QuestionResultHistory};
 }
