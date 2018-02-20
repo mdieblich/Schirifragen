@@ -37,7 +37,7 @@
 
   <mat-card-actions class="question-actions">
     <button mat-raised-button color="primary" (click)="checkAnswers()" [disabled]="finished || !question">Prüfen</button>
-    <button mat-raised-button color="primary" (click)="reset()" [disabled]="!finished">Weiter</button>
+    <button mat-raised-button color="primary" (click)="next()" [disabled]="!finished">Weiter</button>
     <span *ngIf="finished">
       Ergebnis: {{score | points}}
     </span>

@@ -27,9 +27,9 @@ export class QuestionComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private location: Location,
     private questionService: QuestionService,
-    private suggestionService: QuestionSuggestionService,
-    private location: Location) {
+    private suggestionService: QuestionSuggestionService) {
   }
 
   toLetter(i: number) {
@@ -62,6 +62,7 @@ export class QuestionComponent implements OnInit {
   setId(id: number) {
     this.id = id;
     this.loadQuestion();
+    this.location.go("/question/"+id);
   }
 
   suggestQuestionId(): void {
@@ -97,8 +98,12 @@ export class QuestionComponent implements OnInit {
     this.finished = true;
   }
 
-  reset(): void {
+  next(): void {
     this.score = undefined;
+    this.question = undefined
+    this.id = undefined;
     this.finished = false;
+    this.location.go("/question");
+    this.suggestQuestionId();
   }
 }
