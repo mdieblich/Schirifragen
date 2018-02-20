@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 // Angular Material
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -11,15 +12,22 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatExpansionModule } from '@angular/material/expansion';
+import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
 
 // Weitere Drittanbieter-Bibliotheken
 // aktuell nix mehr
 
 // Eigene Module, Komponenten, Pipes, Services....
 import { AppRoutingModule } from './/app-routing.module';
-import { AppComponent } from './app.component';
+
 import { PointsPipe } from './points.pipe';
+
+import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
+import { AnalysisComponent } from './analysis/analysis.component';
+
 import { QuestionService } from './question.service';
 import { QuestionSuggestionService } from './question-suggestion.service';
 import { UserService } from './user.service';
@@ -27,14 +35,17 @@ import { UserService } from './user.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
     PointsPipe,
-    QuestionComponent
+
+    AppComponent,
+    QuestionComponent,
+    AnalysisComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
 
+    BrowserAnimationsModule,
     MatCheckboxModule,
     MatButtonModule,
     MatCardModule,
@@ -42,6 +53,9 @@ import { UserService } from './user.service';
     MatSidenavModule,
     MatProgressBarModule,
     MatChipsModule,
+    MatExpansionModule,
+    MatListModule,
+    MatDividerModule,
 
     AppRoutingModule
   ],

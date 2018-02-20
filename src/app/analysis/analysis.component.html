@@ -1,0 +1,26 @@
+<mat-expansion-panel class="main-accordion">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Diese Fragerunde
+    </mat-panel-title>
+    <mat-panel-description>
+      Ergebnis der letzten {{totalAnswers}} Fragen
+    </mat-panel-description>
+
+  </mat-expansion-panel-header>
+
+  <mat-list>
+    <mat-list-item>
+      Korrekt: {{correctAnswers}} / {{totalAnswers}} Fragen
+      <mat-progress-bar [value]="100*correctAnswers/totalAnswers" mode="determinate" color="warn"></mat-progress-bar>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+
+    <mat-list-item>
+      Punkte: {{totalScore}} / {{totalAnswers}} Fragen<br>
+      <mat-progress-bar [value]="100*totalScore/totalAnswers" mode="determinate" color="warn"></mat-progress-bar>
+    </mat-list-item>
+  </mat-list>
+  
+</mat-expansion-panel>
