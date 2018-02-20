@@ -1,4 +1,4 @@
 export class QuestionResult {
-    constructor(private selectedAnswers: boolean[]){
-    }
+    selectedAnswers: boolean[];
+    score: number;
 }

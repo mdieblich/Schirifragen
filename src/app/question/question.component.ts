@@ -94,9 +94,23 @@ export class QuestionComponent implements OnInit {
     }
     this.score = correctChoicesCount / this.correctAnswers.length;
 
-    this.userService.addQuestionResult(this.id, new QuestionResult(this.selectedAnswers));
+    this.saveResult();
 
     this.finished = true;
+  }
+
+  saveResult(): void {
+    this.userService.addQuestionResult(
+      this.id, 
+      this.createQuestionResult()
+    );
+  }
+
+  createQuestionResult(): QuestionResult {
+    return {
+      selectedAnswers: this.selectedAnswers, 
+      score: this.score
+    };
   }
 
   clear(): void {
@@ -120,8 +134,11 @@ export class QuestionComponent implements OnInit {
   }
 
   noMoreQuestionsAvailable(): void {
-    alert("Keine Fragen mehr");
     // TODO: Weiterleitung zu Auswertung
+    if(confirm("Keine Fragen mehr. Zurücksetzen?")){
+      this.userService.clearOldAnsweredQuestions();
+      this.suggestQuestionId();
+    }
   }
 
 }

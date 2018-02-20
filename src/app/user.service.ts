@@ -39,7 +39,10 @@ export class UserService {
   private readSessionData(action: (sessionData: SessionUserData) => void): void {
     let sessionData: SessionUserData = JSON.parse(sessionStorage.getItem("user"));
     if(!sessionData){
-      sessionData = {questionsAnswered: []};
+      sessionData = {
+        questionsAnswered: [],
+        scores: []
+      };
     }
     action(sessionData);
   }
@@ -56,6 +59,7 @@ export class UserService {
 
     this.operateOnSessionData(sessionData => {
       sessionData.questionsAnswered.push(questionId);
+      sessionData.scores[questionId] = result.score;
     });
   }
 
