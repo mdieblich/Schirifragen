@@ -25,17 +25,23 @@ export class UserService {
     localStorage.setItem("user", JSON.stringify(longTimeData));
   }
 
-  private operateOnSessionData(action: (sessionData: SessionUserData) => void): void{
+  private operateOnSessionData(action: (sessionData: SessionUserData) => void): void {
     // TODO: Besserer Name als "sessionData". Total nichtssagend
 
+    this.readSessionData(
+      sessionData => {
+        action(sessionData);
+        sessionStorage.setItem("user", JSON.stringify(sessionData));
+      }
+    );
+  }
+
+  private readSessionData(action: (sessionData: SessionUserData) => void): void {
     let sessionData: SessionUserData = JSON.parse(sessionStorage.getItem("user"));
     if(!sessionData){
-      sessionData = {questionScores: {}};
+      sessionData = {questionsAnswered: []};
     }
-
     action(sessionData);
-
-    localStorage.setItem("user", JSON.stringify(sessionData));
   }
 
   addQuestionResult(questionId: number, result: QuestionResult): void {
@@ -47,5 +53,21 @@ export class UserService {
       }
       resultHistory.questionResults.push(result);
     });
+
+    this.operateOnSessionData(sessionData => {
+      sessionData.questionsAnswered[questionId] = true;
+    });
+  }
+
+  getAnsweredQuestions(): Set<number> {
+    let answeredQuestions = new Set<number>();
+    this.readSessionData(sessionData => {
+      sessionData.questionsAnswered.forEach((answered, id) => {
+        if(answered){
+          answeredQuestions.add(id);
+        }
+      });
+    });
+    return answeredQuestions;
   }
 }

@@ -10,6 +10,11 @@ import { QUESTIONS } from './question-mock';
 @Injectable()
 export class QuestionService {
 
+  // Cache des Maximums
+  private maxId?: number;
+
+  private allQuestionIds?: Set<number>;
+
   constructor() { }
 
   getQuestion(id: number): Observable<Question>{
@@ -17,7 +22,12 @@ export class QuestionService {
   }
 
   getMaxId(): Observable<number> {
-    return of(QUESTIONS.length).delay(250);
+    if(this.maxId){
+      return of(this.maxId);
+    }
+    const maxIdObservable: Observable<number> = of(QUESTIONS.length).delay(250);
+    maxIdObservable.subscribe(maxId => this.maxId = maxId);
+    return maxIdObservable;
   }
 
 }

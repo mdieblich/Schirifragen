@@ -1,3 +1,3 @@
 export interface SessionUserData {
-    questionScores: { [id: number]: number};
+    questionsAnswered: boolean[];
 }

@@ -45,7 +45,6 @@ export class QuestionComponent implements OnInit {
         this.setIdFromRoute();
       } else {
         this.suggestQuestionId();
-        // this.setRandomId();
       }
     }
   }
@@ -66,7 +65,9 @@ export class QuestionComponent implements OnInit {
 
   suggestQuestionId(): void {
     this.suggestionService.suggestQuestion().subscribe(
-      suggestedId => this.setId(suggestedId)
+      suggestedId => {
+        this.setId(suggestedId);
+      }
     );
   }
 
