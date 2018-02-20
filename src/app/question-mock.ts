@@ -53,6 +53,71 @@ export const QUESTIONS: Question[] = [
             "Stellung des Torwarts war korrekt"],
         correctAnswers: [1,2],
         ruleReferences: ["1:3", "12:1", "14:9"]
+    },
+    {
+        id: 6,
+        question:  "Wie breit muss die Torlinie zwischen den Torpfosten sein?",
+        answers: [
+            " 5 cm",
+            " 6 cm",
+            " 8 cm",
+            "10 cm"],
+        correctAnswers: [2],
+        ruleReferences: ["1:3"]
+    },
+    {
+        id: 7,
+        question:  "Kurz vor dem Schlusspfiff wird B2 an der Torraumlinie angespielt, setzt zum Torwurf an und wird dabei regelwidrig behindert. Bevor der Ball die Hand von B2 verlassen hat, ertönt das Schlusssignal. Richtige Entscheidung?",
+        answers: [
+            "Spiel ist beendet",
+            "Freiwurf für B",
+            "7-Meter-Wurf für B",
+            "Spiel ist beendet; Vermerk im Spielprotokoll"],
+        correctAnswers: [2],
+        ruleReferences: ["2:4", "14.1a"]
+    },
+    {
+        id: 8,
+        question:  "Kurz vor Ende der 1. Halbzeit ist noch ein 7-Meter-Wurf auszuführen. Der von A9 ge-worfene Ball knallt gegen die Latte, von dort gegen den Rücken des ca. 3 Meter vor seinem Tor stehenden Torwarts und dann ins Tor. Der Pfiff des Zeitnehmers ertönte, als der Ball von der Latte in Richtung Torwartrücken flog. Wie ist zu entscheiden?",
+        answers: [
+            "Tor",
+            "Wiederholung des 7-Meter-Wurfs",
+            "Halbzeit beendet, keine weitere Entscheidung"],
+        correctAnswers: [1],
+        ruleReferences: ["2:4"]
+    },
+    {
+        id: 9,
+        question:  "Nach dem Schlusssignal ist noch ein 7-Meter-Wurf auszuführen. Das unmittelbare Ergebnis dieses Wurfs wird abgewartet. Welcher Schiedsrichter beendet das Spiel nun?",
+        answers: [
+            "Der Erstgenannte",
+            "Einer von beiden",
+            "Der Feldschiedsrichter",
+            "Der Torschiedsrichter"],
+        correctAnswers: [1],
+        ruleReferences: ["2:4"]
+    },
+    {
+        id: 10,
+        question:  "Wann beginnt das Spiel?",
+        answers: [
+            "Mit dem Pfiff des erstgenannten Schiedsrichters",
+            "Wenn der Ball die Hand des Werfers verlassen hat",
+            "Wenn der Zeitnehmer die Stoppuhr startet oder die öffentliche Zeitmessanlage zu laufen be-ginnt",
+            "Mit dem Anpfiff des Anwurfs durch den Feldschiedsrichter"],
+        correctAnswers: [3],
+        ruleReferences: ["2:3"]
+    },
+    {
+        id: 11,
+        question:  "Wer bestimmt bei einem 7-m-Werfen, auf welches Tor geworfen wird?",
+        answers: [
+            "Die Mannschaft, die das Losen gewinnt",
+            "Die Mannschaft, die das Losen verliert",
+            "Die Schiedsrichter",
+            "Der erstgenannte Schiedsrichter"],
+        correctAnswers: [2],
+        ruleReferences: ["2:2, Kommentar"]
     }
 
     
