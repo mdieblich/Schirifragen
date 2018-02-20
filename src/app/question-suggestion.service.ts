@@ -36,7 +36,6 @@ export class QuestionSuggestionService {
         remainingQuestions.push(i);
       }
     }
-    console.log("remainingQuestions", remainingQuestions);
     return remainingQuestions;
   }
 
