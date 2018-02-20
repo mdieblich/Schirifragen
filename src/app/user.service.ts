@@ -67,15 +67,10 @@ export class UserService {
     return answeredQuestions;
   }
 
-  clearOldAnsweredQuestions(percentage: number): void {
-    if(percentage < 1 || percentage > 100) {
-      throw new Error("Percentage must be between 1% and 100%, but is " + percentage)
-    }
+  clearOldAnsweredQuestions(): void {
     this.operateOnSessionData(
       sessionData => {
-        // TODO: Slice-Größe (aktuell 50%) über config-Parameter
-        const remainingElements: number = sessionData.questionsAnswered.length * percentage/100;
-        sessionData.questionsAnswered = sessionData.questionsAnswered.slice(-remainingElements);
+        sessionData.questionsAnswered = [];
       }
     );
   }

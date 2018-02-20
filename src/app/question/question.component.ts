@@ -62,6 +62,9 @@ export class QuestionComponent implements OnInit {
     this.suggestionService.suggestQuestion().subscribe(
       suggestedId => {
         this.setId(suggestedId);
+      },
+      error => {
+        this.noMoreQuestionsAvailable();
       }
     );
   }
@@ -115,4 +118,10 @@ export class QuestionComponent implements OnInit {
     let firstLowerLetterCharCode: number = 'a'.charCodeAt(0);
     return String.fromCharCode(firstLowerLetterCharCode + i);
   }
+
+  noMoreQuestionsAvailable(): void {
+    alert("Keine Fragen mehr");
+    // TODO: Weiterleitung zu Auswertung
+  }
+
 }

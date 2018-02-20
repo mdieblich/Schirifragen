@@ -20,8 +20,7 @@ export class QuestionSuggestionService {
       maxId => {
         let remainingQuestions: number[] = this.getRemainingQuestions(maxId);
         if(remainingQuestions.length == 0){
-          this.userService.clearOldAnsweredQuestions(50 /* % */);
-          remainingQuestions = this.getRemainingQuestions(maxId);
+          throw new Error("No more questions");
         }
         return this.selectRandomId(remainingQuestions);
       }
