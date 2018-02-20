@@ -13,6 +13,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatExpansionModule } from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 
@@ -54,6 +55,7 @@ import { UserService } from './user.service';
     MatProgressBarModule,
     MatChipsModule,
     MatExpansionModule,
+    MatGridListModule,
     MatListModule,
     MatDividerModule,
 
