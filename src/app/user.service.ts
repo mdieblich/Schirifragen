@@ -71,6 +71,14 @@ export class UserService {
     return answeredQuestions;
   }
 
+  getQuestionScore(): number[] {
+    let scores: number[];
+    this.readSessionData(sessionData => {
+      scores = sessionData.scores;
+    });
+    return scores;
+  }
+
   clearOldAnsweredQuestions(): void {
     this.operateOnSessionData(
       sessionData => {

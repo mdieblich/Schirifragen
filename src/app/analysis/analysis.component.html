@@ -10,18 +10,89 @@
   </mat-expansion-panel-header>
 
   <mat-grid-list cols="2" rowHeight="50px">
-      <mat-grid-tile>
-          Korrekt: {{correctAnswers}} / {{totalAnswers}} Fragen
-      </mat-grid-tile>
-      <mat-grid-tile>
-          <mat-progress-bar class="col-10" [value]="100*correctAnswers/totalAnswers" mode="determinate" color="warn"></mat-progress-bar>
-      </mat-grid-tile>
-      <mat-grid-tile>
-          Punkte: {{totalScore}} / {{totalAnswers}} Fragen
-      </mat-grid-tile>
-      <mat-grid-tile>
-          <mat-progress-bar class="col-10" [value]="100*totalScore/totalAnswers" mode="determinate" color="warn"></mat-progress-bar>
-      </mat-grid-tile>
-    </mat-grid-list>
+    <mat-grid-tile>
+      {{correctAnswers}} korrekte Fragen von {{totalAnswers}} Fragen
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-progress-bar class="col-10" [value]="100*correctAnswers/totalAnswers" mode="determinate" color="warn"></mat-progress-bar>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      {{totalScore | points }} von max. {{totalAnswers}} Punkten
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-progress-bar class="col-10" [value]="100*totalScore/totalAnswers" mode="determinate" color="warn"></mat-progress-bar>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-expansion-panel>
+
+<mat-expansion-panel class="main-accordion">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Falsche beantwortete Fragen
+    </mat-panel-title>
+    <mat-panel-description>
+      {{wrongQuestions.length}} von {{totalAnswers}}
+    </mat-panel-description>
+
+  </mat-expansion-panel-header>
+
+  <mat-expansion-panel *ngFor="let question of wrongQuestions">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Frage {{question.id}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{shortQuestionText(question)}}
+      </mat-panel-description>
+
+    </mat-expansion-panel-header>
+
+    {{question.text}}
+    <div class="container">
+      <div class="row" *ngFor="let answer of question.answers; let i = index">
+        <!-- TODO: Wieso ist die Box etwas nach unten verschoben? -->
+        <mat-checkbox class="col-12" disabled>
+          {{i}}) {{answer}}
+        </mat-checkbox>
+      </div>
+    </div>
+
+  </mat-expansion-panel>
+
+</mat-expansion-panel>
+
+<mat-expansion-panel class="main-accordion">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Korrekt beantwortete Fragen
+    </mat-panel-title>
+    <mat-panel-description>
+      {{correctQuestions.length}} von {{totalAnswers}}
+    </mat-panel-description>
+
+  </mat-expansion-panel-header>
+
+  <mat-expansion-panel *ngFor="let question of correctQuestions">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Frage {{question.id}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{shortQuestionText(question)}}
+      </mat-panel-description>
+
+    </mat-expansion-panel-header>
+
+    {{question.text}}
+    <div class="container">
+      <div class="row" *ngFor="let answer of question.answers; let i = index">
+        <!-- TODO: Wieso ist die Box etwas nach unten verschoben? -->
+        <mat-checkbox class="col-12" disabled>
+          {{i}}) {{answer}}
+        </mat-checkbox>
+      </div>
+    </div>
+
+  </mat-expansion-panel>
 
 </mat-expansion-panel>

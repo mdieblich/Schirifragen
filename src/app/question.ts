@@ -1,6 +1,6 @@
 export class Question {
     id: number;
-    question: string;
+    text: string;
     answers: string[] = [];
     correctAnswers: number[] = [];
     ruleReferences: string[] = [];

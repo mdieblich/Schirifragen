@@ -3,7 +3,7 @@ import { Question } from "./question";
 export const QUESTIONS: Question[] = [
     {
         id: 1,
-        question:  "Welche Abmessungen sehen die Spielregeln für die Spielfläche vor?",
+        text:  "Welche Abmessungen sehen die Spielregeln für die Spielfläche vor?",
         answers: [
             "40 x 20 Meter",
             "42 x 20 Meter",
@@ -14,7 +14,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 2,
-        question:  "Welche Höhe und welche Breite (im Lichten) müssen die Tore haben?",
+        text:  "Welche Höhe und welche Breite (im Lichten) müssen die Tore haben?",
         answers: [
             "1,92 x 2,92 Meter",
             "2,00 x 3,00 Meter",
@@ -25,7 +25,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 3,
-        question:  "Während der Ausführung eines Abwurfs berührt Torwart A seine Torraumlinie mit einem Fuß. Richtige Entscheidung?",
+        text:  "Während der Ausführung eines Abwurfs berührt Torwart A seine Torraumlinie mit einem Fuß. Richtige Entscheidung?",
         answers: [
             "Wiederholung des Abwurfs mit Anpfiff",
             "Freiwurf für Mannschaft B",
@@ -35,7 +35,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 4,
-        question:  "Der Ball liegt auf der Torraumlinie. Angriffsspieler A7 nimmt ihn auf und will aus klarer Torgelegenheit auf das Tor werfen, als er regelwidrig angegriffen wird. Richtige Entscheidung?",
+        text:  "Der Ball liegt auf der Torraumlinie. Angriffsspieler A7 nimmt ihn auf und will aus klarer Torgelegenheit auf das Tor werfen, als er regelwidrig angegriffen wird. Richtige Entscheidung?",
         answers: [
             "Freiwurf für Mannschaft B",
             "Freiwurf für Mannschaft A",
@@ -46,7 +46,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 5,
-        question:  "Nach dem Anpfiff eines 7-Meter-Wurfs tritt Torwart A mit einem Fuß auf die Torwartgrenzlinie. Der Ball geht über das Tor. Richtige Entscheidung?",
+        text:  "Nach dem Anpfiff eines 7-Meter-Wurfs tritt Torwart A mit einem Fuß auf die Torwartgrenzlinie. Der Ball geht über das Tor. Richtige Entscheidung?",
         answers: [
             "Wiederholung mit Anpfiff",
             "Da kein Tor, Spielfortsetzung mit Abwurf",
@@ -56,7 +56,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 6,
-        question:  "Wie breit muss die Torlinie zwischen den Torpfosten sein?",
+        text:  "Wie breit muss die Torlinie zwischen den Torpfosten sein?",
         answers: [
             " 5 cm",
             " 6 cm",
@@ -67,7 +67,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 7,
-        question:  "Kurz vor dem Schlusspfiff wird B2 an der Torraumlinie angespielt, setzt zum Torwurf an und wird dabei regelwidrig behindert. Bevor der Ball die Hand von B2 verlassen hat, ertönt das Schlusssignal. Richtige Entscheidung?",
+        text:  "Kurz vor dem Schlusspfiff wird B2 an der Torraumlinie angespielt, setzt zum Torwurf an und wird dabei regelwidrig behindert. Bevor der Ball die Hand von B2 verlassen hat, ertönt das Schlusssignal. Richtige Entscheidung?",
         answers: [
             "Spiel ist beendet",
             "Freiwurf für B",
@@ -78,7 +78,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 8,
-        question:  "Kurz vor Ende der 1. Halbzeit ist noch ein 7-Meter-Wurf auszuführen. Der von A9 ge-worfene Ball knallt gegen die Latte, von dort gegen den Rücken des ca. 3 Meter vor seinem Tor stehenden Torwarts und dann ins Tor. Der Pfiff des Zeitnehmers ertönte, als der Ball von der Latte in Richtung Torwartrücken flog. Wie ist zu entscheiden?",
+        text:  "Kurz vor Ende der 1. Halbzeit ist noch ein 7-Meter-Wurf auszuführen. Der von A9 ge-worfene Ball knallt gegen die Latte, von dort gegen den Rücken des ca. 3 Meter vor seinem Tor stehenden Torwarts und dann ins Tor. Der Pfiff des Zeitnehmers ertönte, als der Ball von der Latte in Richtung Torwartrücken flog. Wie ist zu entscheiden?",
         answers: [
             "Tor",
             "Wiederholung des 7-Meter-Wurfs",
@@ -88,7 +88,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 9,
-        question:  "Nach dem Schlusssignal ist noch ein 7-Meter-Wurf auszuführen. Das unmittelbare Ergebnis dieses Wurfs wird abgewartet. Welcher Schiedsrichter beendet das Spiel nun?",
+        text:  "Nach dem Schlusssignal ist noch ein 7-Meter-Wurf auszuführen. Das unmittelbare Ergebnis dieses Wurfs wird abgewartet. Welcher Schiedsrichter beendet das Spiel nun?",
         answers: [
             "Der Erstgenannte",
             "Einer von beiden",
@@ -99,7 +99,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 10,
-        question:  "Wann beginnt das Spiel?",
+        text:  "Wann beginnt das Spiel?",
         answers: [
             "Mit dem Pfiff des erstgenannten Schiedsrichters",
             "Wenn der Ball die Hand des Werfers verlassen hat",
@@ -110,7 +110,7 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 11,
-        question:  "Wer bestimmt bei einem 7-m-Werfen, auf welches Tor geworfen wird?",
+        text:  "Wer bestimmt bei einem 7-m-Werfen, auf welches Tor geworfen wird?",
         answers: [
             "Die Mannschaft, die das Losen gewinnt",
             "Die Mannschaft, die das Losen verliert",
