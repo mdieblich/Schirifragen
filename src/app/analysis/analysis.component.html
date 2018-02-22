@@ -48,14 +48,12 @@
     </mat-expansion-panel-header>
 
     {{question.text}}
-    <div class="container">
-      <div class="row" *ngFor="let answer of question.answers; let i = index">
-        <!-- TODO: Wieso ist die Box etwas nach unten verschoben? -->
-        <mat-checkbox class="col-12" disabled>
-          {{i}}) {{answer}}
-        </mat-checkbox>
-      </div>
-    </div>
+
+    <app-answer-list
+      finished="true"
+      [question]="question"
+      [selectedAnswers]="results[question.id].selectedAnswers"
+      ></app-answer-list>
 
   </mat-expansion-panel>
 
@@ -84,14 +82,11 @@
     </mat-expansion-panel-header>
 
     {{question.text}}
-    <div class="container">
-      <div class="row" *ngFor="let answer of question.answers; let i = index">
-        <!-- TODO: Wieso ist die Box etwas nach unten verschoben? -->
-        <mat-checkbox class="col-12" disabled>
-          {{i}}) {{answer}}
-        </mat-checkbox>
-      </div>
-    </div>
+    <app-answer-list
+      finished="true"
+      [question]="question"
+      [selectedAnswers]="results[question.id].selectedAnswers"
+      ></app-answer-list>
 
   </mat-expansion-panel>
 
