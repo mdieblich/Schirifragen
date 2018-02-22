@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf="!finished" class="col-12">&nbsp;</div>
+    <div *ngIf="finished" class="col-1 center-text">Lösung</div>
+  </div>
+
+  <app-answer *ngFor="let answer of question.answers; let i = index" [finished]="finished" [correctAnswer]="correctAnswers[i]"
+    [(selectedAnswer)]="selectedAnswers[i]" [i]="i" [answer]="answer">
+  </app-answer>
+
+  <div class="row justify-content-start rule-reference">
+    <div class="col-1 center-text">
+      <button mat-button disabled>
+        {{finished?"Regeln:":"&nbsp;"}}
+      </button>
+    </div>
+    <div class="col-1" *ngFor="let rule of question.ruleReferences">
+      <button *ngIf="finished" mat-button color="accent">
+        {{rule}}
+      </button>
+    </div>
+  </div>
+</div>
