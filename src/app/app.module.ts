@@ -32,6 +32,7 @@ import { AnalysisComponent } from './analysis/analysis.component';
 import { QuestionService } from './question.service';
 import { QuestionSuggestionService } from './question-suggestion.service';
 import { UserService } from './user.service';
+import { AnswerComponent } from './answer/answer.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { UserService } from './user.service';
 
     AppComponent,
     QuestionComponent,
-    AnalysisComponent
+    AnalysisComponent,
+    AnswerComponent
   ],
   imports: [
     BrowserModule,
