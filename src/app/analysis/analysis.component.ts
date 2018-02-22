@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Question } from '../question';
 import { QuestionService } from '../question.service';
 import { UserService } from '../user.service';
+import { QuestionResult } from '../question-result';
 
 @Component({
   selector: 'app-analysis',
@@ -17,6 +18,7 @@ export class AnalysisComponent implements OnInit {
 
   correctQuestions: Question[] = [];
   wrongQuestions: Question[] = [];
+  results: QuestionResult[] = [];
 
   constructor(
     private questionService: QuestionService,
@@ -28,13 +30,14 @@ export class AnalysisComponent implements OnInit {
     this.totalScore = 0;
 
     const answeredQuestions: Set<number> = this.userService.getAnsweredQuestions();
-    const scores: number[] = this.userService.getQuestionScore();
+    this.results = this.userService.getQuestionResults();
 
     this.totalAnswers = answeredQuestions.size;
     answeredQuestions.forEach(questionId => {
       this.questionService.getQuestion(questionId).subscribe(question => {
-        this.totalScore += scores[questionId];
-        if(scores[questionId] === 1){
+        const score: number = this.results[questionId].score;
+        this.totalScore += score;
+        if(score === 1){
           this.correctAnswers ++;
           this.correctQuestions.push(question);
         }else{

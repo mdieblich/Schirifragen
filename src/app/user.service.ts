@@ -4,6 +4,7 @@ import { LongTimeUserData } from './long-time-user-data';
 import { QuestionResult } from './question-result';
 import { QuestionResultHistory } from './question-result-history';
 import { SessionUserData } from './session-user-data';
+import { Question } from './question';
 
 @Injectable()
 export class UserService {
@@ -41,7 +42,7 @@ export class UserService {
     if(!sessionData){
       sessionData = {
         questionsAnswered: [],
-        scores: []
+        results: []
       };
     }
     action(sessionData);
@@ -59,7 +60,7 @@ export class UserService {
 
     this.operateOnSessionData(sessionData => {
       sessionData.questionsAnswered.push(questionId);
-      sessionData.scores[questionId] = result.score;
+      sessionData.results[questionId] = result;
     });
   }
 
@@ -71,12 +72,12 @@ export class UserService {
     return answeredQuestions;
   }
 
-  getQuestionScore(): number[] {
-    let scores: number[];
+  getQuestionResults(): QuestionResult[] {
+    let results: QuestionResult[];
     this.readSessionData(sessionData => {
-      scores = sessionData.scores;
+      results = sessionData.results;
     });
-    return scores;
+    return results;
   }
 
   clearOldAnsweredQuestions(): void {
