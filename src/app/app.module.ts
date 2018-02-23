@@ -34,6 +34,7 @@ import { QuestionSuggestionService } from './question-suggestion.service';
 import { UserService } from './user.service';
 import { AnswerComponent } from './answer/answer.component';
 import { AnswerListComponent } from './answer-list/answer-list.component';
+import { QuestionListComponent } from './question-list/question-list.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { AnswerListComponent } from './answer-list/answer-list.component';
     QuestionComponent,
     AnalysisComponent,
     AnswerComponent,
-    AnswerListComponent
+    AnswerListComponent,
+    QuestionListComponent
   ],
   imports: [
     BrowserModule,

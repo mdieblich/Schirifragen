@@ -1,0 +1,16 @@
+<mat-expansion-panel *ngFor="let question of questions">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Frage {{question.id}}
+    </mat-panel-title>
+    <mat-panel-description>
+      {{shortQuestionText(question)}}
+    </mat-panel-description>
+
+  </mat-expansion-panel-header>
+
+  {{question.text}}
+
+  <app-answer-list finished="true" [question]="question" [selectedAnswers]="results[question.id].selectedAnswers"></app-answer-list>
+
+</mat-expansion-panel>

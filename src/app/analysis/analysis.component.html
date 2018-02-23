@@ -36,26 +36,7 @@
 
   </mat-expansion-panel-header>
 
-  <mat-expansion-panel *ngFor="let question of wrongQuestions">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Frage {{question.id}}
-      </mat-panel-title>
-      <mat-panel-description>
-        {{shortQuestionText(question)}}
-      </mat-panel-description>
-
-    </mat-expansion-panel-header>
-
-    {{question.text}}
-
-    <app-answer-list
-      finished="true"
-      [question]="question"
-      [selectedAnswers]="results[question.id].selectedAnswers"
-      ></app-answer-list>
-
-  </mat-expansion-panel>
+  <app-question-list [questions]="wrongQuestions" [results]="results"></app-question-list>
 
 </mat-expansion-panel>
 
@@ -70,24 +51,6 @@
 
   </mat-expansion-panel-header>
 
-  <mat-expansion-panel *ngFor="let question of correctQuestions">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Frage {{question.id}}
-      </mat-panel-title>
-      <mat-panel-description>
-        {{shortQuestionText(question)}}
-      </mat-panel-description>
-
-    </mat-expansion-panel-header>
-
-    {{question.text}}
-    <app-answer-list
-      finished="true"
-      [question]="question"
-      [selectedAnswers]="results[question.id].selectedAnswers"
-      ></app-answer-list>
-
-  </mat-expansion-panel>
+  <app-question-list [questions]="correctQuestions" [results]="results"></app-question-list>
 
 </mat-expansion-panel>

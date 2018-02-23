@@ -46,12 +46,4 @@ export class AnalysisComponent implements OnInit {
       })
     });
   }
-
-  shortQuestionText(question: Question): string {
-    if(question.text.length<30){
-      return question.text;
-    }
-    return question.text.slice(0, 29)+"...";
-  }
-
 }
