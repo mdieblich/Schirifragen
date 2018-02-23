@@ -36,23 +36,31 @@
     </mat-panel-description>
   </mat-expansion-panel-header>
 
-  <ol>
-    <li *ngFor="let ruleUnderstanding of ruleUnderstandings">
-      {{ruleUnderstanding.rule.paragraph}}
+
+  <mat-expansion-panel class="main-accordion" *ngFor="let ruleUnderstanding of ruleUnderstandings">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Regel {{ruleUnderstanding.rule.paragraph}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ruleUnderstanding.wrongQuestions.length}} falsche beantwortete Frage(n)
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <div *ngIf="ruleUnderstanding.wrongQuestions.length>0">
+      Falsch beantwortet: ({{ruleUnderstanding.wrongQuestions.length}})
       <ul>
-        <li>Falsche Beantwortet ({{ruleUnderstanding.wrongQuestions.length}})
-          <ul>
-            <li *ngFor="let wrongQuestion of ruleUnderstanding.wrongQuestions">{{wrongQuestion.id}}</li>
-          </ul>
-        </li>
-        <li>Richtig Beantwortet ({{ruleUnderstanding.correctQuestions.length}})
-            <ul>
-                <li *ngFor="let correctQuestion of ruleUnderstanding.correctQuestions">{{correctQuestion.id}}</li>
-              </ul>
-        </li>
+        <li *ngFor="let wrongQuestion of ruleUnderstanding.wrongQuestions">Frage {{wrongQuestion.id}}</li>
       </ul>
-    </li>
-  </ol>
+    </div>
+    <div *ngIf="ruleUnderstanding.correctQuestions.length>0">
+      Richtig beantwortet: ({{ruleUnderstanding.correctQuestions.length}})
+      <ul>
+        <li *ngFor="let correctQuestion of ruleUnderstanding.correctQuestions">Frage {{correctQuestion.id}}</li>
+      </ul>
+    </div>
+
+  </mat-expansion-panel>
 
 </mat-expansion-panel>
 
