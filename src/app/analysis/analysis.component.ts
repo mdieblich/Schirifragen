@@ -3,6 +3,8 @@ import { Question } from '../question';
 import { QuestionService } from '../question.service';
 import { UserService } from '../user.service';
 import { QuestionResult } from '../question-result';
+import { RuleUnderstanding } from '../rule-understanding';
+import { RuleUnderstandingMap } from '../rule-understanding-map';
 
 @Component({
   selector: 'app-analysis',
@@ -12,6 +14,7 @@ import { QuestionResult } from '../question-result';
 export class AnalysisComponent implements OnInit {
 
   totalAnswers: number;
+  loadedQuestions: number = 0;
 
   correctAnswers: number;
   totalScore: number;
@@ -19,6 +22,8 @@ export class AnalysisComponent implements OnInit {
   correctQuestions: Question[] = [];
   wrongQuestions: Question[] = [];
   results: QuestionResult[] = [];
+
+  ruleUnderstandings: RuleUnderstanding[];
 
   constructor(
     private questionService: QuestionService,
@@ -35,15 +40,30 @@ export class AnalysisComponent implements OnInit {
     this.totalAnswers = answeredQuestions.size;
     answeredQuestions.forEach(questionId => {
       this.questionService.getQuestion(questionId).subscribe(question => {
-        const score: number = this.results[questionId].score;
-        this.totalScore += score;
-        if(score === 1){
-          this.correctAnswers ++;
-          this.correctQuestions.push(question);
-        }else{
-          this.wrongQuestions.push(question);
-        }
+        this.addQuestion(question, this.results[questionId].score);
       })
     });
   }
+
+  addQuestion(question: Question, score: number): void {
+    this.totalScore += score;
+    if(score === 1){
+      this.correctAnswers ++;
+      this.correctQuestions.push(question);
+    }else{
+      this.wrongQuestions.push(question);
+    }
+    this.loadedQuestions ++;
+    if(this.loadedQuestions >= this.totalAnswers){
+      this.calculateRuleUnderstanding();
+    }
+  }
+
+  calculateRuleUnderstanding(): void {
+    let ruleMap = new RuleUnderstandingMap();
+    ruleMap.addCorrectQuestions(this.correctQuestions);
+    ruleMap.addWrongQuestions(this.wrongQuestions);
+    this.ruleUnderstandings = ruleMap.getOrderedRuleUnderstandings();
+  }
+
 }

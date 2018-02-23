@@ -25,6 +25,38 @@
   </mat-grid-list>
 </mat-expansion-panel>
 
+
+<mat-expansion-panel class="main-accordion" *ngIf="ruleUnderstandings">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Regelverständnis
+    </mat-panel-title>
+    <mat-panel-description>
+      welche Regel wie gut
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <ol>
+    <li *ngFor="let ruleUnderstanding of ruleUnderstandings">
+      {{ruleUnderstanding.rule.paragraph}}
+      <ul>
+        <li>Falsche Beantwortet ({{ruleUnderstanding.wrongQuestions.length}})
+          <ul>
+            <li *ngFor="let wrongQuestion of ruleUnderstanding.wrongQuestions">{{wrongQuestion.id}}</li>
+          </ul>
+        </li>
+        <li>Richtig Beantwortet ({{ruleUnderstanding.correctQuestions.length}})
+            <ul>
+                <li *ngFor="let correctQuestion of ruleUnderstanding.correctQuestions">{{correctQuestion.id}}</li>
+              </ul>
+        </li>
+      </ul>
+    </li>
+  </ol>
+
+</mat-expansion-panel>
+
+
 <mat-expansion-panel class="main-accordion">
   <mat-expansion-panel-header>
     <mat-panel-title>
