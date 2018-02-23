@@ -18,6 +18,8 @@ export class AnswerListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // TODO: Belohnungsystem für richtige Antwort (z.B. roter/grüner Hintergrund)
+
     this.correctAnswers = new Array(this.question.answers.length);
     this.correctAnswers.fill(false);
     

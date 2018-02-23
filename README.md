@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Lernmodell
+Der Mensch hat drei Stufen des Gedächtnisses, welche nacheinander durchlaufen werden
+1. Kurzzeit (< 5 Minuten)
+2. Mittelzeit (< 12 h)
+3. Langzeit
+
+Der Lernkasten mit den drei Stufen, spiegelt das ganz gut wieder.
