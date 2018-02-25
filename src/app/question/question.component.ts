@@ -54,8 +54,8 @@ export class QuestionComponent implements OnInit {
 
   setId(id: number) {
     this.id = id;
-    this.loadQuestion();
     this.location.go("/question/"+id);
+    this.loadQuestion();
   }
 
   suggestQuestionId(): void {

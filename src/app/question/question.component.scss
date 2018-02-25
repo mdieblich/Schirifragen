@@ -3,9 +3,9 @@
     margin: auto;
 }
 
-.question-number {
-    font-size: 27px;
-}
+// .question-number {
+//     font-size: 27px;
+// }
 
 .question-text {
     font-size: 150%;
@@ -18,4 +18,9 @@
 
 .rule-reference {
     font-style: italic;
+}
+
+// ab hier Bootstrap-Umschrieb
+.question-number {
+    font-size: 75%;
 }
