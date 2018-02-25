@@ -13,11 +13,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatExpansionModule } from '@angular/material/expansion';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatListModule} from '@angular/material/list';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
 
 // Weitere Drittanbieter-Bibliotheken
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 // aktuell nix mehr
 
 // Eigene Module, Komponenten, Pipes, Services....
@@ -64,6 +65,8 @@ import { QuestionListComponent } from './question-list/question-list.component';
     MatGridListModule,
     MatListModule,
     MatDividerModule,
+
+    NgbModule,  // Bootstrap
 
     AppRoutingModule
   ],
