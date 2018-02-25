@@ -28,7 +28,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 3,
-		text: "Während der Ausführung eines Abwurfs berührt Torwart A seine Torraumlinie mit ei-nem Fuß. Richtige Entscheidung?",
+		text: "Während der Ausführung eines Abwurfs berührt Torwart A seine Torraumlinie mit einem Fuß. Richtige Entscheidung?",
 		answers: [
 			"Wiederholung des Abwurfs mit Anpfiff",
 			"Freiwurf für Mannschaft B",
@@ -39,7 +39,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 4,
-		text: "Der Ball liegt auf der Torraumlinie. Angriffsspieler A7 nimmt ihn auf und will aus klarer Torgelegenheit auf das Tor werfen, als er regelwidrig angegriffen wird. Richtige Ent-scheidung?",
+		text: "Der Ball liegt auf der Torraumlinie. Angriffsspieler A7 nimmt ihn auf und will aus klarer Torgelegenheit auf das Tor werfen, als er regelwidrig angegriffen wird. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für Mannschaft B",
 			"Freiwurf für Mannschaft A",
@@ -51,7 +51,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 5,
-		text: "Nach dem Anpfiff eines 7-Meter-Wurfs tritt Torwart A mit einem Fuß auf die Torwart-grenzlinie. Der Ball geht über das Tor. Richtige Entscheidung?",
+		text: "Nach dem Anpfiff eines 7-Meter-Wurfs tritt Torwart A mit einem Fuß auf die Torwartgrenzlinie. Der Ball geht über das Tor. Richtige Entscheidung?",
 		answers: [
 			"Wiederholung mit Anpfiff",
 			"Da kein Tor, Spielfortsetzung mit Abwurf",
@@ -86,7 +86,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 8,
-		text: "Kurz vor Ende der 1. Halbzeit ist noch ein 7-Meter-Wurf auszuführen. Der von A9 ge-worfene Ball knallt gegen die Latte, von dort gegen den Rücken des ca. 3 Meter vor seinem Tor stehenden Torwarts und dann ins Tor. Der Pfiff des Zeitnehmers ertönte, als der Ball von der Latte in Richtung Torwartrücken flog. Wie ist zu entscheiden?",
+		text: "Kurz vor Ende der 1. Halbzeit ist noch ein 7-Meter-Wurf auszuführen. Der von A9 geworfene Ball knallt gegen die Latte, von dort gegen den Rücken des ca. 3 Meter vor seinem Tor stehenden Torwarts und dann ins Tor. Der Pfiff des Zeitnehmers ertönte, als der Ball von der Latte in Richtung Torwartrücken flog. Wie ist zu entscheiden?",
 		answers: [
 			"Tor",
 			"Wiederholung des 7-Meter-Wurfs",
@@ -97,7 +97,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 9,
-		text: "Nach dem Schlusssignal ist noch ein 7-Meter-Wurf auszuführen. Das unmittelbare Er-gebnis dieses Wurfs wird abgewartet. Welcher Schiedsrichter beendet das Spiel nun?",
+		text: "Nach dem Schlusssignal ist noch ein 7-Meter-Wurf auszuführen. Das unmittelbare Ergebnis dieses Wurfs wird abgewartet. Welcher Schiedsrichter beendet das Spiel nun?",
 		answers: [
 			"Der Erstgenannte",
 			"Einer von beiden",
@@ -113,7 +113,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Mit dem Pfiff des erstgenannten Schiedsrichters",
 			"Wenn der Ball die Hand des Werfers verlassen hat",
-			"Wenn der Zeitnehmer die Stoppuhr startet oder die öffentliche Zeitmessanlage zu laufen be-ginnt",
+			"Wenn der Zeitnehmer die Stoppuhr startet oder die öffentliche Zeitmessanlage zu laufen beginnt",
 			"Mit dem Anpfiff des Anwurfs durch den Feldschiedsrichter."
 		],
 		correctAnswers: [3],
@@ -133,7 +133,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 12,
-		text: "Der vom Torwart abgewehrte Ball rollt über die Torauslinie. Danach ertönt das automa-tische Schlusssignal. Die Schiedsrichter stellen fest, dass das Spiel fünf Minuten zu früh beendet wurde. Da sich die Spieler noch auf der Spielfläche befinden, wird das Spiel wieder aufgenommen mit:",
+		text: "Der vom Torwart abgewehrte Ball rollt über die Torauslinie. Danach ertönt das automatische Schlusssignal. Die Schiedsrichter stellen fest, dass das Spiel fünf Minuten zu früh beendet wurde. Da sich die Spieler noch auf der Spielfläche befinden, wird das Spiel wieder aufgenommen mit:",
 		answers: [
 			"Abwurf",
 			"Freiwurf",
@@ -149,7 +149,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Die 2. Halbzeit um eine Minute verlängern",
 			"Die eine Minute wird nicht nachgeholt",
-			"Nach der Halbzeitpause zuerst eine Minute in denselben Spielfeldhälften wie in der 1. Halb-zeit spielen lassen, dann nach Seitenwechsel normaler Beginn der 2. Halbzeit.",
+			"Nach der Halbzeitpause zuerst eine Minute in denselben Spielfeldhälften wie in der 1. Halbzeit spielen lassen, dann nach Seitenwechsel normaler Beginn der 2. Halbzeit.",
 			"Die Spieler auf dem Spielfeld halten und die verbleibende Spielzeit von 1 Minute noch spielen lassen."
 		],
 		correctAnswers: [3],
@@ -157,7 +157,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 14,
-		text: "A wirft, Torwart B hält. In diesem Augenblick ertönt das automatische Schlusssignal. Die Schiedsrichter machen den Zeitnehmer darauf aufmerksam, dass noch 30 Sekun-den der 2. Halbzeit zu spielen sind. Alle Spieler sind auf der Spielfläche geblieben. Wie wird das Spiel wieder aufgenommen?",
+		text: "A wirft, Torwart B hält. In diesem Augenblick ertönt das automatische Schlusssignal. Die Schiedsrichter machen den Zeitnehmer darauf aufmerksam, dass noch 30 Sekunden der 2. Halbzeit zu spielen sind. Alle Spieler sind auf der Spielfläche geblieben. Wie wird das Spiel wieder aufgenommen?",
 		answers: [
 			"Freiwurf für B",
 			"Abwurf",
@@ -182,7 +182,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 16,
-		text: "Welchen der folgenden vier Bälle müssen die Schiedsrichter für ein Männerspiel wäh-len?",
+		text: "Welchen der folgenden vier Bälle müssen die Schiedsrichter für ein Männerspiel wählen?",
 		answers: [
 			"Umfang 57 cm, Gewicht 450 g",
 			"Umfang 58 cm, Gewicht 400 g",
@@ -194,7 +194,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 17,
-		text: "Welchen der folgenden vier Bälle müssen die Schiedsrichter für ein Frauenspiel wäh-len?",
+		text: "Welchen der folgenden vier Bälle müssen die Schiedsrichter für ein Frauenspiel wählen?",
 		answers: [
 			"Umfang 53 cm, Gewicht 350 g",
 			"Umfang 54 cm, Gewicht 300 g",
@@ -218,11 +218,11 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 19,
-		text: "Mannschaft B erscheint mit 5 Feldspielern, aber ohne etatmäßigen Torwart. Mann-schaft B bestimmt Feldspieler B5 als Torwart. Konsequenzen für B5?",
+		text: "Mannschaft B erscheint mit 5 Feldspielern, aber ohne etatmäßigen Torwart. Mannschaft B bestimmt Feldspieler B5 als Torwart. Konsequenzen für B5?",
 		answers: [
 			"B5 ist nach einer ordnungsgemäßen Auswechslung jederzeit als Feldspieler einsetzbar.",
 			"B5 darf nicht mehr als Feldspieler eingesetzt werden.",
-			"B5 darf als Feldspieler eingesetzt werden, wenn der Offizielle der Mannschaft A einverstan-den ist.",
+			"B5 darf als Feldspieler eingesetzt werden, wenn der Offizielle der Mannschaft A einverstanden ist.",
 			"B5 darf als Feldspieler eingesetzt werden, sobald der vorgesehene Torwart anwesend ist."
 		],
 		correctAnswers: [0],
@@ -243,7 +243,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 21,
-		text: "Wie viele Spieler pro Mannschaft müssen mindestens bei Spielbeginn auf der Spielflä-che antreten und im Spielprotokoll eingetragen sein?",
+		text: "Wie viele Spieler pro Mannschaft müssen mindestens bei Spielbeginn auf der Spielfläche antreten und im Spielprotokoll eingetragen sein?",
 		answers: [
 			"5 Spieler",
 			"4 Feldspieler und 1 Torwart",
@@ -260,14 +260,14 @@ export const QUESTIONS: Question[] =
 			"Bei Spielbeginn anwesend und im Spielprotokoll eingetragen",
 			"Bei Spielbeginn nicht anwesend, aber im Spielprotokoll eingetragen",
 			"Bei Spielbeginn anwesend, aber nicht im Spielprotokoll eingetragen",
-			"Ein Spieler, der zwar nicht im Spielprotokoll eingetragen ist, aber vom Zeitnehmer die Spieler-laubnis erhält"
+			"Ein Spieler, der zwar nicht im Spielprotokoll eingetragen ist, aber vom Zeitnehmer die Spielerlaubnis erhält"
 		],
 		correctAnswers: [0],
 		ruleReferences: ["4:3"]
 	},
 	{
 		id: 23,
-		text: "Bei Spielbeginn sind nur 6 Spieler von Mannschaft A anwesend. Unmittelbar nach dem Anpfiff treffen die fehlenden Spieler ein. Nach dem Umkleiden läuft A7 über die Aus-wechsellinie einfach auf die Spielfläche. Im Spielprotokoll ist er nicht eingetragen. Richtige Entscheidung?",
+		text: "Bei Spielbeginn sind nur 6 Spieler von Mannschaft A anwesend. Unmittelbar nach dem Anpfiff treffen die fehlenden Spieler ein. Nach dem Umkleiden läuft A7 über die Auswechsellinie einfach auf die Spielfläche. Im Spielprotokoll ist er nicht eingetragen. Richtige Entscheidung?",
 		answers: [
 			"Disqualifikation von A7",
 			"Hinausstellung von A7 und Eintragung ins Spielprotokoll",
@@ -279,7 +279,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 24,
-		text: "Während eines Gegenstoßes von Mannschaft A läuft B7 als zusätzlicher Spieler auf das Spielfeld und umklammert A5 so, dass diesem eine klare Torgelegenheit genom-men wird. Richtige Entscheidung?",
+		text: "Während eines Gegenstoßes von Mannschaft A läuft B7 als zusätzlicher Spieler auf das Spielfeld und umklammert A5 so, dass diesem eine klare Torgelegenheit genommen wird. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung von B7",
 			"Disqualifikation von B7 ohne schriftlichen Bericht",
@@ -292,7 +292,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 25,
-		text: "Die Schiedsrichter haben auf Freiwurf für A an der Freiwurflinie von B entschieden. Jetzt pfeift der Zeitnehmer und hält die Uhr an. Die Schiedsrichter erkundigen sich nach dem Grund des Pfiffs. Der Zeitnehmer teilt mit, dass A9 einen Wechselfehler be-gangen hat. Entscheidung?",
+		text: "Die Schiedsrichter haben auf Freiwurf für A an der Freiwurflinie von B entschieden. Jetzt pfeift der Zeitnehmer und hält die Uhr an. Die Schiedsrichter erkundigen sich nach dem Grund des Pfiffs. Der Zeitnehmer teilt mit, dass A9 einen Wechselfehler begangen hat. Entscheidung?",
 		answers: [
 			"Freiwurf für A an der Freiwurflinie von B",
 			"Freiwurf für B an der eigenen Freiwurflinie",
@@ -304,19 +304,19 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 26,
-		text: "B14 wechselt bei einer Spielunterbrechung korrekt ein. Trotzdem kommt vom Zeitneh-mertisch ein Pfiff, denn B14 ist nicht mit dieser Nummer im Spielprotokoll eingetragen. Die Kontrolle des Spielprotokolls zeigt, dass die Spielerin dort die Nummer 18 hat. Richtige Entscheidung?",
+		text: "B14 wechselt bei einer Spielunterbrechung korrekt ein. Trotzdem kommt vom Zeitnehmertisch ein Pfiff, denn B14 ist nicht mit dieser Nummer im Spielprotokoll eingetragen. Die Kontrolle des Spielprotokolls zeigt, dass die Spielerin dort die Nummer 18 hat. Richtige Entscheidung?",
 		answers: [
 			"Progressive Bestrafung des Mannschafsverantwortlichen von B",
 			"Freiwurf für A auf Höhe des Zeitnehmertisches",
 			"Korrektur der Nummer im Spielprotokoll",
-			"Das Spiel wird mit dem der Spielsituation entsprechenden Wurf fortgesetzt. Schriftlicher Be-richt"
+			"Das Spiel wird mit dem der Spielsituation entsprechenden Wurf fortgesetzt. Schriftlicher Bericht"
 		],
 		correctAnswers: [2, 3],
 		ruleReferences: ["4:3", "13:3", "13:4"]
 	},
 	{
 		id: 27,
-		text: "Nach dem Schlusssignal ist von Mannschaft A noch ein Freiwurf auszuführen. Zu die-sem Zweck wechselt sie, nachdem A3 und anschließend A4 die Spielfläche verlassen haben, nacheinander die wurfstarken Spieler A5 und A6 ein. Welche der nachfolgenden Aussagen trifft/treffen zu?",
+		text: "Nach dem Schlusssignal ist von Mannschaft A noch ein Freiwurf auszuführen. Zu diesem Zweck wechselt sie, nachdem A3 und anschließend A4 die Spielfläche verlassen haben, nacheinander die wurfstarken Spieler A5 und A6 ein. Welche der nachfolgenden Aussagen trifft/treffen zu?",
 		answers: [
 			"Der Zeitnehmer wird pfeifen und die Schiedsrichter auf einen Wechselfehler der Mannschaft A hinweisen.",
 			"Spieler A4 ist wegen Wechselfehlers hinauszustellen.",
@@ -353,7 +353,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 30,
-		text: "Der Schiedsrichter pfeift und zeigt eine Spielzeitunterbrechung (Time-out) an, veran-lasst durch die 3. Hinausstellung von A2. Als der Schiedsrichter dem Sekre-tär/Zeitnehmer die Disqualifikation anzeigt, läuft Trainer A auf die Spielfläche, um ge-gen die Hinausstellung zu protestieren. Ein Offizieller von A war vorher schon verwarnt worden. Richtige Entscheidung?",
+		text: "Der Schiedsrichter pfeift und zeigt eine Spielzeitunterbrechung (Time-out) an, veranlasst durch die 3. Hinausstellung von A2. Als der Schiedsrichter dem Sekretär/Zeitnehmer die Disqualifikation anzeigt, läuft Trainer A auf die Spielfläche, um gegen die Hinausstellung zu protestieren. Ein Offizieller von A war vorher schon verwarnt worden. Richtige Entscheidung?",
 		answers: [
 			"Disqualifikation des Trainers und Reduzierung von Mannschaft A für 2 Minuten",
 			"Persönliche Verwarnung für den Trainer",
@@ -389,10 +389,10 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 33,
-		text: "Wegen Verletzung eines Spielers von A pfeift der Feldschiedsrichter Time-out und er-laubt dem Arzt von A, die Spielfläche zu betreten. Der Trainer von B betritt das Spiel-feld ebenfalls, um seinem Torwart Ratschläge zu geben. Richtige Entscheidung?",
+		text: "Wegen Verletzung eines Spielers von A pfeift der Feldschiedsrichter Time-out und erlaubt dem Arzt von A, die Spielfläche zu betreten. Der Trainer von B betritt das Spielfeld ebenfalls, um seinem Torwart Ratschläge zu geben. Richtige Entscheidung?",
 		answers: [
 			"Keine Entscheidung, da das Signal allen Spielern und Offiziellen beider Mannschaften das Betreten der Spielfläche erlaubt",
-			"Alle vier Offiziellen von Mannschaft B sind zu verwarnen und im Wiederholungsfall zu disqua-lifizieren.",
+			"Alle vier Offiziellen von Mannschaft B sind zu verwarnen und im Wiederholungsfall zu disqualifizieren.",
 			"Der Mannschaftsverantwortliche von B wird verwarnt.",
 			"Progressive Bestrafung des Trainers von B."
 		],
@@ -413,7 +413,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 35,
-		text: "Spieler A3 gelingt es, den in Richtung Seitenauslinie fliegenden Ball noch vor der Sei-tenlinie mit einer Hand A7 zuzuspielen. Er gerät bei dieser Aktion jedoch mit einem Fuß außerhalb des Spielfelds. A7 erzielt ein Tor. Richtige Entscheidung?",
+		text: "Spieler A3 gelingt es, den in Richtung Seitenauslinie fliegenden Ball noch vor der Seitenlinie mit einer Hand A7 zuzuspielen. Er gerät bei dieser Aktion jedoch mit einem Fuß außerhalb des Spielfelds. A7 erzielt ein Tor. Richtige Entscheidung?",
 		answers: [
 			"Einwurf für Mannschaft B",
 			"Freiwurf für Mannschaft B",
@@ -425,7 +425,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 36,
-		text: "Ein Offizieller von A protestiert auf dem Weg in die Kabine (während der Halbzeitpau-se) bei den Schiedsrichtern. In der 1. Halbzeit wurde bereits der Trainer von A ver-warnt. Richtige Entscheidung?",
+		text: "Ein Offizieller von A protestiert auf dem Weg in die Kabine (während der Halbzeitpause) bei den Schiedsrichtern. In der 1. Halbzeit wurde bereits der Trainer von A verwarnt. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung des Offiziellen von A",
 			"Disqualifikation",
@@ -437,7 +437,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 37,
-		text: "A4 verlässt die Spielfläche außerhalb seiner Auswechsellinie. Als er die Seitenlinieüberschritten hat, aber noch nicht in seinem Auswechselraum angekommen ist, betritt A11 für ihn die Spielfläche über die Auswechsellinie. Entscheidung nach Pfiff des Zeit-nehmers?",
+		text: "A4 verlässt die Spielfläche außerhalb seiner Auswechsellinie. Als er die Seitenlinieüberschritten hat, aber noch nicht in seinem Auswechselraum angekommen ist, betritt A11 für ihn die Spielfläche über die Auswechsellinie. Entscheidung nach Pfiff des Zeitnehmers?",
 		answers: [
 			"Freiwurf gegen A an der Stelle, an der A4 die Spielfläche verlassen hat",
 			"Freiwurf gegen A an der Auswechselzone von A",
@@ -450,7 +450,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 38,
-		text: "B3 begeht während einer Spielunterbrechung den ersten Wechselfehler seiner Mann-schaft. Vorangegangen war eine Freiwurfentscheidung für B. B3 war bis dahin weder verwarnt noch hinausgestellt worden. Richtige Entscheidung?",
+		text: "B3 begeht während einer Spielunterbrechung den ersten Wechselfehler seiner Mannschaft. Vorangegangen war eine Freiwurfentscheidung für B. B3 war bis dahin weder verwarnt noch hinausgestellt worden. Richtige Entscheidung?",
 		answers: [
 			"Verwarnung von Spieler B3",
 			"Hinausstellung von Spieler B3",
@@ -462,7 +462,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 39,
-		text: "Nachdem die Schiedsrichter auf 7-Meter-Wurf für Mannschaft A entschieden haben, begeht A27, welcher als Werfer vorgesehen war, einen Wechselfehler. Richtige Ent-scheidung?",
+		text: "Nachdem die Schiedsrichter auf 7-Meter-Wurf für Mannschaft A entschieden haben, begeht A27, welcher als Werfer vorgesehen war, einen Wechselfehler. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für B",
 			"7-Meter-Wurf für A",
@@ -486,9 +486,9 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 41,
-		text: "Bei Spielbeginn sind von Mannschaft A nur 12 Spieler anwesend, weil die beiden Tor-warte noch fehlen. A beginnt daher mit einem der 12 Feldspieler als Torwart. Welche der folgenden Aussagen ist/sind richtig?",
+		text: "Bei Spielbeginn sind von Mannschaft A nur 12 Spieler anwesend, weil die beiden Torwarte noch fehlen. A beginnt daher mit einem der 12 Feldspieler als Torwart. Welche der folgenden Aussagen ist/sind richtig?",
 		answers: [
-			"Der als Torwart beginnende Feldspieler muss im Spielprotokoll unter Ziffer 1, 12, oder 16 ein-getragen werden",
+			"Der als Torwart beginnende Feldspieler muss im Spielprotokoll unter Ziffer 1, 12, oder 16 eingetragen werden",
 			"Der als Torwart beginnende Feldspieler darf später auch als Feldspieler eingesetzt werden",
 			"Die verspätet eintreffenden Torwarte von A müssen im Spielprotokoll unter den Ziffern 1, 12 oder 16 nachgetragen werden",
 			"Einer der beiden verspätet eintreffenden Torwarte darf nur als Feldspieler eingesetzt werden."
@@ -524,7 +524,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 44,
-		text: "A5 hat eine klare Torgelegenheit. Der Trainer von A beleidigt den Zeitnehmer, worauf-hin dieser genau in dem Moment pfeift, als A5 zum Wurf ansetzt. Richtige Entschei-dung?",
+		text: "A5 hat eine klare Torgelegenheit. Der Trainer von A beleidigt den Zeitnehmer, woraufhin dieser genau in dem Moment pfeift, als A5 zum Wurf ansetzt. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für B",
 			"Bestrafung des Trainers von A",
@@ -537,7 +537,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 45,
-		text: "A6 wurde schon zweimal für 2 Minuten hinausgestellt: Jetzt begeht er den 2. Wech-selfehler seiner Mannschaft. Wie ist zu entscheiden, wenn er sich besonders grob un-sportlich verhält, nachdem die Schiedsrichter ihn über den Wechselfehler informiert haben?",
+		text: "A6 wurde schon zweimal für 2 Minuten hinausgestellt: Jetzt begeht er den 2. Wechselfehler seiner Mannschaft. Wie ist zu entscheiden, wenn er sich besonders grob unsportlich verhält, nachdem die Schiedsrichter ihn über den Wechselfehler informiert haben?",
 		answers: [
 			"Hinausstellung von Spieler A6",
 			"Disqualifikation von A6",
@@ -563,7 +563,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 47,
-		text: "Nach einer Abwehr durch Torwart A rollt der Ball entlang der Seitenlinie an der Aus-wechselbank von A vorbei. Der auf der Bank sitzende A5 hält den Fuß ins Spielfeld und stoppt den Ball, damit A4 ihn noch vor der Seitenlinie aufnehmen kann. Richtige Ent-scheidung?",
+		text: "Nach einer Abwehr durch Torwart A rollt der Ball entlang der Seitenlinie an der Auswechselbank von A vorbei. Der auf der Bank sitzende A5 hält den Fuß ins Spielfeld und stoppt den Ball, damit A4 ihn noch vor der Seitenlinie aufnehmen kann. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für B",
 			"Einwurf für B",
@@ -579,16 +579,16 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Freiwurf für B",
 			"Freiwurf für A",
-			"Hinausstellung von A3 und Reduzierung von Team A auf der Spielfläche um einen zusätzli-chen Spieler für 30 Sekunden",
+			"Hinausstellung von A3 und Reduzierung von Team A auf der Spielfläche um einen zusätzlichen Spieler für 30 Sekunden",
 			"30 Sekunden für A3 und Reduzierung von Team A auf der Spielfläche um einen zusätzlichen Spieler für 2 Minuten",
-			"Disqualifikation von A3 und Reduzierung von Team A auf der Spielfläche um einen zusätzli-chen Spieler für 30 Sekunden"
+			"Disqualifikation von A3 und Reduzierung von Team A auf der Spielfläche um einen zusätzlichen Spieler für 30 Sekunden"
 		],
 		correctAnswers: [0, 2],
 		ruleReferences: ["4:6", "13:1a", "16:3a"]
 	},
 	{
 		id: 49,
-		text: "Torwart A13 holt beim Abwurf mit dem Ball über die Torlinie aus. Richtige Entschei-dung?",
+		text: "Torwart A13 holt beim Abwurf mit dem Ball über die Torlinie aus. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"Abwurf mit Anpfiff",
@@ -600,22 +600,22 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 50,
-		text: "A5 ist hinausgestellt. Als 1 Minute und 45 Sekunden seiner Hinausstellungszeit verstri-chen sind, wird er von seinem Trainer auf die Spielfläche geschickt. Richtige Entschei-dung?",
+		text: "A5 ist hinausgestellt. Als 1 Minute und 45 Sekunden seiner Hinausstellungszeit verstrichen sind, wird er von seinem Trainer auf die Spielfläche geschickt. Richtige Entscheidung?",
 		answers: [
 			"Erneute Hinausstellung von A5, jetzt für 2 Minuten und 15 Sekunden",
-			"Disqualifikation von A5 und Reduzierung seiner Mannschaft für die Reststrafzeit (15 Sekun-den)",
-			"Erneute Hinausstellung von A5; zusätzliche Reduzierung von Mannschaft A für die Reststraf-zeit (15 Sekunden)"
+			"Disqualifikation von A5 und Reduzierung seiner Mannschaft für die Reststrafzeit (15 Sekunden)",
+			"Erneute Hinausstellung von A5; zusätzliche Reduzierung von Mannschaft A für die Reststrafzeit (15 Sekunden)"
 		],
 		correctAnswers: [2],
 		ruleReferences: ["4:6", "16:3a"]
 	},
 	{
 		id: 51,
-		text: "A2 ist hinausgestellt worden, aber schon nach einer Minute wird er vom Trainer wieder auf die Spielfläche geschickt. Bevor der Zeitnehmer pfeift, hat A2 eine klare Torgele-genheit von B vereitelt. Richtige Entscheidung?",
+		text: "A2 ist hinausgestellt worden, aber schon nach einer Minute wird er vom Trainer wieder auf die Spielfläche geschickt. Bevor der Zeitnehmer pfeift, hat A2 eine klare Torgelegenheit von B vereitelt. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für B und erneute Hinausstellung von A2",
 			"7-Meter-Wurf für B, erneute Hinausstellung von A2 und Reduzierung der Mannschaft A für die Reststrafzeit",
-			"7-Meter-Wurf für B, Disqualifikation von A2 und Reduzierung seiner Mannschaft für die Rest-strafzeit",
+			"7-Meter-Wurf für B, Disqualifikation von A2 und Reduzierung seiner Mannschaft für die Reststrafzeit",
 			"7-Meter, Disqualifikation von A2 und weitere Reduzierung der Mannschaft für den Rest der Hinausstellungszeit von A2; schriftlicher Bericht"
 		],
 		correctAnswers: [3],
@@ -623,7 +623,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 52,
-		text: "Nach Ablauf seiner Hinausstellungszeit will Torwart B seine Mannschaft, die sich gera-de in der Abwehr befindet, ergänzen. Er betritt dazu die Spielfläche und übernimmt als 6. Feldspieler von B im Torwarttrikot die Außenposition. Richtige Entscheidung?",
+		text: "Nach Ablauf seiner Hinausstellungszeit will Torwart B seine Mannschaft, die sich gerade in der Abwehr befindet, ergänzen. Er betritt dazu die Spielfläche und übernimmt als 6. Feldspieler von B im Torwarttrikot die Außenposition. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"7-Meter-Wurf für A",
@@ -648,7 +648,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 54,
-		text: "Torwart B kann einen Torwurf abfangen und den Gegenstoß einleiten. Dabei über-schreitet er mit dem linken Fuß die Torraumlinie. Richtige Entscheidung?",
+		text: "Torwart B kann einen Torwurf abfangen und den Gegenstoß einleiten. Dabei überschreitet er mit dem linken Fuß die Torraumlinie. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"Freiwurf für A",
@@ -659,7 +659,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 55,
-		text: "Torwart A steht außerhalb seines Torraums im Spielfeld. Bei einem Zuspiel durch ei-nen Mitspieler setzt er beim Zurückgehen einen Fuß in den eigenen Torraum, während der andere Fuß noch auf dem Spielfeld steht. Richtige Entscheidung?",
+		text: "Torwart A steht außerhalb seines Torraums im Spielfeld. Bei einem Zuspiel durch einen Mitspieler setzt er beim Zurückgehen einen Fuß in den eigenen Torraum, während der andere Fuß noch auf dem Spielfeld steht. Richtige Entscheidung?",
 		answers: [
 			"7-Meter-Wurf für B",
 			"Weiterspielen lassen",
@@ -671,7 +671,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 56,
-		text: "Torwart A1 wehrt ab und wirft sich nach dem Ball, der sich in Richtung Spielfeld be-wegt. Er erreicht ihn, rutscht aber über die Torraumlinie hinaus und spielt erst im Spiel-feld einem Mitspieler den Ball zu. Richtige Entscheidung?",
+		text: "Torwart A1 wehrt ab und wirft sich nach dem Ball, der sich in Richtung Spielfeld bewegt. Er erreicht ihn, rutscht aber über die Torraumlinie hinaus und spielt erst im Spielfeld einem Mitspieler den Ball zu. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für B",
 			"Weiterspielen lassen",
@@ -682,7 +682,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 57,
-		text: "Der Ball rollt im Torraum von Mannschaft A. B8 nimmt ihn auf und erzielt ein Tor. Rich-tige Entscheidung?",
+		text: "Der Ball rollt im Torraum von Mannschaft A. B8 nimmt ihn auf und erzielt ein Tor. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für A",
 			"Abwurf für A",
@@ -706,7 +706,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 59,
-		text: "Torwart A bekommt den Ball nicht unter Kontrolle. Dieser bewegt sich im Torraum in Richtung Seitenlinie. Der Torwart befördert ihn mit dem Fuß über die Torauslinie. Rich-tige Entscheidung?",
+		text: "Torwart A bekommt den Ball nicht unter Kontrolle. Dieser bewegt sich im Torraum in Richtung Seitenlinie. Der Torwart befördert ihn mit dem Fuß über die Torauslinie. Richtige Entscheidung?",
 		answers: [
 			"Abwurf für A",
 			"Freiwurf für B",
@@ -730,7 +730,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 61,
-		text: "Torwart A wehrt einen Wurf ab, der Ball rollt aber in Richtung Spielfeld, wo B6 ihn un-behindert erwartet. Genau auf der Torraumlinie stoppt der Torwart ihn mit dem Fuß. Richtige Entscheidung?",
+		text: "Torwart A wehrt einen Wurf ab, der Ball rollt aber in Richtung Spielfeld, wo B6 ihn unbehindert erwartet. Genau auf der Torraumlinie stoppt der Torwart ihn mit dem Fuß. Richtige Entscheidung?",
 		answers: [
 			"Abwurf für A mit Anpfiff",
 			"Progressive Strafe gegen Torwart A",
@@ -742,7 +742,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 62,
-		text: "Freiwurf für Mannschaft B an der Freiwurflinie von Mannschaft A. Als alle Spieler kor-rekt stehen, pfeifen die Schiedsrichter den Freiwurf an. Noch bevor der Ball die Hand des Ausführenden verlassen hat, überschreiten zwei seiner Mitspieler die Freiwurflinie von A. Richtige Entscheidung?",
+		text: "Freiwurf für Mannschaft B an der Freiwurflinie von Mannschaft A. Als alle Spieler korrekt stehen, pfeifen die Schiedsrichter den Freiwurf an. Noch bevor der Ball die Hand des Ausführenden verlassen hat, überschreiten zwei seiner Mitspieler die Freiwurflinie von A. Richtige Entscheidung?",
 		answers: [
 			"Wiederholung des Freiwurfs",
 			"Freiwurf für A",
@@ -754,7 +754,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 63,
-		text: "A3 steht mit beiden Füßen im Spielfeld und fängt einen von seinem Torwart abgeprall-ten Ball. Da er von B10 korrekt bedrängt wird, prellt er den Ball mehrmals im eigenen Torraum. Richtige Entscheidung?",
+		text: "A3 steht mit beiden Füßen im Spielfeld und fängt einen von seinem Torwart abgeprallten Ball. Da er von B10 korrekt bedrängt wird, prellt er den Ball mehrmals im eigenen Torraum. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"7-Meter-Wurf für B",
@@ -790,7 +790,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 66,
-		text: "A8, der von einigen Gegenspielern korrekt bedrängt wird, rollt den Ball absichtlich in den eigenen Torraum, wo er liegen bleibt. Torwart A nimmt ihn nicht auf. Richtige Ent-scheidung?",
+		text: "A8, der von einigen Gegenspielern korrekt bedrängt wird, rollt den Ball absichtlich in den eigenen Torraum, wo er liegen bleibt. Torwart A nimmt ihn nicht auf. Richtige Entscheidung?",
 		answers: [
 			"Abwurf",
 			"Abwurf mit Anpfiff",
@@ -826,7 +826,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 69,
-		text: "Einwurf für B. Der korrekt ausführende B7 sieht, dass Torwart A12 weit vor seinem Tor steht, und wirft den Ball direkt in Richtung leeres Tor. Feldspieler A3 betritt den Tor-raum und fängt den Ball. Entscheidung?",
+		text: "Einwurf für B. Der korrekt ausführende B7 sieht, dass Torwart A12 weit vor seinem Tor steht, und wirft den Ball direkt in Richtung leeres Tor. Feldspieler A3 betritt den Torraum und fängt den Ball. Entscheidung?",
 		answers: [
 			"Tor",
 			"Freiwurf für B",
@@ -862,7 +862,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 72,
-		text: "Ein Spieler fängt den Ball in der Luft, landet auf dem rechten Fuß und springt mit die-sem ab. Er setzt den linken und dann den rechten Fuß auf und wirft. Wie viele Schritte machte er?",
+		text: "Ein Spieler fängt den Ball in der Luft, landet auf dem rechten Fuß und springt mit diesem ab. Er setzt den linken und dann den rechten Fuß auf und wirft. Wie viele Schritte machte er?",
 		answers: [
 			"3",
 			"2",
@@ -874,7 +874,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 73,
-		text: "A10 führt nach einem Torerfolg von B den Anwurf aus. Da er keinen anspielbaren Feld-spieler sieht, überrascht er seinen Torwart A17, der im Torraum steht, mit einem Rück-pass. A17 nimmt den Ball auf und spielt zu A9. Entscheidung?",
+		text: "A10 führt nach einem Torerfolg von B den Anwurf aus. Da er keinen anspielbaren Feldspieler sieht, überrascht er seinen Torwart A17, der im Torraum steht, mit einem Rückpass. A17 nimmt den Ball auf und spielt zu A9. Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"7-Meter-Wurf für B",
@@ -945,7 +945,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 79,
-		text: "A3 läuft zwischen zwei Gegenspieler und stößt den Ball vorwärts in die eigene Lauf-richtung. Bevor der Ball den Boden berührt, fängt er ihn und hat jetzt freie Bahn. Nach einmaligem Tippen wirft er den Ball ins Tor. Richtige Entscheidung?",
+		text: "A3 läuft zwischen zwei Gegenspieler und stößt den Ball vorwärts in die eigene Laufrichtung. Bevor der Ball den Boden berührt, fängt er ihn und hat jetzt freie Bahn. Nach einmaligem Tippen wirft er den Ball ins Tor. Richtige Entscheidung?",
 		answers: [
 			"Tor",
 			"Freiwurf für B",
@@ -979,7 +979,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 82,
-		text: "A wurde ein Einwurf zuerkannt. A8 wirft direkt aufs Tor. Der Ball prallt vom Pfosten zu-rück zu A8, der ihn fängt und ins Tor wirft. Richtige Entscheidung?",
+		text: "A wurde ein Einwurf zuerkannt. A8 wirft direkt aufs Tor. Der Ball prallt vom Pfosten zurück zu A8, der ihn fängt und ins Tor wirft. Richtige Entscheidung?",
 		answers: [
 			"Abwurf",
 			"Tor",
@@ -1027,7 +1027,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 86,
-		text: "Nach einem Wurf von A prallt der Ball vom Pfosten ab, trifft den neben dem Tor im Tor-raum stehenden Schiedsrichter und überquert deshalb nicht die Torauslinie, sondern die Seitenlinie. Richtige Entscheidung?",
+		text: "Nach einem Wurf von A prallt der Ball vom Pfosten ab, trifft den neben dem Tor im Torraum stehenden Schiedsrichter und überquert deshalb nicht die Torauslinie, sondern die Seitenlinie. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für A",
 			"Einwurf für B",
@@ -1074,7 +1074,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 90,
-		text: "A3 umspielt mit dem Ball B4 an der Freiwurflinie. Nach dem dritten Schritt will er wer-fen, wird jedoch von B4 gestoßen. Unmittelbar nach dem 4. Schritt erzielt er ein schö-nes Tor. Ein anderer Spieler von B hätte nicht eingreifen können. Richtige Entschei-dung?",
+		text: "A3 umspielt mit dem Ball B4 an der Freiwurflinie. Nach dem dritten Schritt will er werfen, wird jedoch von B4 gestoßen. Unmittelbar nach dem 4. Schritt erzielt er ein schönes Tor. Ein anderer Spieler von B hätte nicht eingreifen können. Richtige Entscheidung?",
 		answers: [
 			"Vorteil und damit Tor",
 			"Progressive Bestrafung von B4",
@@ -1086,7 +1086,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 91,
-		text: "A6 läuft einen Gegenstoß, Torwart B12 verlässt seinen Torraum, gelangt in Ballbesitz, verursacht aber einen Zusammenprall mit A6. Möglicherweise hätte aber ein Abwehr-spieler Spieler A6 noch regelkonform stoppen können Richtige Entscheidung?",
+		text: "A6 läuft einen Gegenstoß, Torwart B12 verlässt seinen Torraum, gelangt in Ballbesitz, verursacht aber einen Zusammenprall mit A6. Möglicherweise hätte aber ein Abwehrspieler Spieler A6 noch regelkonform stoppen können Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung von B12",
 			"Disqualifikation von B12",
@@ -1111,7 +1111,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 93,
-		text: "Der am Kreis freistehende A9 wird angespielt, aber von B2 am Wurfarm zurückgezo-gen. Richtige Entscheidung?",
+		text: "Der am Kreis freistehende A9 wird angespielt, aber von B2 am Wurfarm zurückgezogen. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für A",
 			"7-Meter-Wurf für A",
@@ -1137,7 +1137,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 95,
-		text: "Kurz nachdem B9 in der ersten Spielminute wegen Stoßens verwarnt worden ist, um-klammert B7 den Kreisspieler von A (keine Torgelegenheit). Richtige Entscheidung?",
+		text: "Kurz nachdem B9 in der ersten Spielminute wegen Stoßens verwarnt worden ist, umklammert B7 den Kreisspieler von A (keine Torgelegenheit). Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für A",
 			"7-Meter-Wurf für A",
@@ -1174,7 +1174,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 98,
-		text: "Ein Mannschaftsoffizieller reklamiert und wird hinausgestellt. Vor Wiederanpfiff protes-tiert er weiter und wird disqualifiziert. Richtige Entscheidung?",
+		text: "Ein Mannschaftsoffizieller reklamiert und wird hinausgestellt. Vor Wiederanpfiff protestiert er weiter und wird disqualifiziert. Richtige Entscheidung?",
 		answers: [
 			"Zwei Spieler seines Teams müssen die Spielfläche für je 2 Minuten verlassen.",
 			"Ein Spieler seines Teams muss die Spielfläche für 4 Minuten verlassen.",
@@ -1281,7 +1281,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 107,
-		text: "A11 wirft einen \"Heber\" über Torwart B, der weit vor seinem Tor steht. Bevor der Ball die Torlinie überqueren kann, wird er vom Manager von B, der in der ersten Zuschauer-reihe hinter dem Tor saß, weggestoßen. Richtige Entscheidung?",
+		text: "A11 wirft einen \"Heber\" über Torwart B, der weit vor seinem Tor steht. Bevor der Ball die Torlinie überqueren kann, wird er vom Manager von B, der in der ersten Zuschauerreihe hinter dem Tor saß, weggestoßen. Richtige Entscheidung?",
 		answers: [
 			"7-Meter-Wurf für A",
 			"Tor für A",
@@ -1310,7 +1310,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Bis zum Anpfiff des Anwurfs",
 			"Bis zum Schlusssignal",
-			"Wenn das Tor nach einer Unterbrechung durch den Zeitnehmer erzielt wurde, muss er es an-nullieren, selbst wenn der Anwurf schon erfolgte",
+			"Wenn das Tor nach einer Unterbrechung durch den Zeitnehmer erzielt wurde, muss er es annullieren, selbst wenn der Anwurf schon erfolgte",
 			"Überhaupt nicht mehr"
 		],
 		correctAnswers: [0, 2],
@@ -1353,7 +1353,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 113,
-		text: "Kurz vor Spielende –Spielstand 15:15-erzielt der Gastverein das 15:16. Der Heimverein will einen schnellen Anwurf ausführen. Der Ausführende steht mit einem Fuß vor, mit dem anderen Fuß hinter der Mittellinie am Mittelpunkt. Richtige Entscheidung?",
+		text: "Kurz vor Spielende – Spielstand 15:15 - erzielt der Gastverein das 15:16. Der Heimverein will einen schnellen Anwurf ausführen. Der Ausführende steht mit einem Fuß vor, mit dem anderen Fuß hinter der Mittellinie am Mittelpunkt. Richtige Entscheidung?",
 		answers: [
 			"Korrektur, Anpfiff",
 			"Die Stellung ist korrekt, Anpfiff",
@@ -1376,7 +1376,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 115,
-		text: "A3 führt einen Einwurf zwei Meter außerhalb der Seitenlinie aus. Richtige Entschei-dung?",
+		text: "A3 führt einen Einwurf zwei Meter außerhalb der Seitenlinie aus. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen, ist erlaubt",
 			"Freiwurf für B",
@@ -1400,7 +1400,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 117,
-		text: "A6 führt, mit einem Fuß im und mit dem anderen außerhalb des Spielfelds stehend, ei-nen Einwurf aus und zwar direkt ins Tor von B. Richtige Entscheidung?",
+		text: "A6 führt, mit einem Fuß im und mit dem anderen außerhalb des Spielfelds stehend, einen Einwurf aus und zwar direkt ins Tor von B. Richtige Entscheidung?",
 		answers: [
 			"Erneuter Einwurf für A nach Anpfiff",
 			"Freiwurf für B",
@@ -1425,7 +1425,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 119,
-		text: "Wann ist ein Abwurf ausgeführt; wann also darf der Ball frühestens von einem Feld-spieler gespielt werden?",
+		text: "Wann ist ein Abwurf ausgeführt; wann also darf der Ball frühestens von einem Feldspieler gespielt werden?",
 		answers: [
 			"Während der Ball sich noch über dem Torraum befindet",
 			"Wenn der Ball die Torraumlinie in Richtung Spielfeld passiert hat",
@@ -1437,7 +1437,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 120,
-		text: "Wurf auf das Tor von B. Der Ball prallt von der Latte gegen ein Sportgerät an der Hal-lendecke über dem Torraum von B. Von dort fällt er exakt in die fangbereiten Arme des Torwarts. Richtige Entscheidung?",
+		text: "Wurf auf das Tor von B. Der Ball prallt von der Latte gegen ein Sportgerät an der Hallendecke über dem Torraum von B. Von dort fällt er exakt in die fangbereiten Arme des Torwarts. Richtige Entscheidung?",
 		answers: [
 			"Abwurf",
 			"Einwurf für B",
@@ -1474,7 +1474,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 123,
-		text: "B will einen Freiwurf ausführen; A11 steht nur 2 Meter entfernt und versucht, die Aus-führung zu verzögern. Richtige Entscheidung?",
+		text: "B will einen Freiwurf ausführen; A11 steht nur 2 Meter entfernt und versucht, die Ausführung zu verzögern. Richtige Entscheidung?",
 		answers: [
 			"Persönliche Strafe für A11, Freiwurf anpfeifen",
 			"Freiwurf anpfeifen",
@@ -1499,7 +1499,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 125,
-		text: "Bei einem Gegenstoß von A5 läuft ein Offizieller von B von der Bank aus in Richtung eigener Torraum. A5 ist so verdutzt, dass er seinen Lauf abbricht. Nach Auffassung des Schiedsrichters besaß er eine klare Torgelegenheit. Der fehlbare Offizielle hatte weder Spieler noch Ball berührt, die kürzeste Distanz zu A5 betrug ca. 10 Meter. Richti-ge Entscheidung?",
+		text: "Bei einem Gegenstoß von A5 läuft ein Offizieller von B von der Bank aus in Richtung eigener Torraum. A5 ist so verdutzt, dass er seinen Lauf abbricht. Nach Auffassung des Schiedsrichters besaß er eine klare Torgelegenheit. Der fehlbare Offizielle hatte weder Spieler noch Ball berührt, die kürzeste Distanz zu A5 betrug ca. 10 Meter. Richtige Entscheidung?",
 		answers: [
 			"Time-out",
 			"Freiwurf für A",
@@ -1512,7 +1512,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 126,
-		text: "Bei einem 7-Meter-Wurf für A gelangt der Ball hinter die Torlinie, doch hatte ein Mit-spieler von A die Freiwurflinie überschritten, bevor der Ball die Hand von A7 verlassen hatte. Richtige Entscheidung?",
+		text: "Bei einem 7-Meter-Wurf für A gelangt der Ball hinter die Torlinie, doch hatte ein Mitspieler von A die Freiwurflinie überschritten, bevor der Ball die Hand von A7 verlassen hatte. Richtige Entscheidung?",
 		answers: [
 			"Tor",
 			"Wiederholung des Wurfs",
@@ -1537,7 +1537,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 128,
-		text: "A5 hat eine klare Torgelegenheit. Mannschaft B begeht einen Wechselfehler. Der Zeit-nehmer pfeift deshalb ab, als A5 gerade zum Torwurf ansetzt. Richtige Entscheidung?",
+		text: "A5 hat eine klare Torgelegenheit. Mannschaft B begeht einen Wechselfehler. Der Zeitnehmer pfeift deshalb ab, als A5 gerade zum Torwurf ansetzt. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung des eintretenden Spielers",
 			"Disqualifikation des eintretenden Spielers",
@@ -1573,7 +1573,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 131,
-		text: "A5 überschreitet während des 7-Meter-Wurfs von A3 die Freiwurflinie, nachdem der Schiedsrichter den Wurf angepfiffen, aber bevor der Ball die Hand des Werfers verlas-sen hat. Torwart B hält. Richtige Entscheidung?",
+		text: "A5 überschreitet während des 7-Meter-Wurfs von A3 die Freiwurflinie, nachdem der Schiedsrichter den Wurf angepfiffen, aber bevor der Ball die Hand des Werfers verlassen hat. Torwart B hält. Richtige Entscheidung?",
 		answers: [
 			"Wiederholung des 7-Meter-Wurfs",
 			"Freiwurf für B",
@@ -1620,7 +1620,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 135,
-		text: "B7 (mit Ball) will einen Gegenstoß einleiten, wird aber von A17 festgehalten. Der Schiedsrichter will gerade pfeifen, als er auf Vorteil erkennt, denn B8 hat den Ball noch bekommen und wirft auf das Tor. Torwart A12 hält und will einen Gegenstoß einleiten. Gegen A und B wurden bereits je 3 Verwarnungen ausgesprochen. Richtige Entschei-dung?",
+		text: "B7 (mit Ball) will einen Gegenstoß einleiten, wird aber von A17 festgehalten. Der Schiedsrichter will gerade pfeifen, als er auf Vorteil erkennt, denn B8 hat den Ball noch bekommen und wirft auf das Tor. Torwart A12 hält und will einen Gegenstoß einleiten. Gegen A und B wurden bereits je 3 Verwarnungen ausgesprochen. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"Hinausstellung von A17",
@@ -1633,7 +1633,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 136,
-		text: "Freiwurf für B an der Freiwurflinie von A. Dabei übersehen die Schiedsrichter zwischen Torraum- und Freiwurflinie B8, der angespielt wird und ein Tor erzielt. Richtige Ent-scheidung?",
+		text: "Freiwurf für B an der Freiwurflinie von A. Dabei übersehen die Schiedsrichter zwischen Torraum- und Freiwurflinie B8, der angespielt wird und ein Tor erzielt. Richtige Entscheidung?",
 		answers: [
 			"Wiederholung des Freiwurfs mit Anpfiff",
 			"Freiwurf für A",
@@ -1658,7 +1658,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 138,
-		text: "Torwart B führt aus dem Torraum einen weiten Abwurf aus. Der Ball gelangt ins Tor von A. Weder Mit- noch Gegenspieler hatten ihn vorher berührt. Richtige Entschei-dung?",
+		text: "Torwart B führt aus dem Torraum einen weiten Abwurf aus. Der Ball gelangt ins Tor von A. Weder Mit- noch Gegenspieler hatten ihn vorher berührt. Richtige Entscheidung?",
 		answers: [
 			"Abwurf für A",
 			"Einwurf für A",
@@ -1670,7 +1670,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 139,
-		text: "Beim Betreten der Halle begegnen die Schiedsrichter dem bereits umgezogenen, aber noch nicht im Spielprotokoll eingetragenen B4. Er ruft sofort: ”Aber nicht schon wieder diese Idioten!” Er lässt sich erst in der 12. Minute als 14. Spieler nachtragen. Jetzt be-merkt ihn der Schiedsrichter. Richtige Entscheidung?",
+		text: "Beim Betreten der Halle begegnen die Schiedsrichter dem bereits umgezogenen, aber noch nicht im Spielprotokoll eingetragenen B4. Er ruft sofort: ”Aber nicht schon wieder diese Idioten!” Er lässt sich erst in der 12. Minute als 14. Spieler nachtragen. Jetzt bemerkt ihn der Schiedsrichter. Richtige Entscheidung?",
 		answers: [
 			"Disqualifikation von B4",
 			"B spielt für 2 Minuten mit einem Spieler weniger",
@@ -1683,7 +1683,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 140,
-		text: "Torwart B1 hält einen Ball, spielt ihn zu einem Mitspieler, geht in der Nähe des Aus-wechselraums an die Seitenlinie und verlässt das Spielfeld. Er holt sich sein Handtuch und eine Flasche, aus der er einen Schluck nimmt. Ein anderer Torwart von Mann-schaft B geht nicht auf das Spielfeld. Richtige Entscheidung?",
+		text: "Torwart B1 hält einen Ball, spielt ihn zu einem Mitspieler, geht in der Nähe des Auswechselraums an die Seitenlinie und verlässt das Spielfeld. Er holt sich sein Handtuch und eine Flasche, aus der er einen Schluck nimmt. Ein anderer Torwart von Mannschaft B geht nicht auf das Spielfeld. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen, da dies gestattet ist",
 			"Hinausstellung von B1 wegen Wechselfehlers",
@@ -1718,7 +1718,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 143,
-		text: "A5 hat bereits eine Verwarnung und zwei Hinausstellungen erhalten. Bei einem Frei-wurf für B hält er (zum ersten Mal) den Abstand nicht ein. Richtige Entscheidung?",
+		text: "A5 hat bereits eine Verwarnung und zwei Hinausstellungen erhalten. Bei einem Freiwurf für B hält er (zum ersten Mal) den Abstand nicht ein. Richtige Entscheidung?",
 		answers: [
 			"Verwarnung",
 			"Keine Strafe",
@@ -1729,7 +1729,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 144,
-		text: "A3 wurde auf der Spielfläche wegen eines progressiv zu bestrafenden Vergehens ver-warnt. Nach einem Wechsel beleidigt er von der Auswechselbank aus den Schiedsrich-ter. Richtige Entscheidung?",
+		text: "A3 wurde auf der Spielfläche wegen eines progressiv zu bestrafenden Vergehens verwarnt. Nach einem Wechsel beleidigt er von der Auswechselbank aus den Schiedsrichter. Richtige Entscheidung?",
 		answers: [
 			"Disqualifikation, Reduzierung der Mannschaft auf der Spielfläche für 2 Minuten",
 			"Disqualifikation, Schriftlicher Bericht, Reduzierung der Mannschaft auf der Spielfläche für 2 Minuten",
@@ -1741,10 +1741,10 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 145,
-		text: "Bei einem Gegenstoß wird B9 von A4, der schon verwarnt worden war, am Trikot fest-gehalten. Trotzdem kann B9 den Ball noch zu B8 spielen, der ein Tor erzielt. Der Schiedsrichter will nun A4 nachträglich bestrafen, der sitzt allerdings bereits auf der Auswechselbank. Richtige Entscheidung?",
+		text: "Bei einem Gegenstoß wird B9 von A4, der schon verwarnt worden war, am Trikot festgehalten. Trotzdem kann B9 den Ball noch zu B8 spielen, der ein Tor erzielt. Der Schiedsrichter will nun A4 nachträglich bestrafen, der sitzt allerdings bereits auf der Auswechselbank. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung von A4; seine Mannschaft ist auf der Spielfläche für 2 Minuten zu reduzieren",
-			"A4 darf in den nächsten 2 Minuten nicht mehr mitspielen (seine Mannschaft bleibt aber voll-ständig)",
+			"A4 darf in den nächsten 2 Minuten nicht mehr mitspielen (seine Mannschaft bleibt aber vollständig)",
 			"Keine Bestrafung mehr möglich",
 			"Disqualifikation von A4; seine Mannschaft ist auf der Spielfläche für 2 Minuten zu reduzieren"
 		],
@@ -1753,7 +1753,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 146,
-		text: "Mannschaft A erhält einen Freiwurf, als B6 im Ballbesitz ist. B6 geht mit dem Ball vier Meter von der Stelle weg, wo A den Freiwurf ausführen müsste. Richtige Entschei-dung?",
+		text: "Mannschaft A erhält einen Freiwurf, als B6 im Ballbesitz ist. B6 geht mit dem Ball vier Meter von der Stelle weg, wo A den Freiwurf ausführen müsste. Richtige Entscheidung?",
 		answers: [
 			"Verwarnung von B6",
 			"Hinausstellung von B6",
@@ -1766,7 +1766,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 147,
-		text: "Nach einer Freiwurfentscheidung gegen A4 nimmt dieser den Ball, durchquert den Tor-raum und legt ihn hin. Richtige Entscheidung?",
+		text: "Nach einer Freiwurfentscheidung gegen A4 nimmt dieser den Ball, durchquert den Torraum und legt ihn hin. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung von A4",
 			"Verwarnung von A4",
@@ -1819,14 +1819,14 @@ export const QUESTIONS: Question[] =
 			"Bei grob unsportlichem Verhalten",
 			"Verhinderung einer klaren Torgelegenheit durch absichtliche Fußabwehr eines Wurfes",
 			"Bei fehlerhaftem Wechseln während einer Hinausstellungszeit",
-			"Wenn er den Ball bei einer Freiwurfentscheidung gegen seine Mannschaft nicht sofort nieder-legt"
+			"Wenn er den Ball bei einer Freiwurfentscheidung gegen seine Mannschaft nicht sofort niederlegt"
 		],
 		correctAnswers: [0],
 		ruleReferences: ["8:7e", "4:6", "8:8b", "8:9", "16:6b"]
 	},
 	{
 		id: 152,
-		text: "B ist im Angriff. A11 trennt B6 durch eine Regelwidrigkeit, die die Gesundheit des Ge-genspielers gefährdet, vom Ball. Zwischen B6 und dem Tor standen noch zwei weitere Mitspieler von A. Richtige Entscheidung?",
+		text: "B ist im Angriff. A11 trennt B6 durch eine Regelwidrigkeit, die die Gesundheit des Gegenspielers gefährdet, vom Ball. Zwischen B6 und dem Tor standen noch zwei weitere Mitspieler von A. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung von A11",
 			"Disqualifikation von A11",
@@ -1838,7 +1838,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 153,
-		text: "B5 wurde schon zweimal hinausgestellt, einmal wegen einer progressiv zu bestrafen-den Regelwidrigkeit, einmal wegen Wegwerfen des Balls, nachdem der Schiedsrichter auf Freiwurf für A entschieden hatte. Jetzt begeht er den zweiten Wechselfehler seiner Mannschaft und vor Wiederaufnahme des Spiels noch eine besonders grobe Unsport-lichkeit. Richtige Entscheidung?",
+		text: "B5 wurde schon zweimal hinausgestellt, einmal wegen einer progressiv zu bestrafenden Regelwidrigkeit, einmal wegen Wegwerfen des Balls, nachdem der Schiedsrichter auf Freiwurf für A entschieden hatte. Jetzt begeht er den zweiten Wechselfehler seiner Mannschaft und vor Wiederaufnahme des Spiels noch eine besonders grobe Unsportlichkeit. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung von B5",
 			"Disqualifikation von B5, seine Mannschaft spielt 4 Minuten mit nur 5 Feldspielern. Schriftlicher Bericht",
@@ -1866,7 +1866,7 @@ export const QUESTIONS: Question[] =
 			"Unerlaubtes Betreten der Spielfläche durch einen Offiziellen ab dem zweiten Mal",
 			"Aufforderung zum Spielabbruch durch einen Offiziellen",
 			"Wenn ein 7-m Werfer den Kopf des Torwarts trifft, wobei der Torwart seinen Kopf nicht in Richtung des Balles bewegt",
-			"Ein Spieler wirft den Ball nach einer Schiedsrichter-Entscheidung demonstrativ auf die Tribü-ne.",
+			"Ein Spieler wirft den Ball nach einer Schiedsrichter-Entscheidung demonstrativ auf die Tribüne.",
 			"Ein Spieler bespuckt außerhalb der Spielfläche einen Zuschauer"
 		],
 		correctAnswers: [1, 4],
@@ -1874,7 +1874,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 156,
-		text: "A2 ist wegen regelwidrigen Verhaltens hinausgestellt worden und befindet sich auf der Auswechselbank. Als in der Nähe ein Einwurf ansteht, ruft er dem Schiedsrichter be-leidigende Worte zu. Richtige Entscheidung?",
+		text: "A2 ist wegen regelwidrigen Verhaltens hinausgestellt worden und befindet sich auf der Auswechselbank. Als in der Nähe ein Einwurf ansteht, ruft er dem Schiedsrichter beleidigende Worte zu. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung von A2",
 			"Disqualifikation von A2, was eine 2-Minuten Reduzierung verursacht, die sofort beginnt",
@@ -1886,7 +1886,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 157,
-		text: "Die Schiedsrichter haben auf Einwurf für Mannschaft A entschieden. In diesem Mo-ment beantragt der Mannschaftsverantwortliche von A ein Team-Time-out. Welche der nachfolgenden Aussagen trifft/treffen zu?",
+		text: "Die Schiedsrichter haben auf Einwurf für Mannschaft A entschieden. In diesem Moment beantragt der Mannschaftsverantwortliche von A ein Team-Time-out. Welche der nachfolgenden Aussagen trifft/treffen zu?",
 		answers: [
 			"Team-Time-out nicht möglich, da der Ball nicht im Spiel ist",
 			"Der Zeitnehmer pfeift, hält die Uhr an und gibt das Handzeichen 15",
@@ -1898,7 +1898,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 158,
-		text: "Ein Spieler wird wegen regelwidrigen Verhaltens hinausgestellt. Während des Verlas-sens der Spielfläche beleidigt er den Schiedsrichter, der daraufhin die Rote Karte zieht. Der Spieler regt sich jetzt derart auf, dass er den Schiedsrichter schlägt. Richtige Ent-scheidung?",
+		text: "Ein Spieler wird wegen regelwidrigen Verhaltens hinausgestellt. Während des Verlassens der Spielfläche beleidigt er den Schiedsrichter, der daraufhin die Rote Karte zieht. Der Spieler regt sich jetzt derart auf, dass er den Schiedsrichter schlägt. Richtige Entscheidung?",
 		answers: [
 			"Schriftlicher Bericht",
 			"Die Mannschaft wird auf der Spielfläche für 2 Minuten um einen Spieler reduziert",
@@ -1922,7 +1922,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 160,
-		text: "A5 ist in Ballbesitz, als ein Offizieller von Mannschaft A lautstark gegen die Schieds-richter protestiert. Die Schiedsrichter pfeifen, geben Time-out und verwarnen den Offi-ziellen. Richtige Spielfortsetzung?",
+		text: "A5 ist in Ballbesitz, als ein Offizieller von Mannschaft A lautstark gegen die Schiedsrichter protestiert. Die Schiedsrichter pfeifen, geben Time-out und verwarnen den Offiziellen. Richtige Spielfortsetzung?",
 		answers: [
 			"Freiwurf für B mit Anpfiff in der Nähe der Auswechselzone",
 			"Freiwurf für A mit Anpfiff in der Nähe der Auswechselzone",
@@ -1947,7 +1947,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 162,
-		text: "A3 begeht nach einer Hinausstellung gegen ihn im Auswechselraum vor dem Wieder-anpfiff des Spiels eine grobe Unsportlichkeit gegen den Trainer von B, der vorher auf das Spielfeld gelaufen war, obwohl nicht Time-out gegeben worden war. Gegen die \"Bank\" von B war noch keine Strafe ausgesprochen worden. Wie ist zu entscheiden?",
+		text: "A3 begeht nach einer Hinausstellung gegen ihn im Auswechselraum vor dem Wiederanpfiff des Spiels eine grobe Unsportlichkeit gegen den Trainer von B, der vorher auf das Spielfeld gelaufen war, obwohl nicht Time-out gegeben worden war. Gegen die \"Bank\" von B war noch keine Strafe ausgesprochen worden. Wie ist zu entscheiden?",
 		answers: [
 			"Disqualifikation von A3",
 			"Verwarnung von Trainer B",
@@ -1971,12 +1971,12 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 164,
-		text: "Beim Aufwärmen vor dem Spiel prallen A3 und Torwart B unbeabsichtigt zusammen. Die beiden beschimpfen sich; Torwart B gibt A3 eine Ohrfeige, der sofort zurück-schlägt. Beide Spieler sind im Spielprotokoll eingetragen. Richtige Entscheidung?",
+		text: "Beim Aufwärmen vor dem Spiel prallen A3 und Torwart B unbeabsichtigt zusammen. Die beiden beschimpfen sich; Torwart B gibt A3 eine Ohrfeige, der sofort zurückschlägt. Beide Spieler sind im Spielprotokoll eingetragen. Richtige Entscheidung?",
 		answers: [
 			"Disqualifikation von Torwart B und 2-Minuten Hinausstellung für A3, die Mannschaften dürfen sich auf 14 Spieler ergänzen. Schriftlicher Bericht",
 			"Disqualifikation von beiden Spielern, die Mannschaften dürfen sich auf 14 Spieler ergänzen, die ersten 2 Minuten aber nur mit je 5 Feldspielern spielen. Schriftlicher Bericht",
 			"Beide Spieler erhalten eine Hinausstellung, die zu Beginn des Spiels abgesessen werden muss. Schriftlicher Bericht",
-			"Disqualifikation von beiden Spielern, die Mannschaften dürfen 14 Spieler einsetzen. Schriftli-cher Bericht"
+			"Disqualifikation von beiden Spielern, die Mannschaften dürfen 14 Spieler einsetzen. Schriftlicher Bericht"
 		],
 		correctAnswers: [3],
 		ruleReferences: ["8:10a", "16:11b", "16:6a", "17:10"]
@@ -2005,7 +2005,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 167,
-		text: "Während der Halbzeitpause begeht A7 auf der Spielfläche eine Tätlichkeit gegen Tor-wart B. Richtige Entscheidung?",
+		text: "Während der Halbzeitpause begeht A7 auf der Spielfläche eine Tätlichkeit gegen Torwart B. Richtige Entscheidung?",
 		answers: [
 			"A7 wird disqualifiziert, schriftlicher Bericht;",
 			"A7 wird verwarnt",
@@ -2039,7 +2039,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 170,
-		text: "Nach dem Spiel schreit ein Spieler den Schiedsrichter an: ”Du hast uns den Sieg ge-stohlen, Du Idiot!” Richtige Entscheidung?",
+		text: "Nach dem Spiel schreit ein Spieler den Schiedsrichter an: ”Du hast uns den Sieg gestohlen, Du Idiot!” Richtige Entscheidung?",
 		answers: [
 			"Verwarnung",
 			"Disqualifikation",
@@ -2054,7 +2054,7 @@ export const QUESTIONS: Question[] =
 		text: "A9 begeht während der Halbzeitpause noch auf der Spielfläche eine Tätlichkeit gegen den Trainer von B, der A9 daraufhin beleidigt. Maßnahmen?",
 		answers: [
 			"Disqualifikation von A9, A beginnt die 2. Halbzeit für 2 Minuten mit 5/1 Spielern Schriftlicher Bericht",
-			"Disqualifikation von Trainer B, B beginnt die 2. Halbzeit für 2 Minuten mit 5/1 Spielern, schrift-licher Bericht",
+			"Disqualifikation von Trainer B, B beginnt die 2. Halbzeit für 2 Minuten mit 5/1 Spielern, schriftlicher Bericht",
 			"Disqualifikation von A9, A beginnt in der 2. Halbzeit mit 6/1 Spielern",
 			"Disqualifikation von Trainer B, Spielfortsetzung B in der 2. Halbzeit mit 6/1 Spielern"
 		],
@@ -2077,7 +2077,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 173,
-		text: "Ein Spieler begeht eine Regelwidrigkeit. Der Feldschiedsrichter entscheidet auf Dis-qualifikation und Freiwurf, der Torschiedsrichter auf Hinausstellung und 7-Meter-Wurf. Der Spieler ist zu bestrafen und das Spiel fortzusetzen mit:",
+		text: "Ein Spieler begeht eine Regelwidrigkeit. Der Feldschiedsrichter entscheidet auf Disqualifikation und Freiwurf, der Torschiedsrichter auf Hinausstellung und 7-Meter-Wurf. Der Spieler ist zu bestrafen und das Spiel fortzusetzen mit:",
 		answers: [
 			"Hinausstellung",
 			"Disqualifikation",
@@ -2089,7 +2089,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 174,
-		text: "Das Spiel wird vom Feldschiedsrichter ohne Regelwidrigkeit einer Mannschaft unter-brochen (kein Time-out). B13 hat kurz vor dem unterbrechenden Pfiff den Ball in Rich-tung Tor von A geworfen. Der Ball ist noch unterwegs und landet nach dem Pfiff un-haltbar im Tor. Wie geht das Spiel weiter?",
+		text: "Das Spiel wird vom Feldschiedsrichter ohne Regelwidrigkeit einer Mannschaft unterbrochen (kein Time-out). B13 hat kurz vor dem unterbrechenden Pfiff den Ball in Richtung Tor von A geworfen. Der Ball ist noch unterwegs und landet nach dem Pfiff unhaltbar im Tor. Wie geht das Spiel weiter?",
 		answers: [
 			"Freiwurf für B",
 			"Freiwurf für A",
@@ -2118,12 +2118,12 @@ export const QUESTIONS: Question[] =
 			"Disqualifikationen, ausgenommen die nach der 3. Hinausstellung",
 			"Alle Strafen, ausgenommen Ermahnungen",
 			"Alle Hinausstellungen, Disqualifikationen",
-			"Disqualifikationen für grobe Vergehen und grob unsportliches Verhalten in den letzten Sekun-den, wenn damit dem Gegner die Chance genommen wird, in eine Torwurfsituation zu kom-men.",
+			"Disqualifikationen für grobe Vergehen und grob unsportliches Verhalten in den letzten Sekunden, wenn damit dem Gegner die Chance genommen wird, in eine Torwurfsituation zu kommen.",
 			"Disqualifikationen wegen besonders rücksichtlosem unsportlichen Verhalten",
 			"Jede progressive Bestrafung in der letzten Spielminute, falls die Aktion beabsichtigt, dem Gegner die Chance zu nehmen, in eine Torwurfsituation zu kommen."
 		],
 		correctAnswers: [4],
-		ruleReferences: ["17:10", "16:6", "8:5", "8:10c -8:10d"]
+		ruleReferences: ["17:10", "16:6", "8:5", "8:10c", "8:10d"]
 	},
 	{
 		id: 177,
@@ -2139,7 +2139,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 178,
-		text: "Mannschaft A liegt in Unterzahl in der 57. Minute 24:23 in Führung. Der Feldschieds-richter hat auf Freiwurf für sie entschieden. A6 will diesen provokativ mehrere Meter vom eigentlichen Ausführungsort entfernt ausführen, obwohl der Schiedsrichter die Ausführungsstelle klar angezeigt hat. Richtige Entscheidung?",
+		text: "Mannschaft A liegt in Unterzahl in der 57. Minute 24:23 in Führung. Der Feldschiedsrichter hat auf Freiwurf für sie entschieden. A6 will diesen provokativ mehrere Meter vom eigentlichen Ausführungsort entfernt ausführen, obwohl der Schiedsrichter die Ausführungsstelle klar angezeigt hat. Richtige Entscheidung?",
 		answers: [
 			"Korrektur des Ausführungsortes, Anpfiff, keine weitere Maßnahme",
 			"Korrektur des Ausführungsortes, Anpfiff, Schiedsrichter zeigen Handzeichen für Passives Spiel",
@@ -2150,7 +2150,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 179,
-		text: "Gegenstoß durch A7: er trifft Torwart B mit dem Ball so am Kopf, dass der sichtbar k.o. geht. Der abprallende Ball gelangt zu A9, der mitgelaufen war und regelgerecht ins lee-re Tor wirft. Richtige Entscheidung, sofern der Schiedsrichter pfeift, wenn der Ball über dem Torraum (also noch nicht im Tor) ist?",
+		text: "Gegenstoß durch A7: er trifft Torwart B mit dem Ball so am Kopf, dass der sichtbar k.o. geht. Der abprallende Ball gelangt zu A9, der mitgelaufen war und regelgerecht ins leere Tor wirft. Richtige Entscheidung, sofern der Schiedsrichter pfeift, wenn der Ball über dem Torraum (also noch nicht im Tor) ist?",
 		answers: [
 			"Tor für A",
 			"7-Meter-Wurf für A",
@@ -2162,7 +2162,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 180,
-		text: "7-Meter-Werfer A6 steht mit dem Ball bereit, als Trainer B seinen Torwart zum Tor-wartwechsel auffordert. Der Torwart ist im Begriff, dieser Aufforderung nachzukom-men. Richtige Entscheidung?",
+		text: "7-Meter-Werfer A6 steht mit dem Ball bereit, als Trainer B seinen Torwart zum Torwartwechsel auffordert. Der Torwart ist im Begriff, dieser Aufforderung nachzukommen. Richtige Entscheidung?",
 		answers: [
 			"Nichts unternehmen",
 			"Verwarnung von Trainer B",
@@ -2211,7 +2211,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 184,
-		text: "Der Mannschaftsverantwortliche von A beleidigt den Sekretär, ohne dass die Schieds-richter dies wahrnehmen. Bei der nächsten Unterbrechung meldet der Sekretär das Vergehen. Richtige Entscheidung?",
+		text: "Der Mannschaftsverantwortliche von A beleidigt den Sekretär, ohne dass die Schiedsrichter dies wahrnehmen. Bei der nächsten Unterbrechung meldet der Sekretär das Vergehen. Richtige Entscheidung?",
 		answers: [
 			"Disqualifikation des Mannschaftsverantwortlichen",
 			"Hinausstellung des Mannschaftsverantwortlichen",
@@ -2224,7 +2224,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 185,
-		text: "Mannschaft B erhält einen Freiwurf, während A5 noch in Ballbesitz ist. A5 bewegt sich in Richtung Schiedsrichter und überreicht diesem „höflich” den Ball. Richtige Ent-scheidung?",
+		text: "Mannschaft B erhält einen Freiwurf, während A5 noch in Ballbesitz ist. A5 bewegt sich in Richtung Schiedsrichter und überreicht diesem „höflich” den Ball. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung von A5 und Freiwurf für B an der Stelle, wo sich der Ball befindet",
 			"Verwarnung von A5 und Freiwurf für B an der Stelle, wo sich der Ball befindet",
@@ -2236,7 +2236,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 186,
-		text: "Während einer Spielzeitunterbrechung wegen Verletzung eines Spielers der Mann-schaft A behandelt ein Arzt den Verletzten. Die Schiedsrichter hatten die Erlaubnis zum Betreten der Spielfläche gegeben. Trainer A verfolgt Spieler B5, der seiner Meinung nach die Verletzung verursacht hat, in dessen Auswechselraum und schlägt ihm ins Gesicht. Richtige Entscheidung?",
+		text: "Während einer Spielzeitunterbrechung wegen Verletzung eines Spielers der Mannschaft A behandelt ein Arzt den Verletzten. Die Schiedsrichter hatten die Erlaubnis zum Betreten der Spielfläche gegeben. Trainer A verfolgt Spieler B5, der seiner Meinung nach die Verletzung verursacht hat, in dessen Auswechselraum und schlägt ihm ins Gesicht. Richtige Entscheidung?",
 		answers: [
 			"Disqualifikation des Trainers, Reduzierung von Mannschaft A für 2 Minuten; das Spiel wird mit dem Wurf wieder angepfiffen, mit dem es auch ohne Eingreifen des Trainers A fortgesetzt worden wäre.",
 			"2 Minuten Hinausstellung des Trainers, Freiwurf für B",
@@ -2277,14 +2277,14 @@ export const QUESTIONS: Question[] =
 			"Ein Spieler in Ballbesitz läuft einen Gegenstoß und wird dabei umgerissen, die Situation ist nicht besonders gefährlich",
 			"7-Meter-Wurf in das Gesicht des sich nicht bewegenden Torwarts",
 			"Ein Spieler wirft den Ball aus Protest gegen eine Schiedsrichter-Entscheidung auf die Tribüne",
-			"Der Torwart verlässt den Torraum und kommt in Ballbesitz, verursacht aber einen Zusam-menprall mit dem Gegenspieler"
+			"Der Torwart verlässt den Torraum und kommt in Ballbesitz, verursacht aber einen Zusammenprall mit dem Gegenspieler"
 		],
 		correctAnswers: [1, 2, 3, 4],
 		ruleReferences: ["16:3e", "8:5a", "8:9d", "8:9a", "8:5"]
 	},
 	{
 		id: 190,
-		text: "Spielstand A gegen B 24:23 kurz vor Spielende. Freiwurf für A ca. 1 Meter vor der Frei-wurflinie von B. Alle Spieler haben zunächst eine korrekte Aufstellung eingenommen; die Schiedsrichter pfeifen die Ausführung des Freiwurfs an, als A10 mit dem Ball die Freiwurflinie von B deutlich um einen Schritt in Richtung Tor von B überschreitet. Richtige Entscheidung?",
+		text: "Spielstand A gegen B 24:23 kurz vor Spielende. Freiwurf für A ca. 1 Meter vor der Freiwurflinie von B. Alle Spieler haben zunächst eine korrekte Aufstellung eingenommen; die Schiedsrichter pfeifen die Ausführung des Freiwurfs an, als A10 mit dem Ball die Freiwurflinie von B deutlich um einen Schritt in Richtung Tor von B überschreitet. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für A",
 			"Time-out",
@@ -2296,7 +2296,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 191,
-		text: "Nach seiner dritten Hinausstellung wurde A9 in der 36. Minute disqualifiziert. Noch in Sportkleidung setzt er sich in die erste Zuschauerreihe hinter der Seitenlinie gegen-über den Auswechselbereichen. Direkt vor ihm begeht B3 in der 55. Minute ein ge-sundheitsgefährdendes Foul an A10, der verletzt liegen bleibt. Bevor die Schiedsrichter eine Strafe aussprechen können, läuft A9 auf die Spielfläche und schlägt B3 mit der Faust nieder. Richtige Entscheidung?",
+		text: "Nach seiner dritten Hinausstellung wurde A9 in der 36. Minute disqualifiziert. Noch in Sportkleidung setzt er sich in die erste Zuschauerreihe hinter der Seitenlinie gegenüber den Auswechselbereichen. Direkt vor ihm begeht B3 in der 55. Minute ein gesundheitsgefährdendes Foul an A10, der verletzt liegen bleibt. Bevor die Schiedsrichter eine Strafe aussprechen können, läuft A9 auf die Spielfläche und schlägt B3 mit der Faust nieder. Richtige Entscheidung?",
 		answers: [
 			"Time-out",
 			"Disqualifikation von B3 und schriftlicher Bericht",
@@ -2407,7 +2407,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 200,
-		text: "Der von Torwart B abgeprallte Ball wird von Angriffsspieler A an der Torraumlinie er-wartet. Um es nicht zu einer klaren Torgelegenheit kommen zu lassen, betritt Abwehr-spieler B4 seinen Torraum und verhindert so die Ballannahme durch A. Richtige Ent-scheidung:",
+		text: "Der von Torwart B abgeprallte Ball wird von Angriffsspieler A an der Torraumlinie erwartet. Um es nicht zu einer klaren Torgelegenheit kommen zu lassen, betritt Abwehrspieler B4 seinen Torraum und verhindert so die Ballannahme durch A. Richtige Entscheidung:",
 		answers: [
 			"Freiwurf für A",
 			"7-Meter-Wurf für A",
@@ -2431,7 +2431,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 202,
-		text: "Der Torwart von B führt einen Abwurf aus. Der Ball trifft den Schiedsrichter und prallt zu Torwart B, welcher in der Zwischenzeit den Torraum verlassen hat, zurück. Ent-scheidung?",
+		text: "Der Torwart von B führt einen Abwurf aus. Der Ball trifft den Schiedsrichter und prallt zu Torwart B, welcher in der Zwischenzeit den Torraum verlassen hat, zurück. Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"Wiederholung des Abwurfs",
@@ -2443,7 +2443,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 203,
-		text: "Ein von einem Mitspieler gespielter Ball fliegt Richtung Torwart A. Dieser springt in seinem Torraum ab, fängt den Ball in der Luft und landet mit dem sicher gefassten Ball mit einem Fuß im, mit dem anderen Fuß außerhalb seines Torraums. Richtige Ent-scheidung?",
+		text: "Ein von einem Mitspieler gespielter Ball fliegt Richtung Torwart A. Dieser springt in seinem Torraum ab, fängt den Ball in der Luft und landet mit dem sicher gefassten Ball mit einem Fuß im, mit dem anderen Fuß außerhalb seines Torraums. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"Abwurf für A",
@@ -2455,7 +2455,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 204,
-		text: "In welchen Situationen ist eine Disqualifikation mit einem schriftlichen Bericht verbun-den?",
+		text: "In welchen Situationen ist eine Disqualifikation mit einem schriftlichen Bericht verbunden?",
 		answers: [
 			"Tätlichkeit auf der Spielfläche während der Halbzeitpause",
 			"Ein besonders rücksichtsloses oder gefährliches Vergehen",
@@ -2467,7 +2467,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 205,
-		text: "A9 wirft auf das Tor, Torwart B hält. In diesem Augenblick pfeift der Zeitnehmer das Spiel ab. Die Schiedsrichter machen den Zeitnehmer darauf aufmerksam, dass noch 30 Sekunden der 2. Halbzeit zu spielen sind. Alle Spieler sind auf der Spielfläche geblie-ben. Wie wird das Spiel wieder aufgenommen?",
+		text: "A9 wirft auf das Tor, Torwart B hält. In diesem Augenblick pfeift der Zeitnehmer das Spiel ab. Die Schiedsrichter machen den Zeitnehmer darauf aufmerksam, dass noch 30 Sekunden der 2. Halbzeit zu spielen sind. Alle Spieler sind auf der Spielfläche geblieben. Wie wird das Spiel wieder aufgenommen?",
 		answers: [
 			"Freiwurf für B",
 			"Abwurf für B",
@@ -2504,7 +2504,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 208,
-		text: "Team A hat ein Tor erzielt. B will einen schnellen Anwurf ausführen. Deswegen prellt B5 den Ball rasch in Richtung Mittellinie. Dabei läuft er an dem zurücklaufenden A3 vorbei, der ihm den Ball mit der offenen Hand wegspitzelt, so dass der Ball B5 auf den Fuß und von dort aus über die Mittellinie weit in die Hälfte von A prallt. Richtige Ent-scheidung?",
+		text: "Team A hat ein Tor erzielt. B will einen schnellen Anwurf ausführen. Deswegen prellt B5 den Ball rasch in Richtung Mittellinie. Dabei läuft er an dem zurücklaufenden A3 vorbei, der ihm den Ball mit der offenen Hand wegspitzelt, so dass der Ball B5 auf den Fuß und von dort aus über die Mittellinie weit in die Hälfte von A prallt. Richtige Entscheidung?",
 		answers: [
 			"Time-out",
 			"Anwurf für B",
@@ -2516,7 +2516,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 209,
-		text: "Der Ball rollt nach einem ungenauen Pass von A3 zu A9 in der Nähe der Auswechsel-bank von A in Richtung Seitenlinie. B10 steht einen Meter vom Ball entfernt kurz vor der Ballaufnahme, da hechtet sich A9 nach dem Ball und faustet ihn in Richtung Spiel-feldmitte zurück zu A3. Danach rutscht A9 durch seinen Schwung über die Seitenlinie hinaus. Was ist zu entscheiden?",
+		text: "Der Ball rollt nach einem ungenauen Pass von A3 zu A9 in der Nähe der Auswechselbank von A in Richtung Seitenlinie. B10 steht einen Meter vom Ball entfernt kurz vor der Ballaufnahme, da hechtet sich A9 nach dem Ball und faustet ihn in Richtung Spielfeldmitte zurück zu A3. Danach rutscht A9 durch seinen Schwung über die Seitenlinie hinaus. Was ist zu entscheiden?",
 		answers: [
 			"Weiterspielen lassen",
 			"Freiwurf für B",
@@ -2528,7 +2528,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 210,
-		text: "Torwart B16 springt in seinem Torraum ab, um einen weiten Bogenpass zum Linksau-ßen A7 abzufangen. Er fängt den Ball in der Luft und landet mit Ball mit einem Fuß im Torraum, mit dem anderen im Spielfeld. Aus dieser Position spielt er den Ball weiter zu B3. Richtige Entscheidung?",
+		text: "Torwart B16 springt in seinem Torraum ab, um einen weiten Bogenpass zum Linksaußen A7 abzufangen. Er fängt den Ball in der Luft und landet mit Ball mit einem Fuß im Torraum, mit dem anderen im Spielfeld. Aus dieser Position spielt er den Ball weiter zu B3. Richtige Entscheidung?",
 		answers: [
 			"7-Meter-Wurf gegen B",
 			"Weiterspielen lassen",
@@ -2544,7 +2544,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Der Abwurf ist ausgeführt, wenn der Ball die Hand des Torwarts verlassen hat",
 			"Beim Abwurf müssen die Gegenspieler den 3-Meter-Abstand einhalten",
-			"Der Abwurf ist ausgeführt, wenn der Ball die Hand des Torwarts verlassen und die Torraumli-nie passiert hat.",
+			"Der Abwurf ist ausgeführt, wenn der Ball die Hand des Torwarts verlassen und die Torraumlinie passiert hat.",
 			"Beim Abwurf dürfen sich die Gegenspieler direkt an der Torraumlinie aufstellen"
 		],
 		correctAnswers: [2, 3],
@@ -2552,7 +2552,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 212,
-		text: "A3 führt einen 7-Meter-Wurf aus; A5 überschreitet die Freiwurflinie nach dem Schieds-richterpfiff, aber bevor der Ball die Hand von A3 verlassen hat. Richtige Entscheidung?",
+		text: "A3 führt einen 7-Meter-Wurf aus; A5 überschreitet die Freiwurflinie nach dem Schiedsrichterpfiff, aber bevor der Ball die Hand von A3 verlassen hat. Richtige Entscheidung?",
 		answers: [
 			"Wiederholung des 7-Meter-Wurfs",
 			"Freiwurf für B",
@@ -2588,7 +2588,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 215,
-		text: "Der Trainer von A begibt sich während des Spieles wiederholt zum Coachen unmittel-bar an den Zeitnehmertisch. Dabei protestiert er gegen Entscheidungen der Schieds-richter. Die Schiedsrichter bemerken wegen der Lautstärke in der Halle nichts. Richtige Entscheidung?",
+		text: "Der Trainer von A begibt sich während des Spieles wiederholt zum Coachen unmittelbar an den Zeitnehmertisch. Dabei protestiert er gegen Entscheidungen der Schiedsrichter. Die Schiedsrichter bemerken wegen der Lautstärke in der Halle nichts. Richtige Entscheidung?",
 		answers: [
 			"Der Zeitnehmer unterbricht sofort das Spiel und unterrichtet die Schiedsrichter über das Fehlverhalten vom Trainer",
 			"Der Zeitnehmer wartet bis zur nächsten Unterbrechung des Spieles und informiert die Schiedsrichter über das Fehlverhalten des Trainers",
@@ -2600,7 +2600,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 216,
-		text: "Nach Tor für A hat B Anwurf. Der Ball wird vom Torwart schnell zur Mittellinie gewor-fen. B6 nimmt ihn an und steht in der Mitte des Spielfelds mit einem Fuß auf der Mittel-linie, mit dem anderen in der eigenen Spielfeldhälfte, worauf der Schiedsrichter sofort anpfeift. Zu diesem Zeitpunkt befinden sich noch Spieler von A in der gegnerischen Spielfeldhälfte. Bevor der Ball seine Hand verlassen hat, läuft der Werfer über die Mit-tellinie. Was ist richtig?",
+		text: "Nach Tor für A hat B Anwurf. Der Ball wird vom Torwart schnell zur Mittellinie geworfen. B6 nimmt ihn an und steht in der Mitte des Spielfelds mit einem Fuß auf der Mittellinie, mit dem anderen in der eigenen Spielfeldhälfte, worauf der Schiedsrichter sofort anpfeift. Zu diesem Zeitpunkt befinden sich noch Spieler von A in der gegnerischen Spielfeldhälfte. Bevor der Ball seine Hand verlassen hat, läuft der Werfer über die Mittellinie. Was ist richtig?",
 		answers: [
 			"Weiterspielen lassen",
 			"Freiwurf für A",
@@ -2624,7 +2624,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 218,
-		text: "Torwart B16 will einen Abwurf ausführen. Da B knapp im Rückstand ist, hat er es sehr eilig. Deshalb rutscht ihm der Ball aus der Hand und gelangt zu seinem noch im Tor-raum befindlichen Mitspieler B6, der den Ball mit dem Fuß zu seinem Torwart zurück-spielt. Richtige Entscheidung?",
+		text: "Torwart B16 will einen Abwurf ausführen. Da B knapp im Rückstand ist, hat er es sehr eilig. Deshalb rutscht ihm der Ball aus der Hand und gelangt zu seinem noch im Torraum befindlichen Mitspieler B6, der den Ball mit dem Fuß zu seinem Torwart zurückspielt. Richtige Entscheidung?",
 		answers: [
 			"Abwurf nach Anpfiff",
 			"Freiwurf gegen B",
@@ -2684,7 +2684,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 223,
-		text: "A9 spielt zu seinem auf dem Spielfeld stehenden Torwart A1. In Bedrängnis setzt er den Pass zu hoch an, so dass der Torwart zurückgehen und mit einem Fuß den Tor-raum betreten muss. Den Ball hat er noch kurz vorher annehmen können. Richtige Entscheidung?",
+		text: "A9 spielt zu seinem auf dem Spielfeld stehenden Torwart A1. In Bedrängnis setzt er den Pass zu hoch an, so dass der Torwart zurückgehen und mit einem Fuß den Torraum betreten muss. Den Ball hat er noch kurz vorher annehmen können. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"Time out",
@@ -2710,7 +2710,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 225,
-		text: "Der Torwart wehrt den Ball knapp vor der Torlinie ab. Beim anschließenden Versuch, einen Mitspieler anzuspielen, rutscht ihm der Ball aus der Hand ins eigene Tor. Richti-ge Entscheidung?",
+		text: "Der Torwart wehrt den Ball knapp vor der Torlinie ab. Beim anschließenden Versuch, einen Mitspieler anzuspielen, rutscht ihm der Ball aus der Hand ins eigene Tor. Richtige Entscheidung?",
 		answers: [
 			"Tor",
 			"Freiwurf für die gegnerische Mannschaft",
@@ -2737,7 +2737,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Erneute Hinausstellung von B8",
 			"Disqualifikation von B8",
-			"Mannschaft B spielt für 1 Minute und 58 Sekunden mit 4/1 Spielern und danach 2 Sekun- den mit 5/1Spielern",
+			"Mannschaft B spielt für 1 Minute und 58 Sekunden mit 4/1 Spielern und danach 2 Sekunden mit 5/1 Spielern",
 			"Mannschaft B spielt für 2 Minuten mit 4/1 Spielern",
 			"Freiwurf für A",
 			"Time-out"
@@ -2760,7 +2760,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 229,
-		text: "Der Schiedsrichter erkennt auf Freiwurf gegen Kreisspieler B2. Der ausführende Tor-wart A steht mit einem Fuß im Torraum, mit dem anderen außerhalb. Er passt zu A8, der ein Tor erzielt. Was ist richtig?",
+		text: "Der Schiedsrichter erkennt auf Freiwurf gegen Kreisspieler B2. Der ausführende Torwart A steht mit einem Fuß im Torraum, mit dem anderen außerhalb. Er passt zu A8, der ein Tor erzielt. Was ist richtig?",
 		answers: [
 			"Tor für A",
 			"Wiederholung des Freiwurfs außerhalb des Torraums von A",
@@ -2773,7 +2773,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 230,
-		text: "A10 sitzt seine erste Zeitstrafe ab (Spielzeit bei Beginn der Strafzeit 21:00). Nach Wie-deranpfiff des Spiels reklamiert er so heftig, dass die Schiedsrichter das Spiel bei 21:30 mit Time-out unterbrechen und A10 mit einer weiteren Hinausstellung bestrafen. Auswirkungen für Mannschaft A?",
+		text: "A10 sitzt seine erste Zeitstrafe ab (Spielzeit bei Beginn der Strafzeit 21:00). Nach Wiederanpfiff des Spiels reklamiert er so heftig, dass die Schiedsrichter das Spiel bei 21:30 mit Time-out unterbrechen und A10 mit einer weiteren Hinausstellung bestrafen. Auswirkungen für Mannschaft A?",
 		answers: [
 			"weitere Hinausstellung von A10",
 			"Disqualifikation von A10",
@@ -2802,18 +2802,18 @@ export const QUESTIONS: Question[] =
 			"Wird der Ball nach einer Freiwurfentscheidung nicht sofort niedergelegt, darf der Gegner den Wurf dort ausführen, wo der Ball sich befindet",
 			"Nach einem Wechselfehler darf der Freiwurf statt am Auswechselraum am Ballort ausgeführt werden, wenn dies für die ausführende Mannschaft von Vorteil ist",
 			"Bei passivem Spiel wird der Freiwurf immer dort ausgeführt, wo sich der Ball zum Zeitpunkt des Pfiffs befand",
-			"Bei einem Freiwurf auf der Mittellinie ist die seitliche Toleranz etwa gleich groß wie beim An-wurf"
+			"Bei einem Freiwurf auf der Mittellinie ist die seitliche Toleranz etwa gleich groß wie beim Anwurf"
 		],
 		correctAnswers: [1, 2, 3],
 		ruleReferences: ["7;11", "13:6", "13:6 Kommentar"]
 	},
 	{
 		id: 233,
-		text: "Kreisspieler B10 sperrt Abwehrspieler A2 korrekt. Als B10 sich löst, spielt Rückraum-spieler B4 einen Bodenpass in den Durchbruchsweg zum Tor. Bevor B10 den Ball an-nehmen kann, wird er von A2 am Trikot zurückgehalten. Richtige Entscheidung?",
+		text: "Kreisspieler B10 sperrt Abwehrspieler A2 korrekt. Als B10 sich löst, spielt Rückraumspieler B4 einen Bodenpass in den Durchbruchsweg zum Tor. Bevor B10 den Ball annehmen kann, wird er von A2 am Trikot zurückgehalten. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für B",
 			"7-Meter-Wurf für B, unabhängig von der Stellung der gegnerischen Spieler",
-			"7-Meter-Wurf für B, wenn kein anderer Spieler von A den Kreisspieler regelgerecht am Tor-wurf hätte hindern können",
+			"7-Meter-Wurf für B, wenn kein anderer Spieler von A den Kreisspieler regelgerecht am Torwurf hätte hindern können",
 			"Progressive Bestrafung von A2",
 			"Zwingend Disqualifikation von A2"
 		],
@@ -2822,7 +2822,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 234,
-		text: "Die Spieler von B haben in Unterzahl ihre Angriffspositionen eingenommen und die Aufbauphase begonnen. Jetzt lassen sich B6 und B8 auswechseln. Richtige Entschei-dung?",
+		text: "Die Spieler von B haben in Unterzahl ihre Angriffspositionen eingenommen und die Aufbauphase begonnen. Jetzt lassen sich B6 und B8 auswechseln. Richtige Entscheidung?",
 		answers: [
 			"Warnzeichen „passives Spiel“ geben“",
 			"Warnzeichen „passives Spiel“ geben“, wenn binnen 5 Sekunden kein Tempowechsel erfolgt",
@@ -2848,7 +2848,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 236,
-		text: "Der während der Spielzeit verwarnte A11 begeht während der Pause eine Unsportlich-keit. Richtige Entscheidung?",
+		text: "Der während der Spielzeit verwarnte A11 begeht während der Pause eine Unsportlichkeit. Richtige Entscheidung?",
 		answers: [
 			"Verwarnung von A11",
 			"Hinausstellung von A11",
@@ -2875,10 +2875,10 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 238,
-		text: "In welchem/welchen der folgenden Fälle ist der Mannschaftsverantwortliche persön-lich zu bestrafen?",
+		text: "In welchem/welchen der folgenden Fälle ist der Mannschaftsverantwortliche persönlich zu bestrafen?",
 		answers: [
-			"Wenn ein Spieler seiner Mannschaft den Auswechselraum ohne Abmeldung bei Sekre-tär/Zeitnehmer verlässt",
-			"Wenn sich ab Spielbeginn im Auswechselraum Personen aufhalten, die nicht im Spielproto-koll eingetragen sind",
+			"Wenn ein Spieler seiner Mannschaft den Auswechselraum ohne Abmeldung bei Sekretär/Zeitnehmer verlässt",
+			"Wenn sich ab Spielbeginn im Auswechselraum Personen aufhalten, die nicht im Spielprotokoll eingetragen sind",
 			"Wenn ein zusätzlicher Spieler die Spielfläche betritt",
 			"Wenn ein nicht teilnahmeberechtigter Spieler seiner Mannschaft die Spielfläche betritt",
 			"Wenn nach Spielbeginn eine unkorrekte Ausrüstung festgestellt wird.",
@@ -2889,7 +2889,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 239,
-		text: "Torwart A1 wirft einen langen Pass auf A15, der alleine auf das gegnerische Tor zu-läuft. Torwart B12 verlässt seinen Torraum, springt ab, fängt den Ball und prallt in der Luft mit A15 zusammen. Beide Spieler fallen zu Boden und bleiben verletzt liegen. Entscheidung?",
+		text: "Torwart A1 wirft einen langen Pass auf A15, der alleine auf das gegnerische Tor zuläuft. Torwart B12 verlässt seinen Torraum, springt ab, fängt den Ball und prallt in der Luft mit A15 zusammen. Beide Spieler fallen zu Boden und bleiben verletzt liegen. Entscheidung?",
 		answers: [
 			"Time-out, Hinausstellung für A15",
 			"Time-out, Hinausstellung für B12",
@@ -2940,7 +2940,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 243,
-		text: "A12 führt kurz vor Spielende beim Stand von 22:21 für seine Mannschaft einen Anwurf regelgerecht nach Anpfiff aus, indem er den Ball Richtung eigenes Tor wirft. Torwart A1 berührt ihn nicht, da er sich im eigenen Torraum befindet. Der Ball geht ins Tor. Die Mitspieler von A12 hatten nach dem Anpfiff, aber bevor der Ball gespielt wurde, sprin-tend die Mittellinie in Richtung gegnerisches Tor weit überschritten. Richtige Ent-scheidung?",
+		text: "A12 führt kurz vor Spielende beim Stand von 22:21 für seine Mannschaft einen Anwurf regelgerecht nach Anpfiff aus, indem er den Ball Richtung eigenes Tor wirft. Torwart A1 berührt ihn nicht, da er sich im eigenen Torraum befindet. Der Ball geht ins Tor. Die Mitspieler von A12 hatten nach dem Anpfiff, aber bevor der Ball gespielt wurde, sprintend die Mittellinie in Richtung gegnerisches Tor weit überschritten. Richtige Entscheidung?",
 		answers: [
 			"Tor für B",
 			"Freiwurf für B",
@@ -2978,11 +2978,11 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 246,
-		text: "Die Schiedsrichter stellen fest, dass die 2. Halbzeit des Spiels vom Zeitnehmer eine Minute zu spät beendet wurde. Mannschaft A hatte in den Schlusssekunden einen 7-m-Wurf zum Spielstand von 33:32 verwandelt. Im vorhergehenden Angriff der Mann-schaft B hatte diese den Ausgleich zum 32:32 erzielt. Wie ist zu verfahren?",
+		text: "Die Schiedsrichter stellen fest, dass die 2. Halbzeit des Spiels vom Zeitnehmer eine Minute zu spät beendet wurde. Mannschaft A hatte in den Schlusssekunden einen 7-m-Wurf zum Spielstand von 33:32 verwandelt. Im vorhergehenden Angriff der Mannschaft B hatte diese den Ausgleich zum 32:32 erzielt. Wie ist zu verfahren?",
 		answers: [
-			"Die Schiedsrichter belassen es beim Spielstand 33:32 und melden den Vorfall im Spielbe-richt.",
-			"Die Schiedsrichter korrigieren den Spielstand auf 32:31 und melden den Vorfall im Spielbe-richt.",
-			"Die Schiedsrichter ermitteln anhand der Eintragungen des Sekretärs das vermutliche Ergeb-nis zum korrekten Spielzeitende und korrigieren dies entsprechend.",
+			"Die Schiedsrichter belassen es beim Spielstand 33:32 und melden den Vorfall im Spielbericht.",
+			"Die Schiedsrichter korrigieren den Spielstand auf 32:31 und melden den Vorfall im Spielbericht.",
+			"Die Schiedsrichter ermitteln anhand der Eintragungen des Sekretärs das vermutliche Ergebnis zum korrekten Spielzeitende und korrigieren dies entsprechend.",
 			"Die Schiedsrichter korrigieren im Einvernehmen mit beiden Mannschaftsverantwortlichen den Spielstand."
 		],
 		correctAnswers: [0],
@@ -2996,7 +2996,7 @@ export const QUESTIONS: Question[] =
 			"Die 1 Minute muss vor der Halbzeitpause nachgespielt werden",
 			"Die 1 Minute muss zu Beginn der zweiten Halbzeit nachgespielt werden",
 			"Die 1 Minute wird der zweiten Halbzeit hinzugefügt",
-			"Mit Losentscheid wird entschieden, welche Mannschaft zu Beginn der 1 Minute Ballbesitz er-hält",
+			"Mit Losentscheid wird entschieden, welche Mannschaft zu Beginn der 1 Minute Ballbesitz erhält",
 			"Die Mannschaft, die zuletzt in Ballbesitz war, erhält den Ball"
 		],
 		correctAnswers: [1, 5],
@@ -3044,7 +3044,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 251,
-		text: "Mannschaft A ist in Ballbesitz; ein Mannschaftsoffizieller von B meldet beim Zeitneh-mer Team-Time-out an, indem er die grüne Karte auf den Zeitnehmertisch legt. Richti-ge Entscheidung?",
+		text: "Mannschaft A ist in Ballbesitz; ein Mannschaftsoffizieller von B meldet beim Zeitnehmer Team-Time-out an, indem er die grüne Karte auf den Zeitnehmertisch legt. Richtige Entscheidung?",
 		answers: [
 			"Die grüne Karte wird am Zeitnehmertisch aufgestellt",
 			"Der Zeitnehmer pfeift, sobald B in Ballbesitz gelangt",
@@ -3056,7 +3056,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 252,
-		text: "Der Trainer von Mannschaft A reagiert auf eine Entscheidung der SR gegen seine Mannschaft mit lautstarken Protesten sowie den Worten „Ihr seid doch Idioten“. Gegen ei-nen Mannschaftsoffiziellen von A war bereits 10 Minuten vorher eine Verwarnung ausge-sprochen worden. Entscheidung?",
+		text: "Der Trainer von Mannschaft A reagiert auf eine Entscheidung der SR gegen seine Mannschaft mit lautstarken Protesten sowie den Worten „Ihr seid doch Idioten“. Gegen einen Mannschaftsoffiziellen von A war bereits 10 Minuten vorher eine Verwarnung ausgesprochen worden. Entscheidung?",
 		answers: [
 			". Verwarnung des Trainers wegen unsportlichen Verhaltens",
 			"Hinausstellung gegen den Trainer und Reduzierung der Mannschaft auf der Spielfläche für diese Zeit um einen Spieler.",
@@ -3068,7 +3068,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 253,
-		text: "Nach dem automatischen Schlusssignal muss noch ein Freiwurf ausgeführt werden. B9 wirft auf das Tor. Als der Ball seine Hand gerade verlassen hat, pfeift der Zeitneh-mer. Der Ball landet im Tor, der Torwart hätte keine Abwehrchance gehabt. Der Zeit-nehmer teilt den Schiedsrichtern mit, dass der im Block stehende A7 vor der Wurfaus-führung eingewechselt wurde. Richtige Entscheidung?",
+		text: "Nach dem automatischen Schlusssignal muss noch ein Freiwurf ausgeführt werden. B9 wirft auf das Tor. Als der Ball seine Hand gerade verlassen hat, pfeift der Zeitnehmer. Der Ball landet im Tor, der Torwart hätte keine Abwehrchance gehabt. Der Zeitnehmer teilt den Schiedsrichtern mit, dass der im Block stehende A7 vor der Wurfausführung eingewechselt wurde. Richtige Entscheidung?",
 		answers: [
 			"Hinausstellung von A7",
 			"Disqualifikation von A7",
@@ -3081,7 +3081,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 254,
-		text: "A9 versucht, einen Hüftwurf mit dem Unterschenkel abzuwehren, der Ball geht aber ins Tor. Es war der 2.Versuch, einen Wurf mit dem Fuß abzuwehren. Richtige Ent-scheidung?",
+		text: "A9 versucht, einen Hüftwurf mit dem Unterschenkel abzuwehren, der Ball geht aber ins Tor. Es war der 2.Versuch, einen Wurf mit dem Fuß abzuwehren. Richtige Entscheidung?",
 		answers: [
 			"Tor für B",
 			"Freiwurf für B",
@@ -3117,7 +3117,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 257,
-		text: "Die Schiedsrichter entscheiden auf Schrittfehler von B21. Dieser legt den Ball an der Torraumlinie von A nieder. Torwart A16, nach der vorangehenden Abwehraktion noch im Torraum am Boden, will den Freiwurf schnell ausführen. Er stützt sich außerhalb des Torraums mit einem Arm ab, ein Fuß befindet sich im Torraum am Boden. In die-ser Haltung passt er zu A3, der einen Gegenstoß einleitet, der zu einem Tor führt. Rich-tige Entscheidung?",
+		text: "Die Schiedsrichter entscheiden auf Schrittfehler von B21. Dieser legt den Ball an der Torraumlinie von A nieder. Torwart A16, nach der vorangehenden Abwehraktion noch im Torraum am Boden, will den Freiwurf schnell ausführen. Er stützt sich außerhalb des Torraums mit einem Arm ab, ein Fuß befindet sich im Torraum am Boden. In dieser Haltung passt er zu A3, der einen Gegenstoß einleitet, der zu einem Tor führt. Richtige Entscheidung?",
 		answers: [
 			"Wiederholung des Freiwurfs mit Anpfiff",
 			"Tor für A",
@@ -3158,7 +3158,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Wird die Entwicklung zu passivem Spiel erkannt, zeigt dies zuerst der Feldschiedsrichter mit dem IHF-Handzeichen Nr. 17 an; der Torschiedsrichter übernimmt dieses Zeichen und hebt anschließend ebenfalls den Arm entsprechend",
 			"Sollte die angreifende Mannschaft nach dem Anzeigen des Vorwarnzeichens ein Team-Time-out beantragen, so muss das Warnzeichen nach Wiederaufnahme des Spiels erneut angezeigt werden",
-			"Unternimmt das ballbesitzende Team nach Anzeige des Vorwarnzeichens keinen erkennba-ren Versuch, zum Torwurf zu gelangen, entscheidet entweder der Torschiedsrichter oder der Feldschiedsrichter auf passives Spiel",
+			"Unternimmt das ballbesitzende Team nach Anzeige des Vorwarnzeichens keinen erkennbaren Versuch, zum Torwurf zu gelangen, entscheidet entweder der Torschiedsrichter oder der Feldschiedsrichter auf passives Spiel",
 			"Nach Handzeichen 17 hat die Mannschaft höchstens 6 Pässe zur Verfügung, um zu einem Torwurf zu gelangen."
 		],
 		correctAnswers: [1, 2, 3],
@@ -3179,7 +3179,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 262,
-		text: "Torwart A13 will einen Abwurf ausführen. Gegenspieler B3 betritt wiederholt den Tor-raum und versucht ohne Körperkontakt, den Abwurf zu verhindern. Richtige Entschei-dung?",
+		text: "Torwart A13 will einen Abwurf ausführen. Gegenspieler B3 betritt wiederholt den Torraum und versucht ohne Körperkontakt, den Abwurf zu verhindern. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für A",
 			"Abwurf mit Anpfiff",
@@ -3192,7 +3192,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 263,
-		text: "Bei unentschiedenem Spielstand nach beiden Verlängerungen ist nach dem Regle-ment ein 7-Meter-Werfen durchzuführen. A7 erhielt in der 9. Minute der 2. Verlängerung eine Hinausstellung. Zum 7-Meter-Werfen wird er vom Mannschaftsverantwortlichen von A als fünfter Werfer gemeldet. Richtige Entscheidung?",
+		text: "Bei unentschiedenem Spielstand nach beiden Verlängerungen ist nach dem Reglement ein 7-Meter-Werfen durchzuführen. A7 erhielt in der 9. Minute der 2. Verlängerung eine Hinausstellung. Zum 7-Meter-Werfen wird er vom Mannschaftsverantwortlichen von A als fünfter Werfer gemeldet. Richtige Entscheidung?",
 		answers: [
 			"A7 darf teilnehmen",
 			"A7 darf nicht teilnehmen"
@@ -3202,7 +3202,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 264,
-		text: "B9 wird wegen einer groben Regelwidrigkeit gegen A9 disqualifiziert. Vor dem Wieder-anpfiff schlägt er dem Trainer von A ins Gesicht. Richtige Entscheidung?",
+		text: "B9 wird wegen einer groben Regelwidrigkeit gegen A9 disqualifiziert. Vor dem Wiederanpfiff schlägt er dem Trainer von A ins Gesicht. Richtige Entscheidung?",
 		answers: [
 			"Disqualifikation von B9, Mannschaft B für 2 Minuten mit 2 Spielern weniger",
 			"Disqualifikation von B9, Mannschaft B für 4 Minuten mit 1 Spieler weniger",
@@ -3262,7 +3262,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 269,
-		text: "Tempogegenstoß von A beim Stand von 26:26. A5 setzt an der Torraumlinie zum Tor-wurf an; in diesem Moment pfeift der Zeitnehmer und erklärt, dass die Spielzeit been-det sei. Die Schiedsrichter stellen fest, dass noch 20 Sekunden zu spielen sind. Rich-tige Entscheidung?",
+		text: "Tempogegenstoß von A beim Stand von 26:26. A5 setzt an der Torraumlinie zum Torwurf an; in diesem Moment pfeift der Zeitnehmer und erklärt, dass die Spielzeit beendet sei. Die Schiedsrichter stellen fest, dass noch 20 Sekunden zu spielen sind. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für A am Zeitnehmertisch",
 			"7-Meter-Wurf für A",
@@ -3286,7 +3286,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 271,
-		text: "B3 führt einen Torwurf so unglücklich aus, dass der Ball, ohne einen weiteren Spieler zu berühren, im Torraum liegen bleibt. In diesem Moment beantragt der Mannschafts-verantwortliche von B ein Team-Time-out. Richtige Entscheidung?",
+		text: "B3 führt einen Torwurf so unglücklich aus, dass der Ball, ohne einen weiteren Spieler zu berühren, im Torraum liegen bleibt. In diesem Moment beantragt der Mannschaftsverantwortliche von B ein Team-Time-out. Richtige Entscheidung?",
 		answers: [
 			"Der Zeitnehmer pfeift, stoppt gleichzeitig die Spielzeituhr und zeigt den Schiedsrichtern das Team-Time-out für Mannschaft B an",
 			"Der Zeitnehmer gibt dem Mannschaftsverantwortlichen von B die grüne Karte zurück",
@@ -3298,7 +3298,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 272,
-		text: "Mannschaft A lässt sich sehr viel Zeit mit der Ausführung eines Anwurfs. Die Mann-schaft war wegen derselben taktischen Verzögerung bereits ermahnt worden. Richtige Entscheidung?",
+		text: "Mannschaft A lässt sich sehr viel Zeit mit der Ausführung eines Anwurfs. Die Mannschaft war wegen derselben taktischen Verzögerung bereits ermahnt worden. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"Time out, Anwurf anpfeifen",
@@ -3335,7 +3335,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 275,
-		text: "Die Schiedsrichter geben das Zeichen zum Betreten der Spielfläche, da sich ein Spie-ler von A verletzt hat. Wer darf die Spielfläche betreten?",
+		text: "Die Schiedsrichter geben das Zeichen zum Betreten der Spielfläche, da sich ein Spieler von A verletzt hat. Wer darf die Spielfläche betreten?",
 		answers: [
 			"Zwei Offizielle von A, sonst niemand",
 			"Je zwei Offizielle beider Mannschaften",
@@ -3362,7 +3362,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 277,
-		text: "Ein Spieler springt in den gegnerischen Torraum. Er hat Ball- und Körperkontrolle und befindet sich in einer guten Wurfposition. Anstatt zu werfen, dreht er über dem Tor-raum ab und spielt den Ball zurück zu einem Mitspieler im Rückraum. Richtige Ent-scheidung?",
+		text: "Ein Spieler springt in den gegnerischen Torraum. Er hat Ball- und Körperkontrolle und befindet sich in einer guten Wurfposition. Anstatt zu werfen, dreht er über dem Torraum ab und spielt den Ball zurück zu einem Mitspieler im Rückraum. Richtige Entscheidung?",
 		answers: [
 			"Vorwarnzeichen für passives Spiel",
 			"Sofort Freiwurf wegen passiven Spiels",
@@ -3398,7 +3398,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 280,
-		text: "A7 verbüßt wegen unsportlichen Verhaltens seine erste Zeitstrafe. Nach dem Wieder-anpfiff gestikuliert er auf der Bank heftig, um zu zeigen, dass er mit den Schiedsrich-tern nicht einverstanden ist. Wie ist dies zu bestrafen?",
+		text: "A7 verbüßt wegen unsportlichen Verhaltens seine erste Zeitstrafe. Nach dem Wiederanpfiff gestikuliert er auf der Bank heftig, um zu zeigen, dass er mit den Schiedsrichtern nicht einverstanden ist. Wie ist dies zu bestrafen?",
 		answers: [
 			"Disqualifikation",
 			"Weitere Hinausstellung; A7 muss für 4 Minuten auf der Bank bleiben",
@@ -3415,7 +3415,7 @@ export const QUESTIONS: Question[] =
 			"Der Ball fliegt sehr weit weg",
 			"Der Zeitnehmer pfeift",
 			"Ein Spieler scheint verletzt zu sein",
-			"Die Schiedsrichter zeigen bei einer Entscheidung bezüglich der Spielfortsetzung in verschie-dene Richtungen",
+			"Die Schiedsrichter zeigen bei einer Entscheidung bezüglich der Spielfortsetzung in verschiedene Richtungen",
 			"Wechsel eines Feldspielers mit einem Torwart zur Ausführung eines Abwurfs"
 		],
 		correctAnswers: [0, 2, 4],
@@ -3435,10 +3435,10 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 283,
-		text: "Die Schiedsrichter lassen den Reserveball ins Spiel bringen. Wann sollte der ur-sprüngliche Spielball wieder verwendet werden?",
+		text: "Die Schiedsrichter lassen den Reserveball ins Spiel bringen. Wann sollte der ursprüngliche Spielball wieder verwendet werden?",
 		answers: [
 			"Bei der nächsten Unterbrechung",
-			"Er darf nicht wieder benutzt werden, es sei denn, es ist unmöglich, mit dem Reserveball wei-terzuspielen",
+			"Er darf nicht wieder benutzt werden, es sei denn, es ist unmöglich, mit dem Reserveball weiterzuspielen",
 			"Wenn die Schiedsrichter es für erforderlich halten, dass er wieder benutzt wird",
 			"Wenn eine der Mannschaften es wünscht"
 		],
@@ -3472,11 +3472,11 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 286,
-		text: "Welche der folgenden Aussagen bezüglich der richtigen Handhabung des Vorwarnzei-chens für passives Spiel ist/sind richtig?",
+		text: "Welche der folgenden Aussagen bezüglich der richtigen Handhabung des Vorwarnzeichens für passives Spiel ist/sind richtig?",
 		answers: [
 			"Nur der Feldschiedsrichter darf das Vorwarnzeichen als erster zeigen.",
-			"Wenn das Vorwarnzeichen während eines Angriffs zum ersten Mal gezeigt wird, sind die Ar-me nach ca.10 Sekunden herunterzunehmen",
-			"Das Vorwarnzeichen sollte nach der ersten Unterbrechung zur Information wiederholt wer-den, wenn es bereits vor der Unterbrechung gezeigt wurde",
+			"Wenn das Vorwarnzeichen während eines Angriffs zum ersten Mal gezeigt wird, sind die Arme nach ca.10 Sekunden herunterzunehmen",
+			"Das Vorwarnzeichen sollte nach der ersten Unterbrechung zur Information wiederholt werden, wenn es bereits vor der Unterbrechung gezeigt wurde",
 			"Das Vorwarnzeichen gilt immer als aufgehoben, wenn ein Abwehrspieler progressiv bestraft wird",
 			"Das Vorwarnzeichen sollte angezeigt werden, wenn ein Angreifer klare Ballkontrolle hat."
 		],
@@ -3485,13 +3485,13 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 287,
-		text: "Bei einem Zusammenprall von zwei Spielern pfeifen beide Schiedsrichter. Der Feld-schiedsrichter entscheidet auf Stürmerfoul, der Torschiedsrichter auf Vergehen der Abwehr. Richtige Entscheidung?",
+		text: "Bei einem Zusammenprall von zwei Spielern pfeifen beide Schiedsrichter. Der Feldschiedsrichter entscheidet auf Stürmerfoul, der Torschiedsrichter auf Vergehen der Abwehr. Richtige Entscheidung?",
 		answers: [
 			"Die Entscheidung des Torschiedsrichters ist maßgebend.",
 			"Die Entscheidung des Feldschiedsrichters ist maßgebend.",
 			"Die Schiedsrichter nehmen Kontakt auf und treffen eine gemeinsame Entscheidung.",
 			"Time-out ist verbindlich.",
-			"Time-out ist notwendig, wenn die gemeinsame Entscheidung gegen die angreifende Mann-schaft fällt.",
+			"Time-out ist notwendig, wenn die gemeinsame Entscheidung gegen die angreifende Mannschaft fällt.",
 			"Time out ist nicht verpflichtend, wenn die Schiedsrichter elektronische Geräte zur internen Kommunikation benutzen."
 		],
 		correctAnswers: [2, 3],
@@ -3503,7 +3503,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Ein Spieler ist bereits disqualifiziert worden; beim Verlassen der Spielfläche protestiert er in einer Art, die eine Hinausstellung verdient.",
 			"Ein Spieler hat bereits eine Hinausstellung erhalten, beim Verlassen der Spielfläche beleidigt er einen Schiedsrichter und wird disqualifiziert.",
-			"Ein Spieler hat wegen unsportlichen Verhaltens gegen einen Gegenspieler eine Hinausstel-lung erhalten, noch auf der Spielfläche schlägt er diesem in das Gesicht und wird disqualifi-ziert.",
+			"Ein Spieler hat wegen unsportlichen Verhaltens gegen einen Gegenspieler eine Hinausstellung erhalten, noch auf der Spielfläche schlägt er diesem in das Gesicht und wird disqualifiziert.",
 			"Ein Spieler hat wegen unsportlichen Verhaltens eine Hinausstellung erhalten, nach dem Überschreiten der Seitenlinie kommt er zurück auf die Spielfläche, protestiert und erhält eine zusätzliche Hinausstellung.",
 			"Ein Spieler hat bereits eine Disqualifikation wegen Anspuckens eines Gegners erhalten, beim Verlassen der Spielfläche stößt er den Schiedsrichter.",
 			"Ein Spieler hat bereits eine Disqualifikation wegen groben Vergehens erhalten, nach dem Verlassen der Spielfläche und Wiederanpfiff des Spiels beleidigt er die Schiedsrichter aus dem Zuschauerbereich."
@@ -3536,7 +3536,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 291,
-		text: "Torwart A hat einen Ball gehalten und diesen im Torraum in den Händen, als der Zeit-nehmer wegen eines Wechselfehlers von Mannschaft A pfeift. Richtige Entscheidung?",
+		text: "Torwart A hat einen Ball gehalten und diesen im Torraum in den Händen, als der Zeitnehmer wegen eines Wechselfehlers von Mannschaft A pfeift. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für B am Auswechselraum von A",
 			"Time out",
@@ -3551,7 +3551,7 @@ export const QUESTIONS: Question[] =
 		id: 292,
 		text: "Welche der folgenden Aussagen bezüglich passiven Spiels sind korrekt?",
 		answers: [
-			"Einer Mannschaft sollten von der Aufbauphase bis zur Abschlussphase nicht mehr als 5 Se-kunden zugestanden werden",
+			"Einer Mannschaft sollten von der Aufbauphase bis zur Abschlussphase nicht mehr als 5 Sekunden zugestanden werden",
 			"Die Schiedsrichter sollten genau auf langsamen bzw. verspäteten Spielerwechsel nach Anwurf achten",
 			"Die Schiedsrichter müssen beobachten, ob die Mannschaft das Tempo steigert und während der Aufbauphase versucht, Raum zu gewinnen",
 			"Die Schiedsrichter sollten auf passives Spiel achten, sobald die ballbesitzende Mannschaft in der eigenen Spielfeldhälfte mit der Spielfeldüberbrückung beginnt",
@@ -3566,7 +3566,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Mit dem Pfiff des erstgenannten Schiedsrichters",
 			"Wenn der Ball die Hand des Werfers verlassen hat",
-			"Wenn der Zeitnehmer die Stoppuhr startet oder die öffentliche Zeitmessanlage zu laufen be-ginnt",
+			"Wenn der Zeitnehmer die Stoppuhr startet oder die öffentliche Zeitmessanlage zu laufen beginnt",
 			"Mit dem Anpfiff des Anwurfs durch den Feldschiedsrichter"
 		],
 		correctAnswers: [3],
@@ -3574,7 +3574,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 294,
-		text: "Torwart A 12 springt außerhalb seines Torraums im Spielfeld ab, nimmt einen von ei-nem Mitspieler gespielten Ball in der Luft an und wirft ihn über die eigene Torauslinie. Dann landet er in seinem Torraum. Richtige Entscheidung?",
+		text: "Torwart A 12 springt außerhalb seines Torraums im Spielfeld ab, nimmt einen von einem Mitspieler gespielten Ball in der Luft an und wirft ihn über die eigene Torauslinie. Dann landet er in seinem Torraum. Richtige Entscheidung?",
 		answers: [
 			"Abwurf",
 			"Einwurf für den Gegner",
@@ -3590,7 +3590,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Der ausführende Spieler darf bis zu einem Meter hinter der 7-Meter-Linie stehen",
 			"Wenn die abwehrende Mannschaft den Torwart wechselt, müssen die Schiedsrichter auf Time-out entscheiden",
-			"Wenn der Torwart bei der Abwehrhandlung die 4-Meter-Linie überschreitet, ist er im Wieder-holungsfall persönlich zu bestrafen",
+			"Wenn der Torwart bei der Abwehrhandlung die 4-Meter-Linie überschreitet, ist er im Wiederholungsfall persönlich zu bestrafen",
 			"Die Spieler der abwehrenden Mannschaft müssen immer 3 Meter vom ausführenden Spieler entfernt sein"
 		],
 		correctAnswers: [0],
@@ -3598,12 +3598,12 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 296,
-		text: "Welche der folgenden Festlegungen trifft das Regelwerk hinsichtlich der Aufgabentei-lung von Zeitnehmer und Sekretär?",
+		text: "Welche der folgenden Festlegungen trifft das Regelwerk hinsichtlich der Aufgabenteilung von Zeitnehmer und Sekretär?",
 		answers: [
 			"Die Kontrolle des Aus- und Eintretens der Auswechselspieler ist dem Zeitnehmer vorbehalten",
 			"Generell sollte alle notwendigen Spielunterbrechungen der Zeitnehmer vornehmen",
 			"Erkennt der Sekretär das zu frühe Eintreten eines hinausgestellten Spielers, hat er zu pfeifen",
-			"Wenn keine öffentliche Zeitmessanlage vorhanden ist, unterrichtet der Zeitnehmer die Mann-schaftsverantwortlichen über die gespielte oder die noch zu spielende Zeit",
+			"Wenn keine öffentliche Zeitmessanlage vorhanden ist, unterrichtet der Zeitnehmer die Mannschaftsverantwortlichen über die gespielte oder die noch zu spielende Zeit",
 			"Zählen der Anzahl der Angriffe nach der Versorgung eines Spielers auf der Spielfläche"
 		],
 		correctAnswers: [1, 3, 4],
@@ -3648,10 +3648,10 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 300,
-		text: "A5 wird in Minute 7:00 hinausgestellt. Vor Wiederanpfiff reklamiert er und erhält erneut eine Hinausstellung. Genau eine Minute später läuft er auf das Spielfeld, der Zeitneh-mer pfeift: Wegen der erneuten Hinausstellung sei A5 zu disqualifizieren. Daraufhin beleidigt A5 den Schiedsrichter. Richtige Entscheidung?",
+		text: "A5 wird in Minute 7:00 hinausgestellt. Vor Wiederanpfiff reklamiert er und erhält erneut eine Hinausstellung. Genau eine Minute später läuft er auf das Spielfeld, der Zeitnehmer pfeift: Wegen der erneuten Hinausstellung sei A5 zu disqualifizieren. Daraufhin beleidigt A5 den Schiedsrichter. Richtige Entscheidung?",
 		answers: [
-			"A von 7.-8. Minute mit 5/1 Spielern, 8.-10. Minute mit 4/1 Spielern,10.-11. Minute mit 5/1 Spielern",
-			"A von 7.-8. Minute mit 5/1 Spielern, 8.-11. Minute mit 4/1 Spielern,11.-12. Minute mit 5/1 Spielern",
+			"A von 7.-8. Minute mit 5/1 Spielern, 8.-10. Minute mit 4/1 Spielern, 10.-11. Minute mit 5/1 Spielern",
+			"A von 7.-8. Minute mit 5/1 Spielern, 8.-11. Minute mit 4/1 Spielern, 11.-12. Minute mit 5/1 Spielern",
 			"A von 7.-8. Minute mit 4/1 Spielern, 8.-10. Minute mit 3/1 Spielern, 10.-11. Minute mit 4/1 Spielern",
 			"A von 7.-8. Minute mit 4/1 Spielern, 8.-10. Minute mit 2/1 Spielern, 10.-11 Minute mit 4/1 Spielern"
 		],
@@ -3672,7 +3672,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 302,
-		text: "Haben die Schiedsrichter einen Verstoß gegen das Auswechselraum-Reglement nicht bemerkt, müssen sie von Zeitnehmer/Sekretär...",
+		text: "Haben die Schiedsrichter einen Verstoß gegen das AuswechselraumReglement nicht bemerkt, müssen sie von Zeitnehmer/Sekretär...",
 		answers: [
 			"sofort",
 			"bei der nächsten Spielunterbrechung darauf aufmerksam gemacht werden."
@@ -3682,7 +3682,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 303,
-		text: "Nach einer Abwehr durch Torwart A rollt der Ball entlang der Seitenlinie an der Aus-wechselbank von A vorbei. Der auf der Bank sitzende A5 hält den Fuß ins Spielfeld und stoppt den Ball, damit A4 den Ball noch vor der Seitenlinie aufnehmen kann. Rich-tige Entscheidung?",
+		text: "Nach einer Abwehr durch Torwart A rollt der Ball entlang der Seitenlinie an der Auswechselbank von A vorbei. Der auf der Bank sitzende A5 hält den Fuß ins Spielfeld und stoppt den Ball, damit A4 den Ball noch vor der Seitenlinie aufnehmen kann. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für B",
 			"Hinausstellung von A5",
@@ -3731,7 +3731,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 307,
-		text: "A7 will einen Freiwurf ausführen und steht wie seine Mitspieler korrekt vor der Frei-wurflinie. Der Freiwurf wird ohne Anpfiff schnell ausgeführt. Bevor jedoch der Ball die Hand von A7 verlassen hat, überschreiten A9 und A12 die Freiwurflinie in Richtung Kreisposition. Richtige Entscheidung?",
+		text: "A7 will einen Freiwurf ausführen und steht wie seine Mitspieler korrekt vor der Freiwurflinie. Der Freiwurf wird ohne Anpfiff schnell ausgeführt. Bevor jedoch der Ball die Hand von A7 verlassen hat, überschreiten A9 und A12 die Freiwurflinie in Richtung Kreisposition. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für B",
 			"Korrektur",
@@ -3760,14 +3760,14 @@ export const QUESTIONS: Question[] =
 			"Die Schiedsrichter warten zunächst die klare Torgelegenheit ab",
 			"Die Schiedsrichter unterbrechen das Spiel unverzüglich mit Time-out",
 			"Sobald die Hallenbeleuchtung wieder funktioniert, wird das Spiel mit Freiwurf für Mannschaft A wieder aufgenommen",
-			"Sobald die Hallenbeleuchtung wieder funktioniert, wird das Spiel mit 7-Meter-Wurf für Mann-schaft A wieder aufgenommen"
+			"Sobald die Hallenbeleuchtung wieder funktioniert, wird das Spiel mit 7-Meter-Wurf für Mannschaft A wieder aufgenommen"
 		],
 		correctAnswers: [1, 3],
 		ruleReferences: ["14:1c", "Erläuterung 2a"]
 	},
 	{
 		id: 310,
-		text: "Wenn der Delegierte aufgrund eines Verstoßes durch eine Mannschaft eine sofortige Unterbrechung des Spiels für erforderlich hält, wird das Spiel anschließend mit Ball-besitz für die nicht fehlbare Mannschaft fortgesetzt?",
+		text: "Wenn der Delegierte aufgrund eines Verstoßes durch eine Mannschaft eine sofortige Unterbrechung des Spiels für erforderlich hält, wird das Spiel anschließend mit Ballbesitz für die nicht fehlbare Mannschaft fortgesetzt?",
 		answers: [
 			"Ja",
 			"Nein"
@@ -3777,7 +3777,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 311,
-		text: "Der Trainer von A hat bereits eine Verwarnung und eine Hinausstellung erhalten. Da das Spielprotokoll nur 10 Spieler seiner Mannschaft ausweist, lässt er sich als Spieler nachtragen. Kurz nach dem Betreten der Spielfläche reklamiert er erneut gegen eine Entscheidung. Gegen Spieler von A waren bis dahin noch keine Strafen ausgespro-chen worden. Richtige Entscheidung?",
+		text: "Der Trainer von A hat bereits eine Verwarnung und eine Hinausstellung erhalten. Da das Spielprotokoll nur 10 Spieler seiner Mannschaft ausweist, lässt er sich als Spieler nachtragen. Kurz nach dem Betreten der Spielfläche reklamiert er erneut gegen eine Entscheidung. Gegen Spieler von A waren bis dahin noch keine Strafen ausgesprochen worden. Richtige Entscheidung?",
 		answers: [
 			"Verwarnung",
 			"Hinausstellung",
@@ -3812,7 +3812,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 314,
-		text: "Der Mannschaftsverantwortliche A hat bereits auf der Auswechselbank eine Verwar-nung erhalten. Er verlässt den Auswechselbereich, setzt sich auf die Tribüne und pro-testiert von dort aus weiter gegen Schiedsrichterentscheidungen. Richtige Entschei-dung?",
+		text: "Der Mannschaftsverantwortliche A hat bereits auf der Auswechselbank eine Verwarnung erhalten. Er verlässt den Auswechselbereich, setzt sich auf die Tribüne und protestiert von dort aus weiter gegen Schiedsrichterentscheidungen. Richtige Entscheidung?",
 		answers: [
 			"Keine Entscheidung möglich",
 			"Hinausstellung",
@@ -3823,7 +3823,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 315,
-		text: "A9 wirft auf das Tor. Torwart B1 wehrt ab, der Ball rollt in Richtung Spielfeld, wo ein Spieler von A zur Annahme bereit ist. Da sich der Torwart bei der Abwehraktion ver-letzt hat, unterbricht der Schiedsrichter das Spiel, als der Ball noch im Torraum Rich-tung Spielfeld rollt. Richtige Entscheidung?",
+		text: "A9 wirft auf das Tor. Torwart B1 wehrt ab, der Ball rollt in Richtung Spielfeld, wo ein Spieler von A zur Annahme bereit ist. Da sich der Torwart bei der Abwehraktion verletzt hat, unterbricht der Schiedsrichter das Spiel, als der Ball noch im Torraum Richtung Spielfeld rollt. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für A",
 			"Abwurf für B",
@@ -3834,7 +3834,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 316,
-		text: "Spieler B4 steht korrekt zur Ausführung eines Einwurfs bereit. Da er gerade keinen anspielbaren Mitspieler sieht, prellt er den Ball einmal im Spielfeld auf. Richtige Ent-scheidung?",
+		text: "Spieler B4 steht korrekt zur Ausführung eines Einwurfs bereit. Da er gerade keinen anspielbaren Mitspieler sieht, prellt er den Ball einmal im Spielfeld auf. Richtige Entscheidung?",
 		answers: [
 			"Freiwurf für Mannschaft A ohne Anpfiff",
 			"Einwurf für Mannschaft A mit Anpfiff",
@@ -3871,7 +3871,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 319,
-		text: "Verwarnung von B6. Beim Anpfiff zum folgenden Freiwurf für A übersieht der Feld-schiedsrichter A11, der sich zwischen Freiwurf- und Torraumlinie befindet. A11 erhält den Ball und hat eine klare Torgelegenheit. Der Torschiedsrichter hat die Situation er-kannt. Richtige Entscheidung?",
+		text: "Verwarnung von B6. Beim Anpfiff zum folgenden Freiwurf für A übersieht der Feldschiedsrichter A11, der sich zwischen Freiwurf- und Torraumlinie befindet. A11 erhält den Ball und hat eine klare Torgelegenheit. Der Torschiedsrichter hat die Situation erkannt. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"Wiederholung des Freiwurfs nach Korrektur und Anpfiff",
@@ -3896,7 +3896,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 321,
-		text: "A5 verpasst ein Zuspiel. Er läuft dem Ball nach und kann ihn vor dem Überqueren der Seitenlinie stoppen. Er selbst gelangt anschließend über die Seitenlinie. Richtige Ent-scheidung?",
+		text: "A5 verpasst ein Zuspiel. Er läuft dem Ball nach und kann ihn vor dem Überqueren der Seitenlinie stoppen. Er selbst gelangt anschließend über die Seitenlinie. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen",
 			"Freiwurf für B",
@@ -3924,7 +3924,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Alle Mitspieler des Werfers müssen sich außerhalb der Freiwurflinie des Gegners befinden",
 			"Alle Mitspieler des Werfers müssen sich in der eigenen Spielfeldhälfte aufhalten",
-			"Die Gegner müssen mindestens 3 Meter vom Werfer entfernt bzw. an der Torraumlinie ste-hen",
+			"Die Gegner müssen mindestens 3 Meter vom Werfer entfernt bzw. an der Torraumlinie stehen",
 			"Alle Mitspieler müssen mindestens 3 Meter vom Werfer entfernt stehen",
 			"Alle Mitspieler dürfen beim Werfer an der Freiwurflinie des Gegners stehen"
 		],
@@ -3933,21 +3933,21 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 324,
-		text: "A7 passt den Ball zu A8. In diesem Moment gibt der Zeitnehmer das Signal zum Team- Time-out für Mannschaft A. Die Schiedsrichter und die Spieler hören dieses Signal nicht und A8 spielt den Ball zu Außenspieler A10. Dieser hat eine klare Torgelegenheit, wird aber von B5 regelwidrig behindert. Die Schiedsrichter entscheiden auf 7-Meter-Wurf und Hinausstellung gegen B5. Jetzt erst nehmen die Schiedsrichter wahr, dass der Zeitnehmer das Signal zum Team Time-out gegeben hatte. Richtige Entscheidung?",
+		text: "A7 passt den Ball zu A8. In diesem Moment gibt der Zeitnehmer das Signal zum Team-Time-out für Mannschaft A. Die Schiedsrichter und die Spieler hören dieses Signal nicht und A8 spielt den Ball zu Außenspieler A10. Dieser hat eine klare Torgelegenheit, wird aber von B5 regelwidrig behindert. Die Schiedsrichter entscheiden auf 7-Meter-Wurf und Hinausstellung gegen B5. Jetzt erst nehmen die Schiedsrichter wahr, dass der Zeitnehmer das Signal zum Team Time-out gegeben hatte. Richtige Entscheidung?",
 		answers: [
 			"7-Meter-Wurf für A",
 			"Hinausstellung B5",
 			"Team Time-out für A",
 			"Abwurf für B",
 			"Anpfiff",
-			"Spielfortsetzung mit Freiwurf für A an der Position, an welcher sich A7 zum Zeitpunkt der Un-terbrechung befand"
+			"Spielfortsetzung mit Freiwurf für A an der Position, an welcher sich A7 zum Zeitpunkt der Unterbrechung befand"
 		],
 		correctAnswers: [1, 2, 4, 5],
 		ruleReferences: ["2:9", "2:9 Kommentar", "13:4a", "Erläuterung 3", "10. Absatz", "15:5b"]
 	},
 	{
 		id: 325,
-		text: "Mannschaft A erhält einen Freiwurf, den A9 sehr schnell (ohne Anpfiff ) im Sprung ausführt. Der Ball gelangt zu A4, der sich völlig frei vor dem Tor von B befindet. Rich-tige Entscheidung?",
+		text: "Mannschaft A erhält einen Freiwurf, den A9 sehr schnell (ohne Anpfiff ) im Sprung ausführt. Der Ball gelangt zu A4, der sich völlig frei vor dem Tor von B befindet. Richtige Entscheidung?",
 		answers: [
 			"Weiterspielen lassen b) Freiwurf gegen A c) Korrektur des Freiwurfs für A mit Anpfiff"
 		],
@@ -3965,7 +3965,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 327,
-		text: "Torwart A12 läuft aus seinem Torraum dem Gegenstoß laufenden Spieler B99 entge-gen. A12 erreicht B99 seitlich und hält ihn fest, wobei B99 den Ball fangen kann und diesen ins leere Tor wirft. Entscheidungen?",
+		text: "Torwart A12 läuft aus seinem Torraum dem Gegenstoß laufenden Spieler B99 entgegen. A12 erreicht B99 seitlich und hält ihn fest, wobei B99 den Ball fangen kann und diesen ins leere Tor wirft. Entscheidungen?",
 		answers: [
 			"Anwurf",
 			"Time-out",
@@ -3978,7 +3978,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 328,
-		text: "Torwart A16 spielt einen langen Pass zu dem Gegenstoß laufenden Mitspieler A4. A4 springt, erreicht den Ball und stößt mit dem Torwart B1 zusammen, welcher seinen Torraum verlassen hatte, um den Gegenstoß zu verhindern. Im Augenblick des Zu-sammenpralls steht B1 an der9m Linie. Nach dem Zusammenprall verliert A4 die Körperkotrolle und fällt zu Boden. Entscheidung?",
+		text: "Torwart A16 spielt einen langen Pass zu dem Gegenstoß laufenden Mitspieler A4. A4 springt, erreicht den Ball und stößt mit dem Torwart B1 zusammen, welcher seinen Torraum verlassen hatte, um den Gegenstoß zu verhindern. Im Augenblick des Zusammenpralls steht B1 an der9m Linie. Nach dem Zusammenprall verliert A4 die Körperkotrolle und fällt zu Boden. Entscheidung?",
 		answers: [
 			"Stürmerfoul – Freiwurf für B",
 			"Freiwurf für A",
@@ -4002,7 +4002,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 330,
-		text: "Spielzeit: 43:27 – Spielunterbrechung durch den Zeitnehmer nach Torerfolg A15 und nach Anwurf. Er teilt den Schiedsrichtern mit, dass Spieler A15 nicht im Spielproto-koll aufgeführt ist. Im Spielprotokoll sind bereits 14 Spieler für Mannschaft A einge-tragen. Die Schiedsrichter stellen fest, dass der Spieler A11 gar nicht anwesend ist. Entscheidung?",
+		text: "Spielzeit: 43:27 – Spielunterbrechung durch den Zeitnehmer nach Torerfolg A15 und nach Anwurf. Er teilt den Schiedsrichtern mit, dass Spieler A15 nicht im Spielprotokoll aufgeführt ist. Im Spielprotokoll sind bereits 14 Spieler für Mannschaft A eingetragen. Die Schiedsrichter stellen fest, dass der Spieler A11 gar nicht anwesend ist. Entscheidung?",
 		answers: [
 			"Tor wird annulliert.",
 			"Tor zählt.",
@@ -4021,7 +4021,7 @@ export const QUESTIONS: Question[] =
 			"Ein Spieler spuckt einen Gegner an.",
 			"Ein Offizieller versucht, seine Mannschaft zu beeinflussen, das Spiel abzubrechen.",
 			"Wenn ein 7-m-Werfer den Kopf des Torwarts trifft, wobei der Torwart seinen Kopf nicht Richtung Ball bewegt.",
-			"Nach einer Schiedsrichterentscheidung wirft ein Spieler den Ball demonstrativ auf die Tri-büne.",
+			"Nach einer Schiedsrichterentscheidung wirft ein Spieler den Ball demonstrativ auf die Tribüne.",
 			"Ein Spieler spuckt außerhalb der Spielfläche auf einen Zuschauer (und trifft ihn).",
 			"Ein Spieler schlägt absichtlich einen Gegenspieler in den Magen."
 		],
@@ -4030,7 +4030,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 332,
-		text: "Spieler A15 blockt einen Pass von B12, danach rollt der Ball am Boden, A15 und B12-werfen sich nach dem Ball, A15 bekommt den Ball und rutscht den Boden entlang, er steht auf, macht 3 Schritte, spielt den Ball zu einem Mitspieler, dieser erzielt ein Tor. Richtige Entscheidung?",
+		text: "Spieler A15 blockt einen Pass von B12, danach rollt der Ball am Boden, A15 und B12 werfen sich nach dem Ball, A15 bekommt den Ball und rutscht den Boden entlang, er steht auf, macht 3 Schritte, spielt den Ball zu einem Mitspieler, dieser erzielt ein Tor. Richtige Entscheidung?",
 		answers: [
 			"Tor für Mannschaft A",
 			"Freiwurf für Mannschaft B"
@@ -4040,22 +4040,22 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 333,
-		text: "Ein Spieler liegt anscheinend verletzt auf der Spielfläche am Boden. Welche der fol-genden Aussagen sind korrekt?",
+		text: "Ein Spieler liegt anscheinend verletzt auf der Spielfläche am Boden. Welche der folgenden Aussagen sind korrekt?",
 		answers: [
-			"Wenn der Schiedsrichter absolut überzeugt ist, dass der Spieler medizinische Hilfe auf der Spielfläche benötigt, zeigt er sofort Handzeichen 15 und 16 (Time-Out, Erlaubnis zum Be-treten der Spielfläche für zwei Personen dieses Teams).",
+			"Wenn der Schiedsrichter absolut überzeugt ist, dass der Spieler medizinische Hilfe auf der Spielfläche benötigt, zeigt er sofort Handzeichen 15 und 16 (Time-Out, Erlaubnis zum Betreten der Spielfläche für zwei Personen dieses Teams).",
 			"Das Team kann die medizinische Hilfe auf der Spielfläche verweigern",
 			"Verweigert das Team die medizinische Hilfe auf der Spielfläche, wird der Physiotherapeut progressiv bestraft.",
-			"Verweigert das Team die medizinische Hilfe auf der Spielfläche, wird der Mannschaftsver-antwortliche progressiv bestraft."
+			"Verweigert das Team die medizinische Hilfe auf der Spielfläche, wird der Mannschaftsverantwortliche progressiv bestraft."
 		],
 		correctAnswers: [0, 3],
 		ruleReferences: ["Erläuterung 8a"]
 	},
 	{
 		id: 334,
-		text: "Ein Spieler liegt anscheinend verletzt auf der Spielfläche am Boden. Welche der fol-genden Aussagen sind korrekt?",
+		text: "Ein Spieler liegt anscheinend verletzt auf der Spielfläche am Boden. Welche der folgenden Aussagen sind korrekt?",
 		answers: [
-			"Wenn der Schiedsrichter nicht sicher ist, ob der Spieler medizinische Hilfe auf der Spielflä-che benötigt, fragt er den Spieler, ob er medizinische Hilfe auf der Spielfläche benötige.",
-			"Wenn der Schiedsrichter erkennt, dass der Spieler keine medizinische Hilfe auf der Spiel-fläche benötigt, fordert er den Spieler auf, aufzustehen und sich im Auswechselraum be-handeln zu lassen.",
+			"Wenn der Schiedsrichter nicht sicher ist, ob der Spieler medizinische Hilfe auf der Spielfläche benötigt, fragt er den Spieler, ob er medizinische Hilfe auf der Spielfläche benötige.",
+			"Wenn der Schiedsrichter erkennt, dass der Spieler keine medizinische Hilfe auf der Spielfläche benötigt, fordert er den Spieler auf, aufzustehen und sich im Auswechselraum behandeln zu lassen.",
 			"Wenn der Spieler die Spielfläche nach dieser Aufforderung nicht umgehend verlässt, ist er progressiv zu bestrafen.",
 			"Wenn der Spieler die Spielfläche nach dieser Aufforderung nicht umgehend verlässt, ist der Mannschaftsverantwortliche progressiv zu bestrafen."
 		],
@@ -4067,10 +4067,10 @@ export const QUESTIONS: Question[] =
 		text: "Ein Spieler wurde auf der Spielfläche mit Erlaubnis des Schiedsrichters behandelt, nachdem er sich ohne gegnerische Einwirkung verletzt hatte. Welche der folgenden Aussagen sind korrekt?",
 		answers: [
 			"Nach der Behandlung muss der Spieler die Spielfläche verlassen.",
-			"Nach der Behandlung muss der Spieler die Spielfläche verlassen, wenn er nicht sofort wei-terspielen kann.",
+			"Nach der Behandlung muss der Spieler die Spielfläche verlassen, wenn er nicht sofort weiterspielen kann.",
 			"Nach der Behandlung kann der Spieler erst auf die Spielfläche zurückkehren, wenn sein Team drei Angriffe abgeschlossen hat.",
-			"Nach der Behandlung kann der Spieler erst nach 2 Minuten auf die Spielfläche zurückkeh-ren.",
-			"Delegierte/Zeitnehmer/Sekretär kontrollieren, dass der Spieler nicht zu früh auf die Spielflä-che zurückkehrt."
+			"Nach der Behandlung kann der Spieler erst nach 2 Minuten auf die Spielfläche zurückkehren.",
+			"Delegierte/Zeitnehmer/Sekretär kontrollieren, dass der Spieler nicht zu früh auf die Spielfläche zurückkehrt."
 		],
 		correctAnswers: [0, 2, 4],
 		ruleReferences: ["4:11", "Erläuterung 8b"]
@@ -4079,10 +4079,10 @@ export const QUESTIONS: Question[] =
 		id: 336,
 		text: "Ein Spieler wurde auf der Spielfläche mit Erlaubnis des Schiedsrichters behandelt, nachdem er sich verletzt hatte. Welche der folgenden Aussagen sind korrekt?",
 		answers: [
-			"Wenn die Mannschaft, deren Spieler behandelt wurde, im Ballbesitz ist, zählt die Wieder-aufnahme des Spiels als erster Angriff.",
+			"Wenn die Mannschaft, deren Spieler behandelt wurde, im Ballbesitz ist, zählt die Wiederaufnahme des Spiels als erster Angriff.",
 			"Betritt der verletzte Spieler das Spielfeld zu früh, ist er wegen Wechselfehlers zu bestrafen.",
-			"Der auf der Spielfläche behandelte Spieler muss diese nicht verlassen, wenn die Behand-lung die Folge eines Fouls ist, für das ein Gegenspieler progressiv bestraft wurde.",
-			"Der auf der Spielfläche behandelte Spieler muss diese nicht verlassen, wenn die Behand-lung die Folge eines Fouls ist und die Schiedsrichter dafür einen Freiwurf oder einen 7m-Wurf gepfiffen haben."
+			"Der auf der Spielfläche behandelte Spieler muss diese nicht verlassen, wenn die Behandlung die Folge eines Fouls ist, für das ein Gegenspieler progressiv bestraft wurde.",
+			"Der auf der Spielfläche behandelte Spieler muss diese nicht verlassen, wenn die Behandlung die Folge eines Fouls ist und die Schiedsrichter dafür einen Freiwurf oder einen 7m-Wurf gepfiffen haben."
 		],
 		correctAnswers: [0, 1, 2],
 		ruleReferences: ["4:11", "Erläuterung 8b", "c"]
@@ -4092,8 +4092,8 @@ export const QUESTIONS: Question[] =
 		text: "Ein Spieler wurde auf der Spielfläche mit Erlaubnis des Schiedsrichters behandelt, nachdem er sich verletzt hatte. Welche der folgenden Aussagen sind korrekt?",
 		answers: [
 			"Der auf der Spielfläche behandelte Torwart muss diese nicht verlassen.",
-			"Der auf der Spielfläche behandelte Torwart muss diese nicht verlassen, wenn die Behand-lung erfolgte, weil er von einem Ball am Kopf getroffen wurde.",
-			"Der auf der Spielfläche behandelte Feldspieler muss diese nicht verlassen, wenn die Be-handlung erfolgte, weil er von einem Ball am Kopf getroffen wurde.",
+			"Der auf der Spielfläche behandelte Torwart muss diese nicht verlassen, wenn die Behandlung erfolgte, weil er von einem Ball am Kopf getroffen wurde.",
+			"Der auf der Spielfläche behandelte Feldspieler muss diese nicht verlassen, wenn die Behandlung erfolgte, weil er von einem Ball am Kopf getroffen wurde.",
 			"Der auf der Spielfläche behandelte Abwehrspieler muss diese nicht verlassen, wenn die Behandlung erfolgte, nachdem die Schiedsrichter auf Stürmerfoul entschieden hatten."
 		],
 		correctAnswers: [1],
@@ -4103,9 +4103,9 @@ export const QUESTIONS: Question[] =
 		id: 338,
 		text: "Ein Spieler wurde auf der Spielfläche mit Erlaubnis des Schiedsrichters behandelt, nachdem er sich verletzt hatte. Welche der folgenden Aussagen sind korrekt?",
 		answers: [
-			"Wenn der Spieler am Ende der ersten Halbzeit zwei Angriffe ausgesetzt hat, darf er zu Be-ginn der zweiten Hälfte wieder eingesetzt werden.",
-			"Wenn der Spieler am Ende der ersten Halbzeit zwei Angriffe ausgesetzt hat, darf er zu Be-ginn der zweiten Hälfte wieder eingesetzt werden – aber nur, wenn seine Mannschaft An-spiel hat.",
-			"Die „Auszeit“ des gepflegten Spielers wird am Tisch mit einer weißen Karte mit Spieler-nummer angezeigt. Diese wird nach drei Angriffen entfernt.",
+			"Wenn der Spieler am Ende der ersten Halbzeit zwei Angriffe ausgesetzt hat, darf er zu Beginn der zweiten Hälfte wieder eingesetzt werden.",
+			"Wenn der Spieler am Ende der ersten Halbzeit zwei Angriffe ausgesetzt hat, darf er zu Beginn der zweiten Hälfte wieder eingesetzt werden – aber nur, wenn seine Mannschaft Anspiel hat.",
+			"Die „Auszeit“ des gepflegten Spielers wird am Tisch mit einer weißen Karte mit Spielernummer angezeigt. Diese wird nach drei Angriffen entfernt.",
 			"Erhält der Spieler zusammen mit seiner Behandlung eine 2-Minuten-Strafe, kann er nach Ablauf dieser Zeit unabhängig von der Anzahl gespielter Angriffe wieder eingesetzt werden."
 		],
 		correctAnswers: [0, 2, 3],
@@ -4128,7 +4128,7 @@ export const QUESTIONS: Question[] =
 		id: 340,
 		text: "Nach dem Anzeigen des Vorwarnzeichens für passives Spiel sind folgende Aussagen korrekt:",
 		answers: [
-			"Erhält das gegnerische Team eine progressive Strafe, wird das Vorwarnzeichen aufgeho-ben.",
+			"Erhält das gegnerische Team eine progressive Strafe, wird das Vorwarnzeichen aufgehoben.",
 			"Wird dem angreifenden Team ein Freiwurf zugesprochen, beginnt das Zählen der Pässe bei Null.",
 			"Wird ein Wurfversuch durch die abwehrende Mannschaft geblockt und der Ball gelangt zum angreifenden Team zurück, wird das Vorwarnzeichen aufgehoben.",
 			"Wird ein Wurfversuch durch die abwehrende Mannschaft geblockt und der Ball gelangt zum angreifenden Team zurück, beginnt das Zählen der Pässe bei Null.",
@@ -4144,7 +4144,7 @@ export const QUESTIONS: Question[] =
 			"Begeht die abwehrende Mannschaft beim Wurfversuch nach dem 6. Pass des Gegners ein Foul, muss dieser den Freiwurf direkt ausführen.",
 			"Begeht die abwehrende Mannschaft beim Wurfversuch nach dem 6. Pass des Gegners ein Foul, wird diesem ein zusätzlicher Pass zugesprochen.",
 			"Unterbindet die abwehrende Mannschaft durch ständige Regelwidrigkeiten das Passspiel, ist sie sofort wegen unsportlichem Verhalten zu bestrafen.",
-			"Unterbindet die abwehrende Mannschaft durch progressive Regelwidrigkeiten das Pass-spiel, ist sie konsequent progressiv zu bestrafen.",
+			"Unterbindet die abwehrende Mannschaft durch progressive Regelwidrigkeiten das Passspiel, ist sie konsequent progressiv zu bestrafen.",
 			"Falsches Zählen der Pässe ist ein Tatsachenentscheid."
 		],
 		correctAnswers: [1, 3, 4],
@@ -4155,7 +4155,7 @@ export const QUESTIONS: Question[] =
 		text: "Nach dem Zeigen des Vorwarnzeichens sind folgende Aussagen korrekt:",
 		answers: [
 			"Wird das versuchte Zuspiel durch ein Foul verhindert, zählt diese Aktion nicht als Pass.",
-			"Wird das versuchte Zuspiel durch einen Abwehrspieler ins Seiten-oder Toraus gelenkt, zählt diese Aktion nicht als Pass.",
+			"Wird das versuchte Zuspiel durch einen Abwehrspieler ins Seiten- oder Toraus gelenkt, zählt diese Aktion nicht als Pass.",
 			"Wird der Wurfversuch nach dem 6. Pass durch einen Abwehrspieler geblockt und gelangt zur angreifenden Mannschaft zurück, muss die Mannschaft nach Ballkontrolle direkt aufs Tor werfen.",
 			"Wird der Wurfversuch nach dem 6. Pass durch einen Abwehrspieler geblockt und gelangt zur angreifenden Mannschaft zurück, darf die Mannschaft noch einen Pass spielen."
 		],
@@ -4181,9 +4181,9 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Die besonderen Vorschriften gelten für die letzten 30 Sekunden.",
 			"Die „letzten 30 Sekunden“ gibt es sowohl in der regulären Spielzeit (Ende der 2. Halbzeit) als auch in den zweiten Halbzeiten von Verlängerungen.",
-			"Wird ein Abwehrspieler für ein Vergehen nach Regel 8:5 disqualifiziert, hat dies in den letz-ten 30 Sekunden einen schriftlichen Bericht zur Folge.",
-			"Wird ein Abwehrspieler für ein Vergehen nach Regel 8:5 disqualifiziert, hat dies in den letz-ten 30 Sekunden einen 7m-Wurf für die gegnerische Mannschaft zur Folge.",
-			"Wird ein Abwehrspieler für ein Vergehen nach Regel 8:6 disqualifiziert, hat dies in den letz-ten 30 Sekunden einen 7m-Wurf für die gegnerische Mannschaft und einen schriftlichen Be-richt zur Folge."
+			"Wird ein Abwehrspieler für ein Vergehen nach Regel 8:5 disqualifiziert, hat dies in den letzten 30 Sekunden einen schriftlichen Bericht zur Folge.",
+			"Wird ein Abwehrspieler für ein Vergehen nach Regel 8:5 disqualifiziert, hat dies in den letzten 30 Sekunden einen 7m-Wurf für die gegnerische Mannschaft zur Folge.",
+			"Wird ein Abwehrspieler für ein Vergehen nach Regel 8:6 disqualifiziert, hat dies in den letzten 30 Sekunden einen 7m-Wurf für die gegnerische Mannschaft und einen schriftlichen Bericht zur Folge."
 		],
 		correctAnswers: [0, 1, 3, 4],
 		ruleReferences: ["8:6", "8:6 Kommentar", "8:10d", "Guidelines"]
@@ -4207,7 +4207,7 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Die letzten 30 Sekunden beginnen, wenn die Uhr 59:30 zeigt.",
 			"Die letzten 30 Sekunden beginnen, wenn die Uhr 59:31 zeigt.",
-			"Die besonderen Vorschriften sind auch anwendbar, wenn das Vergehen durch einen Offizi-ellen erfolgt.",
+			"Die besonderen Vorschriften sind auch anwendbar, wenn das Vergehen durch einen Offiziellen erfolgt.",
 			"Die besonderen Vorschriften sind auch anwendbar, wenn ein Spieler der abwehrenden Mannschaft in den letzten 30 Sekunden ein „2-Minuten-Foul“ begeht.",
 			"Die besonderen Vorschriften gelten nur, wenn das Vergehen in den letzten 30 Sekunden erfolgte."
 		],
@@ -4229,7 +4229,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 348,
-		text: "Spielzeit 59:35. B4 stößt A6 im Gegenstoß von hinten. Bevor A6 die Körperkontrolle verliert, ist er in der Lage, den Ball zu spielen. Korrekte Entscheidung in den folgen-den Situationen:",
+		text: "Spielzeit 59:35. B4 stößt A6 im Gegenstoß von hinten. Bevor A6 die Körperkontrolle verliert, ist er in der Lage, den Ball zu spielen. Korrekte Entscheidung in den folgenden Situationen:",
 		answers: [
 			"A6 wirft ein Tor: Tor, kein 7m-Wurf, Rote Karte gegen B4.",
 			"A6 wirft ein Tor: Tor, zusätzlich 7m-Wurf, Rote Karte gegen B4.",
@@ -4246,7 +4246,7 @@ export const QUESTIONS: Question[] =
 		text: "Spielzeit 59:40. B4 stößt A6 im Gegenstoß von hinten. Bevor A6 die Körperkontrolle verliert, ist er in der Lage, den Ball A7 zuzuspielen. Welche Aussagen zur Anwendung der Vorteilsbestimmung treffen zu:",
 		answers: [
 			"Die Vorteilsbestimmungen werden nicht angewendet.",
-			"Der Schiedsrichter entscheidet nur dann auf Vorteil, wenn A7 eine klare Torgelegenheit be-sitzt.",
+			"Der Schiedsrichter entscheidet nur dann auf Vorteil, wenn A7 eine klare Torgelegenheit besitzt.",
 			"Der Schiedsrichter entscheidet in jedem Fall auf Vorteil.",
 			"Der Schiedsrichter entscheidet auch auf Vorteil, wenn der Ball von A7 zu A8 weiter gespielt wird."
 		],
@@ -4257,11 +4257,11 @@ export const QUESTIONS: Question[] =
 		id: 350,
 		text: "Für welche Vergehen wird in den letzten 30 Sekunden ein 7m-Wurf angeordnet?",
 		answers: [
-			"Der Abwehrspieler verhindert regelwidrig, dass der Gegner den Ball zum Anwurfpunkt spie-len kann.",
+			"Der Abwehrspieler verhindert regelwidrig, dass der Gegner den Ball zum Anwurfpunkt spielen kann.",
 			"Ein Spieler legt nach einem geahndeten Stürmerfoul den Ball nicht sofort nieder.",
 			"Der Delegierte pfeift wegen eines Wechselfehlers der abwehrenden Mannschaft, was zur Folge hat, dass der Abwurf nicht sofort ausgeführt werden kann.",
 			"Der Delegierte pfeift, weil ein Offizieller der abwehrenden Mannschaft, einen Ball auf die Spielfläche rollt, was zur Folge hat, dass der Einwurf nicht sofort ausgeführt werden kann.",
-			"Die SR haben Time-Out gegeben. Vor dem Wiederanpfiff hält ein Abwehrspieler den Ab-stand nicht ein."
+			"Die SR haben Time-Out gegeben. Vor dem Wiederanpfiff hält ein Abwehrspieler den Abstand nicht ein."
 		],
 		correctAnswers: [0, 1, 2, 3],
 		ruleReferences: ["8:10c", "Guidelines"]
@@ -4281,7 +4281,7 @@ export const QUESTIONS: Question[] =
 	},
 	{
 		id: 352,
-		text: "Team B spielt mit 7 Feldspielern und ohne Torwart. B7 verliert den Ball und A5 wirft auf das leere Tor. B6 betritt den Torraum und verhindert ein Tor. Welche der folgen-den Aussagen sind korrekt?",
+		text: "Team B spielt mit 7 Feldspielern und ohne Torwart. B7 verliert den Ball und A5 wirft auf das leere Tor. B6 betritt den Torraum und verhindert ein Tor. Welche der folgenden Aussagen sind korrekt?",
 		answers: [
 			"Der Wurf auf das leere Tor ist eine klare Torchance.",
 			"7m-Wurf für Team A.",
@@ -4297,7 +4297,7 @@ export const QUESTIONS: Question[] =
 		text: "Team B spielt mit 7 Feldspielern und ohne Torwart. Team A verfehlt mit einem Wurf das leere Tor. Welche der folgenden Aussagen sind korrekt?",
 		answers: [
 			"Der Abwurf kann durch einen der 7 Feldspieler ausgeführt werden.",
-			"Wenn einer der 7 Feldspieler den Torraum betritt und den Abwurf ausführt, wird er progres-siv bestraft.",
+			"Wenn einer der 7 Feldspieler den Torraum betritt und den Abwurf ausführt, wird er progressiv bestraft.",
 			"Wenn einer der 7 Feldspieler versucht, den Abwurf auszuführen, gibt der Schiedsrichter wenn nötig Time-Out.",
 			"Wenn einer der 7 Feldspieler versucht, den Abwurf auszuführen, gibt der Schiedsrichter zwingend Time-Out.",
 			"Einer der 7 Feldspieler muss sich gegen einen Torwart auswechseln lassen."
@@ -4322,11 +4322,11 @@ export const QUESTIONS: Question[] =
 		id: 355,
 		text: "Welche der folgenden Regelauslegungen zu Ausrüstungsgegenständen sind korrekt:",
 		answers: [
-			"Ein Helm zum Schutz des Kopfes ist erlaubt, wenn er aus weichem, ungefährlichem Materi-al besteht.",
-			"Ein Helm zum Schutz des Kopfes ist für den Torwart erlaubt, wenn er aus weichem, unge-fährlichem Material besteht.",
+			"Ein Helm zum Schutz des Kopfes ist erlaubt, wenn er aus weichem, ungefährlichem Material besteht.",
+			"Ein Helm zum Schutz des Kopfes ist für den Torwart erlaubt, wenn er aus weichem, ungefährlichem Material besteht.",
 			"Ein Helm zum Schutz des Kopfes ist mit ärztlichem Attest erlaubt, wenn er aus weichem, ungefährlichem Material besteht.",
 			"Eine Maske zum Schutz des Gesichts ist erlaubt, wenn sie aus weichem, ungefährlichem Material besteht.",
-			"Eine Maske zum Schutz des Gesichts ist erlaubt, wenn sie nur einen Teil des Gesichts ab-deckt und aus weichem, ungefährlichem Material besteht.",
+			"Eine Maske zum Schutz des Gesichts ist erlaubt, wenn sie nur einen Teil des Gesichts abdeckt und aus weichem, ungefährlichem Material besteht.",
 			"Das Tapen des Nasenbeins ist erlaubt, sofern davon keine Gefährdung ausgeht."
 		],
 		correctAnswers: [5],
@@ -4365,14 +4365,14 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Nur, wenn seine Mannschaft vor Ende der Verlängerung drei Angriffe abgeschlossen hat.",
 			"Nein, in keinem Fall.",
-			"Ja, sofern am Ende der Verlängerung keine Strafe gegen ihn läuft. Die Anzahl abgeschlossener An-griffe ist unerheblich."
+			"Ja, sofern am Ende der Verlängerung keine Strafe gegen ihn läuft. Die Anzahl abgeschlossener Angriffe ist unerheblich."
 		],
 		correctAnswers: [2],
 		ruleReferences: ["4:11", "Erläuterung 8"]
 	},
 	{
 		id: 359,
-		text: "Spielzeit 59:50. Mannschaft A möchte ein schnelles Anspiel ausführen. A6 will den Ball nach dem Anpfiff des Schiedsrichters ungehindert zu A7 werfen. Sein Pass wird aber von B5 abge-fangen, der den Abstand zu A6 nach dem Anpfiff des Schiedsrichters auf 2m verkürzt hat. Entscheidung?",
+		text: "Spielzeit 59:50. Mannschaft A möchte ein schnelles Anspiel ausführen. A6 will den Ball nach dem Anpfiff des Schiedsrichters ungehindert zu A7 werfen. Sein Pass wird aber von B5 abgefangen, der den Abstand zu A6 nach dem Anpfiff des Schiedsrichters auf 2m verkürzt hat. Entscheidung?",
 		answers: [
 			"7m für Mannschaft A",
 			"Freiwurf für Mannschaft A",
