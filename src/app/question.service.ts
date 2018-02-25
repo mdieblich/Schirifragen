@@ -18,14 +18,14 @@ export class QuestionService {
   constructor() { }
 
   getQuestion(id: number): Observable<Question>{
-    return of(QUESTIONS.find(question => question.id == id))/*.delay(250)*/;
+    return of(QUESTIONS.find(question => question.id == id)).delay(250);
   }
 
   getMaxId(): Observable<number> {
     if(this.maxId){
       return of(this.maxId);
     }
-    const maxIdObservable: Observable<number> = of(QUESTIONS.length)/*.delay(250)*/;
+    const maxIdObservable: Observable<number> = of(QUESTIONS.length).delay(250);
     maxIdObservable.subscribe(maxId => this.maxId = maxId);
     return maxIdObservable;
   }
