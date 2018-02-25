@@ -66,7 +66,7 @@ import { QuestionListComponent } from './question-list/question-list.component';
     MatListModule,
     MatDividerModule,
 
-    NgbModule,  // Bootstrap
+    NgbModule.forRoot(),  // Bootstrap
 
     AppRoutingModule
   ],
