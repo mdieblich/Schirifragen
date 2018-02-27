@@ -1,23 +1,20 @@
-<div class="container">
-  <div class="row">
-    <div *ngIf="!finished" class="col-12">&nbsp;</div>
-    <div *ngIf="finished" class="col-1 center-text">Lösung</div>
-  </div>
+<table class="table table-hover">
+  <tbody>
+    <tr 
+    class="{{finished?(selectedAnswers[i]==correctAnswers[i]?'table-success':'table-danger'):'table-default'}}" 
+    *ngFor="let answer of question.answers; let i = index" 
+    (click)="selectedAnswers[i]=finished?selectedAnswers[i]:!selectedAnswers[i]">
+      <td>
+        <input type="checkbox" [(ngModel)]="selectedAnswers[i]" [disabled]="finished"/>
+      </td>
+      <td>
+        {{answer}}
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-  <app-answer *ngFor="let answer of question.answers; let i = index" [finished]="finished" [correctAnswer]="correctAnswers[i]"
-    [(selectedAnswer)]="selectedAnswers[i]" [i]="i" [answer]="answer">
-  </app-answer>
-
-  <div class="row justify-content-start rule-reference">
-    <div class="col-1 center-text">
-      <button mat-button disabled>
-        {{finished?"Regeln:":"&nbsp;"}}
-      </button>
-    </div>
-    <div class="col-1" *ngFor="let rule of question.ruleReferences">
-      <button *ngIf="finished" mat-button color="accent">
-        {{rule}}
-      </button>
-    </div>
-  </div>
-</div>
+<ol class="breadcrumb" *ngIf="finished">
+  <li class="breadcrumb-item">Regeln</li>
+  <li class="breadcrumb-item" *ngFor="let rule of question.ruleReferences"><a href="#">{{rule}}</a></li>
+</ol>
