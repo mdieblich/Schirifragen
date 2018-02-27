@@ -1194,7 +1194,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation von A7"
 		],
 		correctAnswers: [2, 3],
-		ruleReferences: ["2:4", "8:10a", "16:6b", "", "14:1a"]
+		ruleReferences: ["2:4", "8:10a", "16:6b", "14:1a"]
 	},
 	{
 		id: 100,
@@ -1722,9 +1722,9 @@ export const QUESTIONS: Question[] =
 		answers: [
 			"Verwarnung",
 			"Keine Strafe",
-			"3.Hinausstellung und Disqualifikation"
+			"3.Hinausstellung und Disqualifikation",
 		],
-		correctAnswers: [3],
+		correctAnswers: [2],
 		ruleReferences: ["15:4", "15:9", "8:7c", "16:3d", "16:5 16:6d"]
 	},
 	{
