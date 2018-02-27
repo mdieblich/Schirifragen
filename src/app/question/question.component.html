@@ -9,31 +9,17 @@
   </div>
 </div>
 
-<mat-card class="question-card">
+<app-answer-list 
+*ngIf="question"
+[finished]="finished"
+[question]="question"
+[(selectedAnswers)]="selectedAnswers"
+></app-answer-list>
 
-  <mat-card-header>
-    <div mat-card-avatar>
-      <button mat-fab disabled class="question-number">
-        <span *ngIf="!id">?</span>
-        <span *ngIf="id">{{id}}</span>
-      </button>
-    </div>
-    <mat-card-title class="question-text">
-      <span *ngIf="!question">&nbsp;
-        <br>&nbsp;</span>
-      <span *ngIf="question">{{question.text}}</span>
-    </mat-card-title>
-  </mat-card-header>
+<mat-card class="question-card">
 
   <mat-card-content>
     <mat-progress-bar mode="buffer" *ngIf="!question"></mat-progress-bar>
-
-    <app-answer-list 
-      *ngIf="question"
-      [finished]="finished"
-      [question]="question"
-      [(selectedAnswers)]="selectedAnswers"
-      ></app-answer-list>
   </mat-card-content>
 
   <mat-card-actions class="question-actions">
