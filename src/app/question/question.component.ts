@@ -114,6 +114,7 @@ export class QuestionComponent implements OnInit {
   }
 
   clear(): void {
+    window.scrollTo(0,0);
     this.id = undefined;
     this.location.go("/question");
 
