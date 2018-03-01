@@ -5,11 +5,23 @@
   <div class="card-body">
     <p class="card-text">
       {{correctAnswers}} korrekte Fragen von {{totalAnswers}} Fragen
-      <app-score-progress-bar [value]="correctAnswers" [max]="totalAnswers" thresholdGood="0.8" thresholdBad="0.5">{{correctAnswers}}</app-score-progress-bar>
+      <app-score-progress-bar 
+        [value]="correctAnswers" 
+        [max]="totalAnswers" 
+        thresholdGood="0.8" 
+        thresholdBad="0.5">
+        {{correctAnswers}}
+      </app-score-progress-bar>
     </p>
     <p class="card-text">
       {{totalScore | points }} von max. {{totalAnswers}} Punkten
-      <app-score-progress-bar [value]="totalScore" [max]="totalAnswers" thresholdGood="0.9" thresholdBad="0.7">{{totalScore | points}}</app-score-progress-bar>
+      <app-score-progress-bar 
+        [value]="totalScore" 
+        [max]="totalAnswers" 
+        thresholdGood="0.9" 
+        thresholdBad="0.7">
+        {{totalScore | points}}
+      </app-score-progress-bar>
     </p>
   </div>
 </div>
@@ -18,54 +30,37 @@
   <div class="card-header">
     Regelverständnis
   </div>
-  <div class="card-body">
-    <p class="card-text">
-      tja...
-    </p>
+  <div class="card-body p-1">
+    Die 5 Regeln mit den meisten falsch beantworteten Fragen
+    <div id="accordion">
+      <div class="card" *ngFor="let ruleUnderstanding of ruleUnderstandings; let i = index">
+        <div class="card-header" (click)="show(i)">
+          <!-- <h5 class="mb-0" > -->
+            <!-- <button class="btn btn-link" > -->
+                Regel {{ruleUnderstanding.rule.paragraph}}
+            <!-- </button> -->
+          <!-- </h5> -->
+        </div>
+        <div class="card-body" *ngIf="visibleRule == i">
+          <!-- <app-score-progress-bar 
+            class="m-5" 
+            [value]="ruleUnderstanding.correctQuestions.length" 
+            [max]="ruleUnderstanding.wrongQuestions.length+ruleUnderstanding.correctQuestions.length" 
+            thresholdGood="0.8" 
+            thresholdBad="0.5">
+            {{ruleUnderstanding.correctQuestions.length}}
+          </app-score-progress-bar> -->
+          {{ruleUnderstanding.wrongQuestions.length}} falsche beantwortete Frage(n)    
+          <ul>
+            <li *ngFor="let wrongQuestion of ruleUnderstanding.wrongQuestions">Frage {{wrongQuestion.id}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <app-score-progress-bar class="m-5" [value]="loadedQuestions" [max]="totalAnswers" thresholdGood="0.8" thresholdBad="0.5">{{loadedQuestions}}</app-score-progress-bar>
-
-
-<mat-expansion-panel class="main-accordion" *ngIf="ruleUnderstandings">
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      Regelverständnis
-    </mat-panel-title>
-    <mat-panel-description>
-      welche Regel wie gut
-    </mat-panel-description>
-  </mat-expansion-panel-header>
-
-
-  <mat-expansion-panel class="main-accordion" *ngFor="let ruleUnderstanding of ruleUnderstandings">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Regel {{ruleUnderstanding.rule.paragraph}}
-      </mat-panel-title>
-      <mat-panel-description>
-        {{ruleUnderstanding.wrongQuestions.length}} falsche beantwortete Frage(n)
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-
-    <div *ngIf="ruleUnderstanding.wrongQuestions.length>0">
-      Falsch beantwortet: ({{ruleUnderstanding.wrongQuestions.length}})
-      <ul>
-        <li *ngFor="let wrongQuestion of ruleUnderstanding.wrongQuestions">Frage {{wrongQuestion.id}}</li>
-      </ul>
-    </div>
-    <div *ngIf="ruleUnderstanding.correctQuestions.length>0">
-      Richtig beantwortet: ({{ruleUnderstanding.correctQuestions.length}})
-      <ul>
-        <li *ngFor="let correctQuestion of ruleUnderstanding.correctQuestions">Frage {{correctQuestion.id}}</li>
-      </ul>
-    </div>
-
-  </mat-expansion-panel>
-
-</mat-expansion-panel>
-
 
 <mat-expansion-panel class="main-accordion">
   <mat-expansion-panel-header>

@@ -25,6 +25,8 @@ export class AnalysisComponent implements OnInit {
 
   ruleUnderstandings: RuleUnderstanding[];
 
+  visibleRule: number = 0;
+
   constructor(
     private questionService: QuestionService,
     private userService: UserService
@@ -63,7 +65,12 @@ export class AnalysisComponent implements OnInit {
     let ruleMap = new RuleUnderstandingMap();
     ruleMap.addCorrectQuestions(this.correctQuestions);
     ruleMap.addWrongQuestions(this.wrongQuestions);
-    this.ruleUnderstandings = ruleMap.getOrderedRuleUnderstandings();
+    this.ruleUnderstandings = ruleMap.getOrderedRuleUnderstandings().slice(0,5);
+  }
+
+  show(row: number){
+    console.log(row);
+    this.visibleRule = row;
   }
 
 }
