@@ -1,29 +1,21 @@
-<mat-expansion-panel class="main-accordion">
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      Zusammenfassung
-    </mat-panel-title>
-    <mat-panel-description>
-      der letzten {{totalAnswers}} Fragen
-    </mat-panel-description>
-
-  </mat-expansion-panel-header>
-
-  <mat-grid-list cols="2" rowHeight="50px">
-    <mat-grid-tile>
+<div class="card">
+  <div class="card-header">
+    Zusammenfassung
+  </div>
+  <div class="card-body">
+    <p class="card-text">
       {{correctAnswers}} korrekte Fragen von {{totalAnswers}} Fragen
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-progress-bar class="col-10" [value]="100*correctAnswers/totalAnswers" mode="determinate" color="warn"></mat-progress-bar>
-    </mat-grid-tile>
-    <mat-grid-tile>
+      <ngb-progressbar [type]="(correctAnswers/totalAnswers>=0.8)?'success':((correctAnswers/totalAnswers>=0.5)?'warning':'danger')" [value]="correctAnswers" [max]="totalAnswers">{{correctAnswers}}</ngb-progressbar>
+    </p>
+    <p class="card-text">
       {{totalScore | points }} von max. {{totalAnswers}} Punkten
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-progress-bar class="col-10" [value]="100*totalScore/totalAnswers" mode="determinate" color="warn"></mat-progress-bar>
-    </mat-grid-tile>
-  </mat-grid-list>
-</mat-expansion-panel>
+      <ngb-progressbar [type]="(totalScore/totalAnswers>=0.9)?'success':((totalScore/totalAnswers>=0.7)?'warning':'danger')" [value]="totalScore" [max]="totalAnswers">{{totalScore| points }}</ngb-progressbar>
+    </p>
+  </div>
+</div>
+
+Laden der Fragen...
+<ngb-progressbar [type]="(loadedQuestions/totalAnswers>=0.8)?'success':((loadedQuestions/totalAnswers>=0.5)?'warning':'danger')" [value]="loadedQuestions" [max]="totalAnswers">{{loadedQuestions}}</ngb-progressbar>
 
 
 <mat-expansion-panel class="main-accordion" *ngIf="ruleUnderstandings">
