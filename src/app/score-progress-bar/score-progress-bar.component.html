@@ -1,0 +1,6 @@
+<ngb-progressbar 
+  [type]="(value/max>=thresholdGood)?'success':((value/max<thresholdBad)?'danger':'warning')" 
+  [value]="value" 
+  [max]="max">
+  <ng-content></ng-content>
+</ngb-progressbar>

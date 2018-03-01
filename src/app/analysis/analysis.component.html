@@ -1,21 +1,31 @@
-<div class="card">
+<div class="card m-1">
   <div class="card-header">
     Zusammenfassung
   </div>
   <div class="card-body">
     <p class="card-text">
       {{correctAnswers}} korrekte Fragen von {{totalAnswers}} Fragen
-      <ngb-progressbar [type]="(correctAnswers/totalAnswers>=0.8)?'success':((correctAnswers/totalAnswers>=0.5)?'warning':'danger')" [value]="correctAnswers" [max]="totalAnswers">{{correctAnswers}}</ngb-progressbar>
+      <app-score-progress-bar [value]="correctAnswers" [max]="totalAnswers" thresholdGood="0.8" thresholdBad="0.5">{{correctAnswers}}</app-score-progress-bar>
     </p>
     <p class="card-text">
       {{totalScore | points }} von max. {{totalAnswers}} Punkten
-      <ngb-progressbar [type]="(totalScore/totalAnswers>=0.9)?'success':((totalScore/totalAnswers>=0.7)?'warning':'danger')" [value]="totalScore" [max]="totalAnswers">{{totalScore| points }}</ngb-progressbar>
+      <app-score-progress-bar [value]="totalScore" [max]="totalAnswers" thresholdGood="0.9" thresholdBad="0.7">{{totalScore | points}}</app-score-progress-bar>
     </p>
   </div>
 </div>
 
-Laden der Fragen...
-<ngb-progressbar [type]="(loadedQuestions/totalAnswers>=0.8)?'success':((loadedQuestions/totalAnswers>=0.5)?'warning':'danger')" [value]="loadedQuestions" [max]="totalAnswers">{{loadedQuestions}}</ngb-progressbar>
+<div class="card m-1">
+  <div class="card-header">
+    Regelverständnis
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      tja...
+    </p>
+  </div>
+</div>
+
+<app-score-progress-bar class="m-5" [value]="loadedQuestions" [max]="totalAnswers" thresholdGood="0.8" thresholdBad="0.5">{{loadedQuestions}}</app-score-progress-bar>
 
 
 <mat-expansion-panel class="main-accordion" *ngIf="ruleUnderstandings">

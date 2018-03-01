@@ -36,6 +36,7 @@ import { UserService } from './user.service';
 import { AnswerComponent } from './answer/answer.component';
 import { AnswerListComponent } from './answer-list/answer-list.component';
 import { QuestionListComponent } from './question-list/question-list.component';
+import { ScoreProgressBarComponent } from './score-progress-bar/score-progress-bar.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { QuestionListComponent } from './question-list/question-list.component';
     AnalysisComponent,
     AnswerComponent,
     AnswerListComponent,
-    QuestionListComponent
+    QuestionListComponent,
+    ScoreProgressBarComponent
   ],
   imports: [
     BrowserModule,
