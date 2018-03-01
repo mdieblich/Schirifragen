@@ -1725,7 +1725,7 @@ export const QUESTIONS: Question[] =
 			"3.Hinausstellung und Disqualifikation",
 		],
 		correctAnswers: [2],
-		ruleReferences: ["15:4", "15:9", "8:7c", "16:3d", "16:5 16:6d"]
+		ruleReferences: ["15:4", "15:9", "8:7c", "16:3d", "16:5", "16:6d"]
 	},
 	{
 		id: 144,
@@ -1845,7 +1845,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation von B5, B spielt für 2 Minuten mit 4 Feldspielern. Schriftlicher Bericht"
 		],
 		correctAnswers: [0, 1],
-		ruleReferences: ["4:5", "8:10a 16:3a", "16:6d", "16:9b"]
+		ruleReferences: ["4:5", "8:10a", "16:3a", "16:6d", "16:9b"]
 	},
 	{
 		id: 154,
