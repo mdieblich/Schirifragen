@@ -18,7 +18,8 @@ export class QuestionService {
   constructor() { }
 
   getQuestion(id: number): Observable<Question>{
-    return of(QUESTIONS.find(question => question.id == id)).delay(250);
+    const delay = Math.floor((Math.random() * 2500) + 100);
+    return of(QUESTIONS.find(question => question.id == id)).delay(delay);
   }
 
   getMaxId(): Observable<number> {
