@@ -129,7 +129,7 @@ export const QUESTIONS: Question[] =
 			"Der erstgenannte Schiedsrichter"
 		],
 		correctAnswers: [2],
-		ruleReferences: ["2:2", "Kommentar"]
+		ruleReferences: ["2:2 Kommentar"]
 	},
 	{
 		id: 12,
@@ -300,7 +300,7 @@ export const QUESTIONS: Question[] =
 			"Hinausstellung von A9"
 		],
 		correctAnswers: [0, 3],
-		ruleReferences: ["16:3a", "4:5", "13:3", "Erläuterung 7"]
+		ruleReferences: ["4:5", "13:3", "16:3a", "Erläuterung 7"]
 	},
 	{
 		id: 26,
@@ -373,7 +373,7 @@ export const QUESTIONS: Question[] =
 			"Hinausstellung des Spielers und Reduzierung seiner Mannschaft für 2 Minuten"
 		],
 		correctAnswers: [3],
-		ruleReferences: ["16:3a", "4:4", "4:6"]
+		ruleReferences: ["4:4", "4:6", "16:3a"]
 	},
 	{
 		id: 32,
@@ -619,7 +619,7 @@ export const QUESTIONS: Question[] =
 			"7-Meter, Disqualifikation von A2 und weitere Reduzierung der Mannschaft für den Rest der Hinausstellungszeit von A2; schriftlicher Bericht"
 		],
 		correctAnswers: [3],
-		ruleReferences: ["4:6", "14:1a", "8:10b", "16:6b", "16:8"]
+		ruleReferences: ["4:6", "8:10b", "14:1a", "16:6b", "16:8"]
 	},
 	{
 		id: 52,
@@ -894,7 +894,7 @@ export const QUESTIONS: Question[] =
 			"Einwurf für B"
 		],
 		correctAnswers: [1],
-		ruleReferences: ["7:7", "7:3", "7:4"]
+		ruleReferences: ["7:3", "7:4", "7:7"]
 	},
 	{
 		id: 75,
@@ -1095,7 +1095,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation von B12, schriftlicher Bericht"
 		],
 		correctAnswers: [1, 2],
-		ruleReferences: ["8:5 Kommentar", "16:6a", "14:1a", "Erläuterung 6b"]
+		ruleReferences: ["14:1a", "8:5 Kommentar", "16:6a", "Erläuterung 6b"]
 	},
 	{
 		id: 92,
@@ -1158,7 +1158,7 @@ export const QUESTIONS: Question[] =
 			"7-Meter-Wurf für A"
 		],
 		correctAnswers: [1, 4],
-		ruleReferences: ["8:4b", "16:3c", "14:1a"]
+		ruleReferences: ["8:4b", "14:1a", "16:3c"]
 	},
 	{
 		id: 97,
@@ -1194,7 +1194,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation von A7"
 		],
 		correctAnswers: [2, 3],
-		ruleReferences: ["2:4", "8:10a", "16:6b", "14:1a"]
+		ruleReferences: ["2:4", "8:10a", "14:1a", "16:6b"]
 	},
 	{
 		id: 100,
@@ -1218,7 +1218,7 @@ export const QUESTIONS: Question[] =
 			"Abwurf für B"
 		],
 		correctAnswers: [1],
-		ruleReferences: ["9:1", "7:8", "13:2"]
+		ruleReferences: ["7:8", "9:1", "13:2"]
 	},
 	{
 		id: 102,
@@ -1253,7 +1253,7 @@ export const QUESTIONS: Question[] =
 			"Abwurf für A"
 		],
 		correctAnswers: [2],
-		ruleReferences: ["9:1", "6:4", "12:1"]
+		ruleReferences: ["6:4", "9:1", "12:1"]
 	},
 	{
 		id: 105,
@@ -1289,7 +1289,7 @@ export const QUESTIONS: Question[] =
 			"Schriftlicher Bericht"
 		],
 		correctAnswers: [1, 3],
-		ruleReferences: ["9:1", "Kommentar"]
+		ruleReferences: ["9:1 Kommentar"]
 	},
 	{
 		id: 108,
@@ -1421,7 +1421,7 @@ export const QUESTIONS: Question[] =
 			"Freiwurf für A"
 		],
 		correctAnswers: [2],
-		ruleReferences: ["7:9", "15:2", "13:1a"]
+		ruleReferences: ["7:9", "13:1a", "15:2"]
 	},
 	{
 		id: 119,
@@ -1495,7 +1495,7 @@ export const QUESTIONS: Question[] =
 			"Time-out"
 		],
 		correctAnswers: [0, 1, 4],
-		ruleReferences: ["13:5", "15:5b", "8:8b", "16:3f"]
+		ruleReferences: ["8:8b", "13:5", "15:5b", "16:3f"]
 	},
 	{
 		id: 125,
@@ -1508,7 +1508,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation des Offiziellen mit schriftlichem Bericht"
 		],
 		correctAnswers: [0, 2, 4],
-		ruleReferences: ["2:8a", "14:1a", "8:10b", "16:6b"]
+		ruleReferences: ["2:8a", "8:10b", "14:1a", "16:6b"]
 	},
 	{
 		id: 126,
@@ -1520,7 +1520,7 @@ export const QUESTIONS: Question[] =
 			"Wiederholung und Verwarnung des fehlbaren Spielers"
 		],
 		correctAnswers: [2],
-		ruleReferences: ["13:1a 14:7", "15:7"]
+		ruleReferences: ["13:1a", "14:7", "15:7"]
 	},
 	{
 		id: 127,
@@ -1533,7 +1533,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation des Offiziellen von B, schriftlicher Bericht"
 		],
 		correctAnswers: [1, 4],
-		ruleReferences: ["14:1a", "8:10b", "16:6b"]
+		ruleReferences: ["8:10b", "14:1a", "16:6b"]
 	},
 	{
 		id: 128,
@@ -1545,7 +1545,7 @@ export const QUESTIONS: Question[] =
 			"7-Meter-Wurf für A"
 		],
 		correctAnswers: [0, 3],
-		ruleReferences: ["4:5", "14:1a", "16:3a; Erläuterung 7"]
+		ruleReferences: ["4:5", "14:1a", "16:3a Erläuterung 7"]
 	},
 	{
 		id: 129,
@@ -1557,7 +1557,7 @@ export const QUESTIONS: Question[] =
 			"Progressive Strafe gegen B7"
 		],
 		correctAnswers: [0, 3],
-		ruleReferences: ["6:2c", "14:1a", "8:7f", "16:1b"]
+		ruleReferences: ["6:2c", "8:7f", "14:1a", "16:1b"]
 	},
 	{
 		id: 130,
@@ -1580,7 +1580,7 @@ export const QUESTIONS: Question[] =
 			"Abwurf für B"
 		],
 		correctAnswers: [2],
-		ruleReferences: ["6:4", "14:7", "13:2", "12:1"]
+		ruleReferences: ["6:4", "14:7", "12:1", "13:2"]
 	},
 	{
 		id: 132,
@@ -1604,7 +1604,7 @@ export const QUESTIONS: Question[] =
 			"Time out"
 		],
 		correctAnswers: [0],
-		ruleReferences: ["8:1a", "7:4"]
+		ruleReferences: ["7:4", "8:1a"]
 	},
 	{
 		id: 134,
@@ -1616,7 +1616,7 @@ export const QUESTIONS: Question[] =
 			"Verwarnung des Torwarts A1"
 		],
 		correctAnswers: [0],
-		ruleReferences: ["12:1", "5:10"]
+		ruleReferences: ["5:10", "12:1"]
 	},
 	{
 		id: 135,
@@ -1725,7 +1725,7 @@ export const QUESTIONS: Question[] =
 			"3.Hinausstellung und Disqualifikation",
 		],
 		correctAnswers: [2],
-		ruleReferences: ["15:4", "15:9", "8:7c", "16:3d", "16:5", "16:6d"]
+		ruleReferences: ["8:7c", "15:4", "15:9", "16:3d", "16:5", "16:6d"]
 	},
 	{
 		id: 144,
@@ -1762,7 +1762,7 @@ export const QUESTIONS: Question[] =
 			"Freiwurf für A an der Stelle, wo der Ball sich befindet"
 		],
 		correctAnswers: [1, 3],
-		ruleReferences: ["13:5", "13:6 Kommentar", "8:8b", "16:3f"]
+		ruleReferences: ["8:8b", "13:5", "13:6 Kommentar", "16:3f"]
 	},
 	{
 		id: 147,
@@ -1774,7 +1774,7 @@ export const QUESTIONS: Question[] =
 			"Freiwurf für B"
 		],
 		correctAnswers: [0, 3],
-		ruleReferences: ["13:5", "8:8b", "16:3f"]
+		ruleReferences: ["8:8b", "13:5", "16:3f"]
 	},
 	{
 		id: 148,
@@ -1822,7 +1822,7 @@ export const QUESTIONS: Question[] =
 			"Wenn er den Ball bei einer Freiwurfentscheidung gegen seine Mannschaft nicht sofort niederlegt"
 		],
 		correctAnswers: [0],
-		ruleReferences: ["8:7e", "4:6", "8:8b", "8:9", "16:6b"]
+		ruleReferences: ["4:6", "8:7e", "8:8b", "8:9", "16:6b"]
 	},
 	{
 		id: 152,
@@ -1834,7 +1834,7 @@ export const QUESTIONS: Question[] =
 			"Freiwurf für B"
 		],
 		correctAnswers: [1, 3],
-		ruleReferences: ["8:5", "16:6a", "Erläuterung 6", "13:1b"]
+		ruleReferences: ["8:5", "13:1b", "16:6a", "Erläuterung 6"]
 	},
 	{
 		id: 153,
@@ -1870,7 +1870,7 @@ export const QUESTIONS: Question[] =
 			"Ein Spieler bespuckt außerhalb der Spielfläche einen Zuschauer"
 		],
 		correctAnswers: [1, 4],
-		ruleReferences: ["16:6b", "8:10"]
+		ruleReferences: ["8:10", "16:6b"]
 	},
 	{
 		id: 156,
@@ -2012,7 +2012,7 @@ export const QUESTIONS: Question[] =
 			"A7 wird nur ermahnt, weil das Spiel unterbrochen ist"
 		],
 		correctAnswers: [0],
-		ruleReferences: ["16:10", "8:6", "16:6a", "17:10"]
+		ruleReferences: ["8:6", "16:6a", "16:10", "17:10"]
 	},
 	{
 		id: 168,
@@ -2024,7 +2024,7 @@ export const QUESTIONS: Question[] =
 			"Schriftlicher Bericht"
 		],
 		correctAnswers: [0, 2, 3],
-		ruleReferences: ["16:10", "8:10a", "16:6b", "17:10"]
+		ruleReferences: ["8:10a", "16:6b", "16:10", "17:10"]
 	},
 	{
 		id: 169,
@@ -2035,7 +2035,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation von A9, A beginnt die 2. Halbzeit mit 6 Feldspielern"
 		],
 		correctAnswers: [1],
-		ruleReferences: ["16:10", "8:9", "16:6b"]
+		ruleReferences: ["8:9", "16:6b", "16:10"]
 	},
 	{
 		id: 170,
@@ -2059,7 +2059,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation von Trainer B, Spielfortsetzung B in der 2. Halbzeit mit 6/1 Spielern"
 		],
 		correctAnswers: [0, 1],
-		ruleReferences: ["8:10a", "16:10", "16:6"]
+		ruleReferences: ["8:10a", "16:6", "16:10"]
 	},
 	{
 		id: 172,
@@ -2123,7 +2123,7 @@ export const QUESTIONS: Question[] =
 			"Jede progressive Bestrafung in der letzten Spielminute, falls die Aktion beabsichtigt, dem Gegner die Chance zu nehmen, in eine Torwurfsituation zu kommen."
 		],
 		correctAnswers: [4],
-		ruleReferences: ["17:10", "16:6", "8:5", "8:10c", "8:10d"]
+		ruleReferences: ["8:5", "8:10c", "8:10d", "16:6", "17:10"]
 	},
 	{
 		id: 177,
@@ -2158,7 +2158,7 @@ export const QUESTIONS: Question[] =
 			"Time out"
 		],
 		correctAnswers: [2, 3],
-		ruleReferences: ["13", "4b", "Erläuterung 2"]
+		ruleReferences: ["4b", "13", "Erläuterung 2"]
 	},
 	{
 		id: 180,
@@ -2182,7 +2182,7 @@ export const QUESTIONS: Question[] =
 			"Abwurf für B"
 		],
 		correctAnswers: [0],
-		ruleReferences: ["14:1a", "6:2c", "Erläuterung 6"]
+		ruleReferences: ["6:2c", "14:1a", "Erläuterung 6"]
 	},
 	{
 		id: 182,
@@ -2195,7 +2195,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation von B5, schriftlicher Bericht"
 		],
 		correctAnswers: [0, 2],
-		ruleReferences: ["8:5", "16:6a", "13:1b"]
+		ruleReferences: ["8:5", "13:1b", "16:6a"]
 	},
 	{
 		id: 183,
@@ -2207,7 +2207,7 @@ export const QUESTIONS: Question[] =
 			"Weiterspielen lassen"
 		],
 		correctAnswers: [2],
-		ruleReferences: ["7:10", "13:1a", "8:1c"]
+		ruleReferences: ["7:10", "8:1c", "13:1a"]
 	},
 	{
 		id: 184,
@@ -2232,7 +2232,7 @@ export const QUESTIONS: Question[] =
 			"Verwarnung von A5 und Freiwurf für B an der Stelle, wo auf Freiwurf erkannt worden war"
 		],
 		correctAnswers: [2],
-		ruleReferences: ["13:5", "13:6 Kommentar", "8.8b", "16:3f"]
+		ruleReferences: ["8.8b", "13:5", "13:6 Kommentar", "16:3f"]
 	},
 	{
 		id: 186,
@@ -2244,7 +2244,7 @@ export const QUESTIONS: Question[] =
 			"Schriftlicher Bericht"
 		],
 		correctAnswers: [0, 3],
-		ruleReferences: ["8:6b", "16:6a", "16:8", "13:3"]
+		ruleReferences: ["8:6b", "13:3", "16:6a", "16:8"]
 	},
 	{
 		id: 187,
@@ -2267,7 +2267,7 @@ export const QUESTIONS: Question[] =
 			"Wenn die Abwehrspieler beim Freiwurf oder Einwurf an der eigenen Torraumlinie stehen"
 		],
 		correctAnswers: [1, 2],
-		ruleReferences: ["15:4", "11:5", "13", "8"]
+		ruleReferences: ["8", "11:5", "13", "15:4"]
 	},
 	{
 		id: 189,
@@ -2280,7 +2280,7 @@ export const QUESTIONS: Question[] =
 			"Der Torwart verlässt den Torraum und kommt in Ballbesitz, verursacht aber einen Zusammenprall mit dem Gegenspieler"
 		],
 		correctAnswers: [1, 2, 3, 4],
-		ruleReferences: ["16:3e", "8:5a", "8:9d", "8:9a", "8:5"]
+		ruleReferences: ["8:5", "8:5a", "8:9a", "8:9d", "16:3e"]
 	},
 	{
 		id: 190,
@@ -2292,7 +2292,7 @@ export const QUESTIONS: Question[] =
 			"Freiwurf gegen A"
 		],
 		correctAnswers: [3],
-		ruleReferences: ["15:7", "13:7"]
+		ruleReferences: ["13:7", "15:7"]
 	},
 	{
 		id: 191,
@@ -2305,7 +2305,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation von B3 ohne schriftlichen Bericht"
 		],
 		correctAnswers: [0, 1, 3],
-		ruleReferences: ["8:6a", "16:6a", "2:8a", "17:2", "17:10"]
+		ruleReferences: ["2:8a", "8:6a", "16:6a", "17:2", "17:10"]
 	},
 	{
 		id: 192,
@@ -2317,7 +2317,7 @@ export const QUESTIONS: Question[] =
 			"dem Versuch eines Torwarts, einen Wechsel vorzunehmen, wenn der Werfer zum 7-Meter-Wurf bereit ist"
 		],
 		correctAnswers: [0, 1, 3],
-		ruleReferences: ["8:3", "8:7c", "8:8b", "16:1b", "14:10", "16:3d"]
+		ruleReferences: ["8:3", "8:7c", "8:8b", "14:10", "16:1b", "16:3d"]
 	},
 	{
 		id: 193,
@@ -2353,7 +2353,7 @@ export const QUESTIONS: Question[] =
 			"Spielfortsetzung mit Freiwurf für A an der 9-Meter-Linie von B"
 		],
 		correctAnswers: [1, 3],
-		ruleReferences: ["13:6", "8:10a", "16:6b", "Erläuterung 7.B.b", "Auswechselraum-Reglement 5"]
+		ruleReferences: ["8:10a", "13:6", "16:6b", "Erläuterung 7.B.b", "Auswechselraum-Reglement 5"]
 	},
 	{
 		id: 196,
@@ -2463,7 +2463,7 @@ export const QUESTIONS: Question[] =
 			"Eine arglistige Aktion, die ohne jeglichen Bezug zu einer Spielhandlung erfolgt"
 		],
 		correctAnswers: [0, 1, 3],
-		ruleReferences: ["8:5", "8:9f", "8:6"]
+		ruleReferences: ["8:5", "8:6", "8:9f"]
 	},
 	{
 		id: 205,
@@ -2512,7 +2512,7 @@ export const QUESTIONS: Question[] =
 			"Freiwurf für A"
 		],
 		correctAnswers: [0, 1, 2],
-		ruleReferences: ["15:9", "16:1b", "2:8", "Erläuterung 2c", "8:7c"]
+		ruleReferences: ["2:8", "8:7c", "15:9", "16:1b", "Erläuterung 2c"]
 	},
 	{
 		id: 209,
@@ -2642,7 +2642,7 @@ export const QUESTIONS: Question[] =
 			"Progressive Strafe für B3"
 		],
 		correctAnswers: [1, 2],
-		ruleReferences: ["14:1a", "Erläuterung 6a", "16:1b", "8:7f"]
+		ruleReferences: ["8:7f", "14:1a", "16:1b", "Erläuterung 6a"]
 	},
 	{
 		id: 220,
@@ -2656,7 +2656,7 @@ export const QUESTIONS: Question[] =
 			"Schriftlicher Bericht"
 		],
 		correctAnswers: [1, 3],
-		ruleReferences: ["10:3", "8:10c", "15:2", "16:6b"]
+		ruleReferences: ["8:10c", "10:3", "15:2", "16:6b"]
 	},
 	{
 		id: 221,
@@ -2781,7 +2781,7 @@ export const QUESTIONS: Question[] =
 			"Mannschaft A spielt bis 23:00 mit 4/1, dann bis 23:30 mit 5/1 Spielern"
 		],
 		correctAnswers: [0, 3],
-		ruleReferences: ["analog 4:6", "16:3d"]
+		ruleReferences: ["4:6", "16:3d"]
 	},
 	{
 		id: 231,
@@ -2831,7 +2831,7 @@ export const QUESTIONS: Question[] =
 			"Im Wiederholungsfall Hinausstellung gegen B6 oder B8"
 		],
 		correctAnswers: [0],
-		ruleReferences: ["7:12", "7:11", "Erläuterung 4.B.2"]
+		ruleReferences: ["7:11", "7:12", "Erläuterung 4.B.2"]
 	},
 	{
 		id: 235,
@@ -3064,7 +3064,7 @@ export const QUESTIONS: Question[] =
 			"Time out und anzeigen der blauen Karte"
 		],
 		correctAnswers: [2, 3],
-		ruleReferences: ["2:8", "8:7a", "8:10a 16:6b", "16:8", "Auswechselraum-Reglement 5"]
+		ruleReferences: ["2:8", "8:7a", "8:10a", "16:6b", "16:8", "Auswechselraum-Reglement 5"]
 	},
 	{
 		id: 253,
@@ -3088,7 +3088,7 @@ export const QUESTIONS: Question[] =
 			"Progressive Strafe gegen A9"
 		],
 		correctAnswers: [0, 2],
-		ruleReferences: ["9:1", "8:7e", "16:1b"]
+		ruleReferences: ["8:7e", "9:1", "16:1b"]
 	},
 	{
 		id: 255,
@@ -3188,7 +3188,7 @@ export const QUESTIONS: Question[] =
 			"Time-out"
 		],
 		correctAnswers: [1, 3, 4],
-		ruleReferences: ["12:2", "15:4", "15:9", "16:1b", "16:3d", "8:7c"]
+		ruleReferences: ["8:7c", "12:2", "15:4", "15:9", "16:1b", "16:3d"]
 	},
 	{
 		id: 263,
@@ -3222,7 +3222,7 @@ export const QUESTIONS: Question[] =
 			"2 Minuten + Disqualifikation von B8, Team B für 4 Minuten mit einem Spieler weniger"
 		],
 		correctAnswers: [1],
-		ruleReferences: ["16:9a", "8:7a", "16:3d"]
+		ruleReferences: ["8:7a", "16:3d", "16:9a"]
 	},
 	{
 		id: 266,
@@ -3468,7 +3468,7 @@ export const QUESTIONS: Question[] =
 			"Schriftlicher Bericht"
 		],
 		correctAnswers: [2],
-		ruleReferences: ["8:9; 16:6b"]
+		ruleReferences: ["8:9", "16:6b"]
 	},
 	{
 		id: 286,
@@ -3727,7 +3727,7 @@ export const QUESTIONS: Question[] =
 			"Freiwurf für A an der Freiwurflinie von B"
 		],
 		correctAnswers: [0, 2],
-		ruleReferences: ["13:6", "8:7", "Auswechselraum-Reglement 5+6"]
+		ruleReferences: ["8:7", "13:6", "Auswechselraum-Reglement 5+6"]
 	},
 	{
 		id: 307,
@@ -3796,7 +3796,7 @@ export const QUESTIONS: Question[] =
 			"Mannschaft B erhält ein Team-Time-out, sobald der Ball wieder ins Spiel gebracht ist"
 		],
 		correctAnswers: [0],
-		ruleReferences: ["2:8", "Erläuterung 3", "2:10"]
+		ruleReferences: ["2:8", "2:10", "Erläuterung 3"]
 	},
 	{
 		id: 313,
@@ -3808,7 +3808,7 @@ export const QUESTIONS: Question[] =
 			"Spielfortsetzung: Freiwurf für A"
 		],
 		correctAnswers: [0, 3],
-		ruleReferences: ["2:8", "Erläuterung 3", "2:9 Kommentar"]
+		ruleReferences: ["2:8", "2:9 Kommentar", "Erläuterung 3"]
 	},
 	{
 		id: 314,
@@ -3855,7 +3855,7 @@ export const QUESTIONS: Question[] =
 			"Schriftlicher Bericht"
 		],
 		correctAnswers: [1, 2, 4],
-		ruleReferences: ["2:4", "8:6 14:1a", "16:6a"]
+		ruleReferences: ["2:4", "8:6", "14:1a", "16:6a"]
 	},
 	{
 		id: 318,
@@ -3892,7 +3892,7 @@ export const QUESTIONS: Question[] =
 			"7-Meter-Wurf für A"
 		],
 		correctAnswers: [0, 1],
-		ruleReferences: ["8:5", "Erläuterung 6", "13:1b"]
+		ruleReferences: ["8:5", "13:1b", "Erläuterung 6"]
 	},
 	{
 		id: 321,
@@ -3943,7 +3943,7 @@ export const QUESTIONS: Question[] =
 			"Spielfortsetzung mit Freiwurf für A an der Position, an welcher sich A7 zum Zeitpunkt der Unterbrechung befand"
 		],
 		correctAnswers: [1, 2, 4, 5],
-		ruleReferences: ["2:9", "2:9 Kommentar", "13:4a", "Erläuterung 3", "10. Absatz", "15:5b"]
+		ruleReferences: ["2:9", "2:9 Kommentar", "13:4a", "15:5b", "Erläuterung 3, 10. Absatz"]
 	},
 	{
 		id: 325,
@@ -3987,7 +3987,7 @@ export const QUESTIONS: Question[] =
 			"Disqualifikation von B1"
 		],
 		correctAnswers: [2, 4],
-		ruleReferences: ["8:5 Kommentar", "16:6a", "14:1a", "Erläuterung 6c"]
+		ruleReferences: ["8:5 Kommentar", "14:1a", "16:6a", "Erläuterung 6c"]
 	},
 	{
 		id: 329,
@@ -4026,7 +4026,7 @@ export const QUESTIONS: Question[] =
 			"Ein Spieler schlägt absichtlich einen Gegenspieler in den Magen."
 		],
 		correctAnswers: [0, 1, 4, 5],
-		ruleReferences: ["8:9a und d. 8:10a"]
+		ruleReferences: ["8:9a", "8.9d", "8:10a"]
 	},
 	{
 		id: 332,
@@ -4085,7 +4085,7 @@ export const QUESTIONS: Question[] =
 			"Der auf der Spielfläche behandelte Spieler muss diese nicht verlassen, wenn die Behandlung die Folge eines Fouls ist und die Schiedsrichter dafür einen Freiwurf oder einen 7m-Wurf gepfiffen haben."
 		],
 		correctAnswers: [0, 1, 2],
-		ruleReferences: ["4:11", "Erläuterung 8b", "c"]
+		ruleReferences: ["4:11", "Erläuterung 8b", "Erläuterung 8c"]
 	},
 	{
 		id: 337,
@@ -4109,7 +4109,7 @@ export const QUESTIONS: Question[] =
 			"Erhält der Spieler zusammen mit seiner Behandlung eine 2-Minuten-Strafe, kann er nach Ablauf dieser Zeit unabhängig von der Anzahl gespielter Angriffe wieder eingesetzt werden."
 		],
 		correctAnswers: [0, 2, 3],
-		ruleReferences: ["4:11", "Erläuterung 8a", "b"]
+		ruleReferences: ["4:11", "Erläuterung 8a", "Erläuterung 8b"]
 	},
 	{
 		id: 339,
@@ -4135,7 +4135,7 @@ export const QUESTIONS: Question[] =
 			"Gelangt der Ball nach einem Wurfversuch vom Tor oder vom Torwart zur angreifenden Mannschaft zurück, wird das Vorwarnzeichen aufgehoben."
 		],
 		correctAnswers: [0, 4],
-		ruleReferences: ["Erläuterung 4C", "4D3a"]
+		ruleReferences: ["Erläuterung 4C", "Erläuterung 4D3a"]
 	},
 	{
 		id: 341,
@@ -4148,7 +4148,7 @@ export const QUESTIONS: Question[] =
 			"Falsches Zählen der Pässe ist ein Tatsachenentscheid."
 		],
 		correctAnswers: [1, 3, 4],
-		ruleReferences: ["7:12", "Erläuterung 4D2", "4D3b"]
+		ruleReferences: ["7:12", "Erläuterung 4D2", "Erläuterung 4D3b"]
 	},
 	{
 		id: 342,
@@ -4160,7 +4160,7 @@ export const QUESTIONS: Question[] =
 			"Wird der Wurfversuch nach dem 6. Pass durch einen Abwehrspieler geblockt und gelangt zur angreifenden Mannschaft zurück, darf die Mannschaft noch einen Pass spielen."
 		],
 		correctAnswers: [0, 1, 3],
-		ruleReferences: ["Erläuterung 4D", "4D3b"]
+		ruleReferences: ["Erläuterung 4D", "Erläuterung 4D3b"]
 	},
 	{
 		id: 343,
@@ -4225,7 +4225,7 @@ export const QUESTIONS: Question[] =
 			"Time-Out"
 		],
 		correctAnswers: [1, 3, 4],
-		ruleReferences: ["2.8", "8:6", "8:10d", "16:8"]
+		ruleReferences: ["2:8", "8:6", "8:10d", "16:8"]
 	},
 	{
 		id: 348,
@@ -4380,7 +4380,7 @@ export const QUESTIONS: Question[] =
 			"Progressive Bestrafung von B5"
 		],
 		correctAnswers: [1, 3],
-		ruleReferences: ["15:2", "8:7c"]
+		ruleReferences: ["8:7c", "15:2"]
 	},
 	{
 		id: 360,
