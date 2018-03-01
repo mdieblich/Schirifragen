@@ -16,5 +16,9 @@
 
 <ol class="breadcrumb" *ngIf="finished">
   <li class="breadcrumb-item">Regeln</li>
+  <!-- TODO: Popover für erste 50 Zeichen einer Regel  -->
   <li class="breadcrumb-item" *ngFor="let rule of question.ruleReferences"><a href="#">{{rule}}</a></li>
+</ol>
+<ol class="breadcrumb" *ngIf="!finished">
+  <li class="breadcrumb-item">Regeln</li>
 </ol>
