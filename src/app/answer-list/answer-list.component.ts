@@ -28,8 +28,11 @@ export class AnswerListComponent implements OnInit {
     });
 
   }
-  egal(): void {
-    console.log("egal");
+
+  toggle(i: number): void {
+    if(!this.finished){
+      this.selectedAnswers[i]=!this.selectedAnswers[i];
+    }
   }
 
 }
