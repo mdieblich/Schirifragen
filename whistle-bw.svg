@@ -15,7 +15,10 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    width="800"
-   height="800">
+   height="800"
+   inkscape:export-filename="E:\Programmieren\web\schirifragen\whistle-bw.png"
+   inkscape:export-xdpi="14.4"
+   inkscape:export-ydpi="14.4">
   <defs
      id="defs9" />
   <sodipodi:namedview
@@ -29,17 +32,21 @@
      inkscape:window-maximized="1"
      inkscape:zoom="0.28127723"
      inkscape:window-x="-8"
-     showgrid="false"
+     showgrid="true"
      borderopacity="1.0"
      inkscape:current-layer="g7804"
-     inkscape:cx="-527.06555"
+     inkscape:cx="-1303.8792"
      inkscape:cy="162.66135"
      fit-margin-top="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1920"
      inkscape:pageopacity="0.0"
-     inkscape:document-units="px" />
+     inkscape:document-units="px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4135" />
+  </sodipodi:namedview>
   <g
      id="layer1"
      inkscape:label="Layer 1"
@@ -48,6 +55,13 @@
     <g
        id="g7804"
        transform="translate(175,382.36)">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4137"
+         width="800"
+         height="800"
+         x="-195.552"
+         y="-408.23999" />
       <path
          id="polygon5"
          style="fill:#000000"
@@ -70,7 +84,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
