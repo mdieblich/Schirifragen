@@ -1,0 +1,61 @@
+{
+	"masterPicture": "whistle-bw.svg",
+	"iconsPath": "/",
+	"design": {
+		"ios": {
+			"pictureAspect": "backgroundAndMargin",
+			"backgroundColor": "#ffffff",
+			"margin": "14%",
+			"assets": {
+				"ios6AndPriorIcons": false,
+				"ios7AndLaterIcons": false,
+				"precomposedIcons": false,
+				"declareOnlyDefaultIcon": true
+			}
+		},
+		"desktopBrowser": {},
+		"windows": {
+			"pictureAspect": "noChange",
+			"backgroundColor": "#ffc40d",
+			"onConflict": "override",
+			"assets": {
+				"windows80Ie10Tile": false,
+				"windows10Ie11EdgeTiles": {
+					"small": false,
+					"medium": true,
+					"big": false,
+					"rectangle": false
+				}
+			}
+		},
+		"androidChrome": {
+			"pictureAspect": "backgroundAndMargin",
+			"margin": "10%",
+			"backgroundColor": "#ffffff",
+			"themeColor": "#ffffff",
+			"manifest": {
+				"name": "Schirifragen",
+				"display": "standalone",
+				"orientation": "notSet",
+				"onConflict": "override",
+				"declared": true
+			},
+			"assets": {
+				"legacyIcon": false,
+				"lowResolutionIcons": false
+			}
+		},
+		"safariPinnedTab": {
+			"pictureAspect": "blackAndWhite",
+			"threshold": 40,
+			"themeColor": "#5bbad5"
+		}
+	},
+	"settings": {
+		"scalingAlgorithm": "Mitchell",
+		"errorOnImageTooSmall": false,
+		"readmeFile": false,
+		"htmlCodeFile": false,
+		"usePathAsIs": false
+	}
+}
