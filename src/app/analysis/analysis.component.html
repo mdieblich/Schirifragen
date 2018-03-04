@@ -59,35 +59,3 @@
     </div>
   </div>
 </div>
-
-<app-score-progress-bar class="m-5" [value]="loadedQuestions" [max]="totalAnswers" thresholdGood="0.8" thresholdBad="0.5">{{loadedQuestions}}</app-score-progress-bar>
-
-<mat-expansion-panel class="main-accordion">
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      Falsche beantwortete Fragen
-    </mat-panel-title>
-    <mat-panel-description>
-      {{wrongQuestions.length}} von {{totalAnswers}}
-    </mat-panel-description>
-
-  </mat-expansion-panel-header>
-
-  <app-question-list [questions]="wrongQuestions" [results]="results"></app-question-list>
-
-</mat-expansion-panel>
-
-<mat-expansion-panel class="main-accordion">
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      Korrekt beantwortete Fragen
-    </mat-panel-title>
-    <mat-panel-description>
-      {{correctQuestions.length}} von {{totalAnswers}}
-    </mat-panel-description>
-
-  </mat-expansion-panel-header>
-
-  <app-question-list [questions]="correctQuestions" [results]="results"></app-question-list>
-
-</mat-expansion-panel>
