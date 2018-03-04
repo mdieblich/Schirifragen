@@ -69,7 +69,6 @@ export class AnalysisComponent implements OnInit {
   }
 
   show(row: number){
-    console.log(row);
     this.visibleRule = row;
   }
 
