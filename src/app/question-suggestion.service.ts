@@ -17,7 +17,7 @@ export class QuestionSuggestionService {
 
   suggestQuestion(): Observable<number> {
     const maxId: Observable<number> = this.questionService.getMaxId();
-    return maxId.delay(250).map(
+    return maxId/*.delay(250)*/.map(
       maxId => {
         let remainingQuestions: number[] = this.getRemainingQuestions(maxId);
         if(remainingQuestions.length == 0){

@@ -18,15 +18,15 @@ export class QuestionService {
   constructor() { }
 
   getQuestion(id: number): Observable<Question>{
-    const delay = Math.floor((Math.random() * 2500) + 100);
-    return of(QUESTIONS.find(question => question.id == id)).delay(delay);
+    // const delay = Math.floor((Math.random() * 2500) + 100);
+    return of(QUESTIONS.find(question => question.id == id))/*.delay(delay)*/;
   }
 
   getMaxId(): Observable<number> {
     if(this.maxId){
       return of(this.maxId);
     }
-    const maxIdObservable: Observable<number> = of(QUESTIONS.length).delay(250);
+    const maxIdObservable: Observable<number> = of(QUESTIONS.length)/*.delay(250)*/;
     maxIdObservable.subscribe(maxId => this.maxId = maxId);
     return maxIdObservable;
   }
