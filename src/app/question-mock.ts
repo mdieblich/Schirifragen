@@ -3949,7 +3949,9 @@ export const QUESTIONS: Question[] =
 		id: 325,
 		text: "Mannschaft A erhält einen Freiwurf, den A9 sehr schnell (ohne Anpfiff ) im Sprung ausführt. Der Ball gelangt zu A4, der sich völlig frei vor dem Tor von B befindet. Richtige Entscheidung?",
 		answers: [
-			"Weiterspielen lassen b) Freiwurf gegen A c) Korrektur des Freiwurfs für A mit Anpfiff"
+			"Weiterspielen lassen ",
+			"Freiwurf gegen A",
+			"Korrektur des Freiwurfs für A mit Anpfiff"
 		],
 		correctAnswers: [2],
 		ruleReferences: ["15:5b", "15:7"]
@@ -3958,7 +3960,9 @@ export const QUESTIONS: Question[] =
 		id: 326,
 		text: "Mannschaft A erhält einen Freiwurf, den A5 sehr rasch (ohne Anpfiff) im schnellen Lauf ausführt. Der Ball soll zu A4 gelangen, wird aber sofort von B3 abgefangen, der sich nun völlig frei vor dem Tor von A befindet. Richtige Entscheidung?",
 		answers: [
-			"Weiterspielen lassen b) Korrektur des Freiwurfs mit Anpfiff c) Korrektur des Freiwurfs und progressive Strafe gegen B3"
+			"Weiterspielen lassen",
+			"Korrektur des Freiwurfs mit Anpfiff",
+			"Korrektur des Freiwurfs und progressive Strafe gegen B3"
 		],
 		correctAnswers: [0],
 		ruleReferences: ["13:2", "15:7 2. Absatz"]
