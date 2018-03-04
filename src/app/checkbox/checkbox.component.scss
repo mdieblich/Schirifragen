@@ -1,0 +1,19 @@
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+* {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../assets/checkbox.png');
+    background-repeat: no-repeat;
+    background-color: theme-color("info");
+}
+
+.checked {
+    background-position: 0 -25px;
+}
+.checked-inactive{
+    background-position: 0 -50px;
+}

@@ -4,8 +4,9 @@
     class="{{finished?(selectedAnswers[i]==correctAnswers[i]?'table-success':'table-danger'):'table-default'}}" 
     *ngFor="let answer of question.answers; let i = index" 
     (click)="toggle(i)">
-      <td>
-        <div [class]="selectedAnswers[i]?(finished?'custom-checkbox-checked-inactive':'custom-checkbox-checked'):'custom-checkbox-unchecked'"></div>
+      <td style="width:25px" >
+        <app-checkbox [checked]="selectedAnswers[i]" [active]="!finished"></app-checkbox>
+        <!-- <div [class]="selectedAnswers[i]?(finished?'custom-checkbox-checked-inactive':'custom-checkbox-checked'):'custom-checkbox-unchecked'"></div> -->
         <!-- <input type="checkbox" [(ngModel)]="selectedAnswers[i]" [disabled]="finished"/> -->
       </td>
       <td>
