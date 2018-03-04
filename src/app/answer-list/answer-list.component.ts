@@ -1,4 +1,4 @@
-import {  SimpleChanges } from '@angular/core';
+import {  SimpleChanges, OnChanges } from '@angular/core';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Question } from '../question';
 
@@ -7,7 +7,7 @@ import { Question } from '../question';
   templateUrl: './answer-list.component.html',
   styleUrls: ['./answer-list.component.scss']
 })
-export class AnswerListComponent implements OnInit {
+export class AnswerListComponent implements OnInit, OnChanges {
 
   @Input() finished: boolean;
   @Input() question: Question;
@@ -19,14 +19,20 @@ export class AnswerListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
 
-    this.correctAnswers = new Array(this.question.answers.length);
-    this.correctAnswers.fill(false);
-    
-    this.question.correctAnswers.forEach(index => {
-      this.correctAnswers[index] = true;
-    });
+  ngOnChanges(changes: SimpleChanges): void {
+    for (let propName in changes) {
+      if(propName === 'question'){
 
+        this.correctAnswers = new Array(this.question.answers.length);
+        this.correctAnswers.fill(false);
+        
+        this.question.correctAnswers.forEach(index => {
+          this.correctAnswers[index] = true;
+        });
+      }
+    }
   }
 
   toggle(i: number): void {
