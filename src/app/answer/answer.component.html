@@ -1,9 +1,0 @@
-<div class="row">
-  <div class="col-1 center-text">
-    <mat-checkbox *ngIf="finished" [checked]="correctAnswer" disabled></mat-checkbox>
-  </div>
-  <!-- TODO: Wieso ist die Box etwas nach unten verschoben? -->
-  <mat-checkbox class="col-11" [(ngModel)]="selectedAnswer" (change)="selectedAnswerChange.emit(selectedAnswer)" [disabled]="finished">
-    {{toLetter(i)}}) {{answer}}
-  </mat-checkbox>
-</div>
