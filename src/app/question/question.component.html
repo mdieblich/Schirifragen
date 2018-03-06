@@ -26,10 +26,8 @@
     thresholdBad="0.5">
   </app-score-progress-bar>
 
-  <ol class="breadcrumb" *ngIf="finished">
-      <li class="breadcrumb-item">Regeln</li>
-      <li class="breadcrumb-item" *ngFor="let rule of question.ruleReferences"><a href="#">{{rule}}</a></li>
-  </ol>
+  <app-rule-reference-list *ngIf="finished" [ruleReferences]="question.ruleReferences"></app-rule-reference-list>
+  
   <button type="button" class="btn btn-info" disabled>Prüfen</button>
 </div>
 
@@ -43,11 +41,7 @@
     {{score | points}}
   </app-score-progress-bar>
 
-  <ol class="breadcrumb" *ngIf="finished">
-    <li class="breadcrumb-item">Regeln</li>
-    <!-- TODO: Popover für erste 50 Zeichen einer Regel  -->
-    <li class="breadcrumb-item" *ngFor="let rule of question.ruleReferences"><a href="#">{{rule}}</a></li>
-  </ol>
+  <app-rule-reference-list *ngIf="finished" [ruleReferences]="question.ruleReferences"></app-rule-reference-list>
 
   <div class="d-flex justify-content-between">
     <div class="btn-group ml-2" role="group">
