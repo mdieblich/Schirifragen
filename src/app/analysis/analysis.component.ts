@@ -72,4 +72,9 @@ export class AnalysisComponent implements OnInit {
     this.visibleRule = row;
   }
 
+  clickediklick(): void {
+    const idString: string = window.prompt("mach");
+    this.userService.listAllQuestionsFromId(Number(idString));
+  }
+
 }

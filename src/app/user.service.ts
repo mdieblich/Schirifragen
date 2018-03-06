@@ -40,7 +40,7 @@ export class UserService {
     if (!window.indexedDB) {
       throw new Error("Ihr Browser unterstützt keine stabile Version von IndexedDB.");
     } else {
-      const request: IDBOpenDBRequest = window.indexedDB.open("Schirifragen: Antworten", 3);
+      const request: IDBOpenDBRequest = window.indexedDB.open("Schirifragen: Antworten", 4);
       request.onerror = () => this.notifyThatIndexedDBisNotUsable(new Error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert."));
       request.onsuccess = () => {
         console.log("Datenbank bereit");
@@ -52,6 +52,7 @@ export class UserService {
         const questionResultObjectStore: IDBObjectStore = dbForUpdate.createObjectStore("QuestionResult", { keyGenerator: "id", autoIncrement: true});
         questionResultObjectStore.createIndex("question", "question", { unique: false });
         questionResultObjectStore.createIndex("date", "date", { unique: false });
+        questionResultObjectStore.createIndex("score", "score", { unique: false });
       }
     }
   }
@@ -60,6 +61,19 @@ export class UserService {
     const transaction: IDBTransaction = this.db.transaction(["QuestionResult"], "readwrite");
     transaction.onerror = this.handleDBError;
     return transaction.objectStore("QuestionResult");;
+  }
+
+  listAllQuestionsFromId(lowerBound: number): void {
+    const questionIndex: IDBIndex= this.getQuestionResultObjectStore().index('question');
+    questionIndex.openCursor(IDBKeyRange.lowerBound(lowerBound)).onsuccess = (event: any) => {
+      const cursor = event.target.result;
+        if(cursor) {
+          console.log(cursor.value);
+          cursor.continue();
+        } else {
+          console.log('Fertig!');
+        }
+      };
   }
 
   private operateOnSessionData(action: (sessionData: SessionUserData) => void): void {
