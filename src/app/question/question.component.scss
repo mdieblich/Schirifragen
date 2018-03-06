@@ -1,0 +1,12 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+.breadcrumb {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bg-light-transparent {
+    background-color: rgba(theme-color("light"), 0.85);
+}

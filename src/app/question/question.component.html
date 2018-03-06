@@ -27,12 +27,13 @@
   </app-score-progress-bar>
 
   <ol class="breadcrumb" *ngIf="finished">
-    <li class="breadcrumb-item">Regeln</li>
+      <li class="breadcrumb-item">Regeln</li>
+      <li class="breadcrumb-item" *ngFor="let rule of question.ruleReferences"><a href="#">{{rule}}</a></li>
   </ol>
   <button type="button" class="btn btn-info" disabled>Prüfen</button>
 </div>
 
-<div class="p-1 fixed-bottom bg-light">
+<div class="p-1 fixed-bottom bg-light-transparent">
     <app-score-progress-bar 
     *ngIf="finished"
     [value]="score" 
