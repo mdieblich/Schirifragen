@@ -108,8 +108,10 @@ export class QuestionComponent implements OnInit {
 
   createQuestionResult(): QuestionResult {
     return {
-      selectedAnswers: this.selectedAnswers, 
-      score: this.score
+      question: this.id,
+      date: new Date(),
+      score: this.score,
+      selectedAnswers: this.selectedAnswers
     };
   }
 

@@ -42,7 +42,7 @@ export class UserService {
     if (!window.indexedDB) {
       throw new Error("Ihr Browser unterstützt keine stabile Version von IndexedDB.");
     } else {
-      const request: IDBOpenDBRequest = window.indexedDB.open("Schirifragen: Antworten", 2);
+      const request: IDBOpenDBRequest = window.indexedDB.open("Schirifragen: Antworten", 3);
       request.onerror = () => this.notifyThatIndexedDBisNotUsable(new Error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert."));
       request.onsuccess = () => {
         console.log("Datenbank bereit");
@@ -51,27 +51,17 @@ export class UserService {
       };
       request.onupgradeneeded = (event: any) => {
         const dbForUpdate = event.target.result;
-        const objectStore = dbForUpdate.createObjectStore("answers", { keyGenerator: "id" });
-        objectStore.createIndex("frage", "frage", { unique: false });
-        objectStore.createIndex("timestamp", "timestamp", { unique: false });
-        // objectStore.createIndex("score", "score", { unique: false });  // score nicht als index
-        // TODO Datenbankupgrades
-
+        const questionResultObjectStore: IDBObjectStore = dbForUpdate.createObjectStore("QuestionResult", { keyGenerator: "id", autoIncrement: true});
+        questionResultObjectStore.createIndex("question", "question", { unique: false });
+        questionResultObjectStore.createIndex("date", "date", { unique: false });
       }
     }
   }
 
-  private operateOnLongTimeData(action: (longTimeData: LongTimeUserData) => void): void{
-    // TODO: Besserer Name als "LongTimeData". Total nichtssagend
-
-    let longTimeData: LongTimeUserData = JSON.parse(localStorage.getItem("user"));
-    if(!longTimeData){
-      longTimeData = {results: {}};
-    }
-
-    action(longTimeData);
-
-    localStorage.setItem("user", JSON.stringify(longTimeData));
+  private getQuestionResultObjectStore(): IDBObjectStore {
+    const transaction: IDBTransaction = this.db.transaction(["QuestionResult"], "readwrite");
+    transaction.onerror = this.handleDBError;
+    return transaction.objectStore("QuestionResult");;
   }
 
   private operateOnSessionData(action: (sessionData: SessionUserData) => void): void {
@@ -97,14 +87,7 @@ export class UserService {
   }
 
   addQuestionResult(questionId: number, result: QuestionResult): void {
-    this.operateOnLongTimeData( longTimeData => {
-      let resultHistory: QuestionResultHistory = longTimeData.results[questionId];
-      if(!resultHistory){
-          resultHistory = {questionResults: []};
-          longTimeData.results[questionId] = resultHistory;
-      }
-      resultHistory.questionResults.push(result);
-    });
+    this.getQuestionResultObjectStore().add(result);
 
     this.operateOnSessionData(sessionData => {
       sessionData.questionsAnswered.push(questionId);
