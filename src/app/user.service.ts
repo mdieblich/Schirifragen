@@ -11,7 +11,55 @@ export class UserService {
     // TODO: in IndexedDB auslagern!
     // TODO: Prüfen, ob LocalStorage/SessionStorage überhaupt zur Verfügung stehen
 
-  constructor() { }
+  db?: IDBDatabase;
+
+
+  constructor() {
+    try {
+      this.openIndexedDB()
+    } catch (error){
+      this.notifyThatIndexedDBisNotUsable(error);
+    }
+  }
+  
+  private notifyThatIndexedDBisNotUsable(error: Error): void{
+    alert(
+      "IndexedDB kann nicht verwendet werden.\n" + 
+      "Daher können Sie die Langzeitauswertung ihrer Antworten nicht benutzen.\n"+
+      "\n"+
+      "Ursache:\n"
+      +error);
+  }
+
+  // TODO Typ von Event klären
+  private handleDBError(event){
+    console.log("Datenbankfehler", event);
+    alert("Datenbankfehler\n"+
+          "Fehlercode: " + event.target.errorCode);
+  }
+
+  private openIndexedDB(): void {
+    if (!window.indexedDB) {
+      throw new Error("Ihr Browser unterstützt keine stabile Version von IndexedDB.");
+    } else {
+      const request: IDBOpenDBRequest = window.indexedDB.open("Schirifragen: Antworten", 2);
+      request.onerror = () => this.notifyThatIndexedDBisNotUsable(new Error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert."));
+      request.onsuccess = () => {
+        console.log("Datenbank bereit");
+        this.db = request.result;
+        this.db.onerror = this.handleDBError;
+      };
+      request.onupgradeneeded = (event: any) => {
+        const dbForUpdate = event.target.result;
+        const objectStore = dbForUpdate.createObjectStore("answers", { keyGenerator: "id" });
+        objectStore.createIndex("frage", "frage", { unique: false });
+        objectStore.createIndex("timestamp", "timestamp", { unique: false });
+        // objectStore.createIndex("score", "score", { unique: false });  // score nicht als index
+        // TODO Datenbankupgrades
+
+      }
+    }
+  }
 
   private operateOnLongTimeData(action: (longTimeData: LongTimeUserData) => void): void{
     // TODO: Besserer Name als "LongTimeData". Total nichtssagend
