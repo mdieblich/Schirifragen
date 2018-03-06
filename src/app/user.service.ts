@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { LongTimeUserData } from './long-time-user-data';
 import { QuestionResult } from './question-result';
-import { QuestionResultHistory } from './question-result-history';
 import { SessionUserData } from './session-user-data';
 import { Question } from './question';
 
