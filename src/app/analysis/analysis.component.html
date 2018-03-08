@@ -10,7 +10,7 @@
         [max]="totalAnswers" 
         thresholdGood="0.8" 
         thresholdBad="0.5">
-        {{correctAnswers}}
+        {{correctAnswers/totalAnswers | percentage}}
       </app-score-progress-bar>
     </p>
     <p class="card-text">
@@ -20,7 +20,7 @@
         [max]="totalAnswers" 
         thresholdGood="0.9" 
         thresholdBad="0.7">
-        {{totalScore | points}}
+        {{totalScore/totalAnswers | percentage}}
       </app-score-progress-bar>
     </p>
   </div>

@@ -23,11 +23,13 @@ import { AnswerListComponent } from './answer-list/answer-list.component';
 import { ScoreProgressBarComponent } from './score-progress-bar/score-progress-bar.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RuleReferenceListComponent } from './rule-reference-list/rule-reference-list.component';
+import { PercentagePipe } from './percentage.pipe';
 
 
 @NgModule({
   declarations: [
     PointsPipe,
+    PercentagePipe,
 
     AppComponent,
     QuestionComponent,
