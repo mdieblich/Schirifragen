@@ -7,10 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ScoreProgressBarComponent implements OnInit {
 
-  @Input() value;
-  @Input() max;
-  @Input() thresholdGood;
-  @Input() thresholdBad;
+  @Input() value: number;
+  @Input() max: number;
+  @Input() thresholdGood: number;
+  @Input() thresholdBad: number;
+  @Input() showThresholds: boolean = false;
 
   constructor() { }
 

@@ -4,9 +4,9 @@
   [max]="max">
   <ng-content></ng-content>
 </ngb-progressbar>
-<div class="position-relative small-text" [ngStyle]="{'left': thresholdGood*100+'%'}">
+<div *ngIf="showThresholds" class="position-relative small-text" [ngStyle]="{'left': thresholdGood*100+'%'}">
   <div class="good-arrow-up d-inline-block"></div>{{thresholdGood | percentage}}
 </div>
-<div class="position-relative small-text" [ngStyle]="{'left': thresholdBad*100+'%', 'top':'-15px'}">
+<div *ngIf="showThresholds" class="position-relative small-text" [ngStyle]="{'left': thresholdBad*100+'%', 'top':'-15px'}">
   <div class="bad-arrow-up d-inline-block"></div>{{thresholdBad | percentage}}
 </div>
