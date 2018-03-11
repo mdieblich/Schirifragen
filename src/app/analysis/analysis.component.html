@@ -9,7 +9,8 @@
         [value]="correctAnswers" 
         [max]="totalAnswers" 
         thresholdGood="0.8" 
-        thresholdBad="0.5">
+        thresholdBad="0.5"
+        showThresholds="true">
         {{correctAnswers/totalAnswers | percentage}}
       </app-score-progress-bar>
     </p>
@@ -19,7 +20,8 @@
         [value]="totalScore" 
         [max]="totalAnswers" 
         thresholdGood="0.9" 
-        thresholdBad="0.7">
+        thresholdBad="0.7"
+        showThresholds="true">
         {{totalScore/totalAnswers | percentage}}
       </app-score-progress-bar>
     </p>
