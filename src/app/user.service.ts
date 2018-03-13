@@ -64,6 +64,7 @@ export class UserService {
   }
 
   listAllQuestionsFromId(lowerBound: number): void {
+    console.log("list all....");
     const questionIndex: IDBIndex= this.getQuestionResultObjectStore().index('question');
     questionIndex.openCursor(IDBKeyRange.lowerBound(lowerBound)).onsuccess = (event: any) => {
       const cursor = event.target.result;
