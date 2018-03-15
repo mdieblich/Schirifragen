@@ -1,8 +1,14 @@
 import { Injectable } from '@angular/core';
 
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
+import { map } from 'rxjs/operators';
+
 import { QuestionResult } from './question-result';
 import { SessionUserData } from './session-user-data';
 import { Question } from './question';
+import { QuestionPerformance } from './question-performance';
+import { Subscriber } from 'rxjs/Subscriber';
 
 @Injectable()
 export class UserService {
@@ -36,6 +42,40 @@ export class UserService {
           "Fehlercode: " + event.target.errorCode);
   }
 
+  private getIndexedDB(): Observable<IDBDatabase>{
+
+    if(this.db) {
+      return of(this.db);
+    } else {
+      let emitter: Subscriber<IDBDatabase>;
+
+      if (!window.indexedDB) {
+        throw new Error("Ihr Browser unterstützt keine stabile Version von IndexedDB.");
+      } else {
+        const request: IDBOpenDBRequest = window.indexedDB.open("Schirifragen: Antworten", 4);
+        request.onerror = () => {
+          this.notifyThatIndexedDBisNotUsable(new Error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert."));
+          emitter.error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert.");
+        };
+        request.onsuccess = () => {
+          console.log("Datenbank bereit");
+          this.db = request.result;
+          this.db.onerror = this.handleDBError;
+          emitter.next(this.db);
+          emitter.complete();
+        };
+        request.onupgradeneeded = (event: any) => {
+          const dbForUpdate = event.target.result;
+          const questionResultObjectStore: IDBObjectStore = dbForUpdate.createObjectStore("QuestionResult", { keyGenerator: "id", autoIncrement: true});
+          questionResultObjectStore.createIndex("question", "question", { unique: false });
+          questionResultObjectStore.createIndex("date", "date", { unique: false });
+          questionResultObjectStore.createIndex("score", "score", { unique: false });
+        }
+      }
+      return Observable.create(e => emitter = e);
+    }
+  }
+
   private openIndexedDB(): void {
     if (!window.indexedDB) {
       throw new Error("Ihr Browser unterstützt keine stabile Version von IndexedDB.");
@@ -57,25 +97,36 @@ export class UserService {
     }
   }
 
-  private getQuestionResultObjectStore(): IDBObjectStore {
-    const transaction: IDBTransaction = this.db.transaction(["QuestionResult"], "readwrite");
-    transaction.onerror = this.handleDBError;
-    return transaction.objectStore("QuestionResult");;
+  private getQuestionResultObjectStore(): Observable<IDBObjectStore> {
+    return this.getIndexedDB().map(db => {
+      const transaction: IDBTransaction = db.transaction(["QuestionResult"], "readwrite");
+      transaction.onerror = this.handleDBError;
+      return transaction.objectStore("QuestionResult");
+    });
   }
+  
+  public getAllQuestionResults(): Observable<QuestionResult> {
+    let emitter: Subscriber<QuestionResult>;
+    
+    this.getQuestionResultObjectStore().subscribe(objectStore => {
+      const questionIndex: IDBIndex = objectStore.index('question');
+      questionIndex.openCursor().onsuccess = (event: any) => {
+          const cursor = event.target.result;
+            if(cursor) {
+              const result: QuestionResult = cursor.value;
+              emitter.next(result);
+              cursor.continue();
+            }
+            else{
+              emitter.complete();
+            }
+        };
+    });
+    return Observable.create(e => emitter = e);
+  }
+  // public getAllWrongQuestions(): Observable<QuestionPerformance[]> {
 
-  listAllQuestionsFromId(lowerBound: number): void {
-    console.log("list all....");
-    const questionIndex: IDBIndex= this.getQuestionResultObjectStore().index('question');
-    questionIndex.openCursor(IDBKeyRange.lowerBound(lowerBound)).onsuccess = (event: any) => {
-      const cursor = event.target.result;
-        if(cursor) {
-          console.log(cursor.value);
-          cursor.continue();
-        } else {
-          console.log('Fertig!');
-        }
-      };
-  }
+  // }
 
   private operateOnSessionData(action: (sessionData: SessionUserData) => void): void {
     // TODO: Besserer Name als "sessionData". Total nichtssagend
@@ -100,7 +151,7 @@ export class UserService {
   }
 
   addQuestionResult(questionId: number, result: QuestionResult): void {
-    this.getQuestionResultObjectStore().add(result);
+    this.getQuestionResultObjectStore().subscribe(objectStore => objectStore.add(result));
 
     this.operateOnSessionData(sessionData => {
       sessionData.questionsAnswered.push(questionId);

@@ -45,6 +45,8 @@ export class AnalysisComponent implements OnInit {
         this.addQuestion(question, this.results[questionId].score);
       })
     });
+
+    this.userService.getAllQuestionResults().subscribe(result => console.log(result));
   }
 
   addQuestion(question: Question, score: number): void {
