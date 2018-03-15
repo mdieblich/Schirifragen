@@ -9,21 +9,13 @@ import { SessionUserData } from './session-user-data';
 import { Question } from './question';
 import { QuestionPerformance } from './question-performance';
 import { Subscriber } from 'rxjs/Subscriber';
+import { IndexedDbService } from './indexed-db.service';
 
 @Injectable()
 export class UserService {
-    // TODO: in IndexedDB auslagern!
     // TODO: Prüfen, ob LocalStorage/SessionStorage überhaupt zur Verfügung stehen
 
-  db?: IDBDatabase;
-
-
-  constructor() {
-    try {
-      this.openIndexedDB()
-    } catch (error){
-      this.notifyThatIndexedDBisNotUsable(error);
-    }
+  constructor(private indexedDBService: IndexedDbService) {
   }
   
   private notifyThatIndexedDBisNotUsable(error: Error): void{
@@ -43,66 +35,20 @@ export class UserService {
   }
 
   private getIndexedDB(): Observable<IDBDatabase>{
-
-    if(this.db) {
-      return of(this.db);
-    } else {
-      let emitter: Subscriber<IDBDatabase>;
-
-      if (!window.indexedDB) {
-        throw new Error("Ihr Browser unterstützt keine stabile Version von IndexedDB.");
-      } else {
-        const request: IDBOpenDBRequest = window.indexedDB.open("Schirifragen: Antworten", 4);
-        request.onerror = () => {
-          this.notifyThatIndexedDBisNotUsable(new Error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert."));
-          emitter.error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert.");
-        };
-        request.onsuccess = () => {
-          console.log("Datenbank bereit");
-          this.db = request.result;
-          this.db.onerror = this.handleDBError;
-          emitter.next(this.db);
-          emitter.complete();
-        };
-        request.onupgradeneeded = (event: any) => {
-          const dbForUpdate = event.target.result;
-          const questionResultObjectStore: IDBObjectStore = dbForUpdate.createObjectStore("QuestionResult", { keyGenerator: "id", autoIncrement: true});
-          questionResultObjectStore.createIndex("question", "question", { unique: false });
-          questionResultObjectStore.createIndex("date", "date", { unique: false });
-          questionResultObjectStore.createIndex("score", "score", { unique: false });
-        }
-      }
-      return Observable.create(e => emitter = e);
-    }
+    return this.indexedDBService.getIndexedDB("Schirifragen: Antworten", 4, this.updateDB);
   }
 
-  private openIndexedDB(): void {
-    if (!window.indexedDB) {
-      throw new Error("Ihr Browser unterstützt keine stabile Version von IndexedDB.");
-    } else {
-      const request: IDBOpenDBRequest = window.indexedDB.open("Schirifragen: Antworten", 4);
-      request.onerror = () => this.notifyThatIndexedDBisNotUsable(new Error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert."));
-      request.onsuccess = () => {
-        console.log("Datenbank bereit");
-        this.db = request.result;
-        this.db.onerror = this.handleDBError;
-      };
-      request.onupgradeneeded = (event: any) => {
-        const dbForUpdate = event.target.result;
-        const questionResultObjectStore: IDBObjectStore = dbForUpdate.createObjectStore("QuestionResult", { keyGenerator: "id", autoIncrement: true});
-        questionResultObjectStore.createIndex("question", "question", { unique: false });
-        questionResultObjectStore.createIndex("date", "date", { unique: false });
-        questionResultObjectStore.createIndex("score", "score", { unique: false });
-      }
-    }
+  // event: IDBVersionChangeEvent ???
+  private updateDB(event:any): void{
+    const dbForUpdate = event.target.result;
+    const questionResultObjectStore: IDBObjectStore = dbForUpdate.createObjectStore("QuestionResult", { keyGenerator: "id", autoIncrement: true});
+    questionResultObjectStore.createIndex("question", "question", { unique: false });
+    questionResultObjectStore.createIndex("date", "date", { unique: false });
+    questionResultObjectStore.createIndex("score", "score", { unique: false });
   }
 
   private getQuestionResultObjectStore(): Observable<IDBObjectStore> {
-    return this.getIndexedDB().map(db => {
-      const transaction: IDBTransaction = db.transaction(["QuestionResult"], "readwrite");
-      transaction.onerror = this.handleDBError;
-      return transaction.objectStore("QuestionResult");
-    });
+    return this.indexedDBService.getObjectStore(this.getIndexedDB(), "QuestionResult");
   }
   
   public getAllQuestionResults(): Observable<QuestionResult> {

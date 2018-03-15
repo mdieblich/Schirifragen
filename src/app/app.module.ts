@@ -24,6 +24,7 @@ import { ScoreProgressBarComponent } from './score-progress-bar/score-progress-b
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RuleReferenceListComponent } from './rule-reference-list/rule-reference-list.component';
 import { PercentagePipe } from './percentage.pipe';
+import { IndexedDbService } from './indexed-db.service';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { PercentagePipe } from './percentage.pipe';
   providers: [
     QuestionService,
     QuestionSuggestionService,
-    UserService
+    UserService,
+    IndexedDbService
   ],
   bootstrap: [AppComponent]
 })
