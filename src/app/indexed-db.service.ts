@@ -39,7 +39,7 @@ export class IndexedDbService {
 
   public getObjectStore(db:Observable<IDBDatabase>, objectStoreName: string): Observable<IDBObjectStore> {
 
-    let emitter: Subscriber<IDBObjectStore>;
+    let emitter: Subscriber<IDBObjectStore> = new Subscriber<IDBObjectStore>();
 
     db.subscribe(db => {
       const transaction: IDBTransaction = db.transaction(["QuestionResult"], "readwrite");

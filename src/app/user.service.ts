@@ -17,15 +17,6 @@ export class UserService {
 
   constructor(private indexedDBService: IndexedDbService) {
   }
-  
-  private notifyThatIndexedDBisNotUsable(error: Error): void{
-    alert(
-      "IndexedDB kann nicht verwendet werden.\n" + 
-      "Daher können Sie die Langzeitauswertung ihrer Antworten nicht benutzen.\n"+
-      "\n"+
-      "Ursache:\n"
-      +error);
-  }
 
   // TODO Typ von Event klären
   private handleDBError(event){
@@ -53,6 +44,7 @@ export class UserService {
   
   public getAllQuestionResults(): Observable<QuestionResult> {
     let emitter: Subscriber<QuestionResult>;
+
     
     this.getQuestionResultObjectStore().subscribe(objectStore => {
       const questionIndex: IDBIndex = objectStore.index('question');
@@ -67,7 +59,7 @@ export class UserService {
               emitter.complete();
             }
         };
-    });
+    }, this.handleDBError);
     return Observable.create(e => emitter = e);
   }
   // public getAllWrongQuestions(): Observable<QuestionPerformance[]> {
