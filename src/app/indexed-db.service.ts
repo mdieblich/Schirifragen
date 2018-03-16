@@ -17,37 +17,27 @@ export class IndexedDbService {
     if(this.db) {
       return of(this.db);
     } else {
-      let emitter: Subscriber<IDBDatabase>;
-
-      if (!window.indexedDB) {
-        emitter.error(new Error("Ihr Browser unterstützt keine stabile Version von IndexedDB."));
-      } else {
-        const request: IDBOpenDBRequest = window.indexedDB.open(dbName, dbVersion);
-        request.onerror = (event: Event) => {
-          emitter.error(new Error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert."));
-        };
-        request.onsuccess = () => {
-          this.db = request.result;
-          emitter.next(this.db);
-          emitter.complete();
-        };
-        request.onupgradeneeded = upgradeCallBack;
-      }
-      return Observable.create(e => emitter = e);
+      return this.createIndexedDB(dbName, dbVersion, upgradeCallBack);
     }
   }
 
-  public getObjectStore(db:Observable<IDBDatabase>, objectStoreName: string): Observable<IDBObjectStore> {
+  private createIndexedDB(dbName: string, dbVersion: number, upgradeCallBack?: (event:IDBVersionChangeEvent)=>any): Observable<IDBDatabase>{
 
-    let emitter: Subscriber<IDBObjectStore> = new Subscriber<IDBObjectStore>();
-
-    db.subscribe(db => {
-      const transaction: IDBTransaction = db.transaction(["QuestionResult"], "readwrite");
-      transaction.onerror = emitter.error;
-      emitter.next(transaction.objectStore("QuestionResult"));
-      emitter.complete();
-    }, emitter.error);
-
+    let emitter: Subscriber<IDBDatabase>;
+    if (!window.indexedDB) {
+      emitter.error(new Error("Ihr Browser unterstützt keine stabile Version von IndexedDB."));
+    } else {
+      const request: IDBOpenDBRequest = window.indexedDB.open(dbName, dbVersion);
+      request.onerror = (event: Event) => {
+        emitter.error(new Error("Der Zugriff auf die lokale Browserdatenbank wurde verweigert."));
+      };
+      request.onsuccess = () => {
+        this.db = request.result;
+        emitter.next(this.db);
+        emitter.complete();
+      };
+      request.onupgradeneeded = upgradeCallBack;
+    }
     return Observable.create(e => emitter = e);
   }
 

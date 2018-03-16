@@ -37,17 +37,14 @@ export class UserService {
     questionResultObjectStore.createIndex("date", "date", { unique: false });
     questionResultObjectStore.createIndex("score", "score", { unique: false });
   }
-
-  private getQuestionResultObjectStore(): Observable<IDBObjectStore> {
-    return this.indexedDBService.getObjectStore(this.getIndexedDB(), "QuestionResult");
-  }
   
   public getAllQuestionResults(): Observable<QuestionResult> {
     let emitter: Subscriber<QuestionResult>;
-
     
-    this.getQuestionResultObjectStore().subscribe(objectStore => {
-      const questionIndex: IDBIndex = objectStore.index('question');
+    this.getIndexedDB().subscribe(db => {
+      const transaction: IDBTransaction = db.transaction(["QuestionResult"], "readwrite");
+      const questionResultStore: IDBObjectStore = transaction.objectStore("QuestionResult");
+      const questionIndex: IDBIndex = questionResultStore.index('question');
       questionIndex.openCursor().onsuccess = (event: any) => {
           const cursor = event.target.result;
             if(cursor) {
@@ -59,7 +56,7 @@ export class UserService {
               emitter.complete();
             }
         };
-    }, this.handleDBError);
+    });
     return Observable.create(e => emitter = e);
   }
   // public getAllWrongQuestions(): Observable<QuestionPerformance[]> {
@@ -88,8 +85,13 @@ export class UserService {
     action(sessionData);
   }
 
-  addQuestionResult(questionId: number, result: QuestionResult): void {
-    this.getQuestionResultObjectStore().subscribe(objectStore => objectStore.add(result));
+  public addQuestionResult(questionId: number, result: QuestionResult): void {
+
+    this.getIndexedDB().subscribe(db => {
+      const transaction: IDBTransaction = db.transaction(["QuestionResult"], "readwrite");
+      const questionResultStore: IDBObjectStore = transaction.objectStore("QuestionResult");
+      questionResultStore.add(result);
+    });
 
     this.operateOnSessionData(sessionData => {
       sessionData.questionsAnswered.push(questionId);
