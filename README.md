@@ -35,11 +35,3 @@ Der Mensch hat drei Stufen des Gedächtnisses, welche nacheinander durchlaufen w
 Der Lernkasten mit den drei Stufen, spiegelt das ganz gut wieder.
 
 Bilder oder Videos sind wichtig zum lernen!
-
-## Design-Ideen:
-Fragen über Pagination darstellen, damit man auch alte Fragen ansehen kann.
-
-## Angular-Metrial installieren
-npm install --save @angular/material @angular/cdk
-npm install --save @angular/animations
-npm install --save hammerjs
