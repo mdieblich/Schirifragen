@@ -8,8 +8,8 @@
       <app-score-progress-bar 
         [value]="correctAnswers" 
         [max]="totalAnswers" 
-        thresholdGood="0.8" 
-        thresholdBad="0.5"
+        thresholdGood="0.85" 
+        thresholdBad="0.75"
         showThresholds="true">
         {{correctAnswers/totalAnswers | percentage}}
       </app-score-progress-bar>
@@ -19,8 +19,8 @@
       <app-score-progress-bar 
         [value]="totalScore" 
         [max]="totalAnswers" 
-        thresholdGood="0.9" 
-        thresholdBad="0.7"
+        thresholdGood="0.95" 
+        thresholdBad="0.80"
         showThresholds="true">
         {{totalScore/totalAnswers | percentage}}
       </app-score-progress-bar>
