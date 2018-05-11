@@ -24,6 +24,7 @@ import { ScoreProgressBarComponent } from './score-progress-bar/score-progress-b
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RuleReferenceListComponent } from './rule-reference-list/rule-reference-list.component';
 import { PercentagePipe } from './percentage.pipe';
+import { RulesComponent } from './rules/rules.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { PercentagePipe } from './percentage.pipe';
     AnswerListComponent,
     ScoreProgressBarComponent,
     CheckboxComponent,
-    RuleReferenceListComponent
+    RuleReferenceListComponent,
+    RulesComponent
   ],
   imports: [
     BrowserModule,
