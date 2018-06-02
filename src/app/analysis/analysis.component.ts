@@ -18,7 +18,6 @@ export class AnalysisComponent implements OnInit {
 
   correctAnswers: number;
   wrongAnswers: number;
-  totalScore: number;
   wrongQuestionScore: number;
 
   correctQuestions: Question[] = [];
@@ -37,7 +36,6 @@ export class AnalysisComponent implements OnInit {
   ngOnInit() {
     this.correctAnswers = 0;
     this.wrongAnswers = 0;
-    this.totalScore = 0;
     this.wrongQuestionScore = 0;
 
     const answeredQuestions: Set<number> = this.userService.getAnsweredQuestions();
@@ -52,7 +50,6 @@ export class AnalysisComponent implements OnInit {
   }
 
   addQuestion(question: Question, score: number): void {
-    this.totalScore += score;
     if(score === 1){
       this.correctAnswers ++;
       this.correctQuestions.push(question);
