@@ -3058,8 +3058,8 @@ export const QUESTIONS: Question[] =
 		id: 252,
 		text: "Der Trainer von Mannschaft A reagiert auf eine Entscheidung der SR gegen seine Mannschaft mit lautstarken Protesten sowie den Worten „Ihr seid doch Idioten“. Gegen einen Mannschaftsoffiziellen von A war bereits 10 Minuten vorher eine Verwarnung ausgesprochen worden. Entscheidung?",
 		answers: [
-			". Verwarnung des Trainers wegen unsportlichen Verhaltens",
-			"Hinausstellung gegen den Trainer und Reduzierung der Mannschaft auf der Spielfläche für diese Zeit um einen Spieler.",
+			"Verwarnung des Trainers wegen unsportlichen Verhaltens",
+			"Hinausstellung gegen den Trainer und Reduzierung der Mannschaft auf der Spielfläche für diese Zeit um einen Spieler",
 			"Disqualifikation des Trainers und Reduzierung der Mannschaft A für 2 Minuten auf der Spielfläche um einen Spieler, Schriftlicher Bericht",
 			"Time out und anzeigen der blauen Karte"
 		],
