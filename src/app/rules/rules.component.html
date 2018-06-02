@@ -6,6 +6,34 @@
     </div>
   </div>
 
+  <div *ngFor="let rule of rules">  <!-- Schleife für Regeln -->
+
+    <div class="row">
+      <div class="col-12">
+        <h2 id="1">Regel {{rule.number}} - {{rule.caption}}</h2>
+      </div>
+    </div>
+
+    <div *ngFor="let paragaph of rule.paragraphs">  <!-- Schleife für Paragraphen -->
+      <div class="row">
+          <div [id]="paragaph.number" class="col-1">{{paragaph.number}}</div>
+          <div class="col-11">  
+            <p *ngFor="let section of paragaph.sections" [innerHTML]="section">
+              <!-- Schleife für einzelne Abschnitte -->
+            </p> 
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12">
+      <h1 id="Spielregeln">Spielregeln (alt)</h1>
+    </div>
+  </div>
+
+
+
   <div class="row">
     <div class="col-12">
       <h2 id="1">Regel 1 - Die Spielfläche</h2>

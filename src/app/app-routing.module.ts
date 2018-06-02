@@ -7,8 +7,8 @@ import { AnalysisComponent } from './analysis/analysis.component';
 import { RulesComponent } from './rules/rules.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/rules', pathMatch: 'full' },
   // { path: '', redirectTo: '/question', pathMatch: 'full' },
-  { path: '', redirectTo: '/question', pathMatch: 'full' },
   // { path: 'dashboard', component: TODO: Dashboard},
   { path: 'question', component: QuestionComponent},
   { path: 'analysis', component: AnalysisComponent},

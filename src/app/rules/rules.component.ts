@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RuleService } from './rule.service';
+import { Rule } from './rule';
 
 @Component({
   selector: 'app-rules',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RulesComponent implements OnInit {
 
-  constructor() { }
+  rules: Rule[] = [];
+
+  constructor(private ruleService: RuleService) {
+  }
 
   ngOnInit() {
+    this.ruleService.getRules().subscribe(
+      rule => this.addRule(rule)
+    );
+  }
+
+  addRule(rule: Rule){
+    this.rules.push(rule);
   }
 
 }

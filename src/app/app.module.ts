@@ -25,6 +25,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RuleReferenceListComponent } from './rule-reference-list/rule-reference-list.component';
 import { PercentagePipe } from './percentage.pipe';
 import { RulesComponent } from './rules/rules.component';
+import { RuleService } from './rules/rule.service';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { RulesComponent } from './rules/rules.component';
   ],
   providers: [
     QuestionService,
+    RuleService,
     QuestionSuggestionService,
     UserService
   ],
