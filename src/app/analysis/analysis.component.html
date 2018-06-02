@@ -25,6 +25,17 @@
         {{totalScore/totalAnswers | percentage}}
       </app-score-progress-bar>
     </p>
+    <p class="card-text">
+      Falsche Fragen: {{wrongQuestionScore | points }} von max. {{wrongAnswers}} Punkten
+      <app-score-progress-bar 
+        [value]="wrongQuestionScore" 
+        [max]="wrongAnswers" 
+        thresholdGood="0.75" 
+        thresholdBad="0.50"
+        showThresholds="true">
+        {{wrongQuestionScore/wrongAnswers | percentage}}
+      </app-score-progress-bar>
+    </p>
   </div>
 </div>
 
