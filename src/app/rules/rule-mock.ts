@@ -16,43 +16,63 @@ export const RULES: Rule[] =
                         number: "1:1",
                         sections: 
                         [
-                            "<u>Die Spielfläche<\/u> (Abb. 1) ist ein Rechteck von 40 m Länge und 20 m Breite und umfasst zwei Torräume (Regel 1:4 und Regel 6) und ein Spielfeld. Die Längsseiten heißen Seitelinien, die Breitseiten Torauslinien, zwischen den Torpfosten jedoch Torlinien.",
-                            "Eine Sicherheitszone entlang der Spielfläche von mindestens 1 m neben den Seitenlinien und 2 m hinter den Torauslinien sollte gegeben sein.",
-                            "Die Beschaffenheit der Spielfläche darf im Spielverlauf nicht zugunsten einer Mannschaft verändert werden."
+                            `<u>Die Spielfläche<\/u> (Abb. 1) ist ein Rechteck von 40 m Länge und 20 m 
+                             Breite und umfasst zwei Torräume (Regel 1:4 und Regel 6) und ein Spielfeld. 
+                             Die Längsseiten heißen Seitelinien, die Breitseiten Torauslinien, zwischen
+                             den Torpfosten jedoch Torlinien.`,
+                            `Eine Sicherheitszone entlang der Spielfläche von mindestens 1 m neben 
+                             den Seitenlinien und 2 m hinter den Torauslinien sollte gegeben sein.`,
+                            `Die Beschaffenheit der Spielfläche darf im Spielverlauf nicht zugunsten 
+                             einer Mannschaft verändert werden.`
                         ]
                     },
                     {
                         number: "1:2",
                         sections: 
                         [
-                            "In der Mitte der beiden Torauslinien steht ein <u>Tor<\/u> (Abb. 2a und 2b). Die Tore müssen fest im Boden oder an den Wänden hinter ihnen verankert sein. Sie sind im Lichten 2 m hoch und 3m breit.",
-                            "Die Pfosten des Tores sind durch eine Querlatte fest verbunden. Ihre hintere Kante muss mit der hinteren Seite der Torlinie verlaufen. Torpfosten und Latte müssen quadratisch sein (8 cm). Sie müssen auf den drei vom Spielfeld einzusehenden Seiten mit zwei kontrastierenden Farben gestrichen sein, die sich ebenfalls deutlich vom Hintergrund abheben sollen.",
-                            "Jedes Tor muss mit einem Netz versehen sein. Dieses muss so aufgehängt werden, dass ein in das Tor geworfener Ball normalerweise im Tor verbleibt."
+                            `In der Mitte der beiden Torauslinien steht ein <u>Tor<\/u> (Abb. 2a und 2b). 
+                             Die Tore müssen fest im Boden oder an den Wänden hinter ihnen verankert 
+                             sein. Sie sind im Lichten 2 m hoch und 3m breit.`,
+                            `Die Pfosten des Tores sind durch eine Querlatte fest verbunden. Ihre 
+                             hintere Kante muss mit der hinteren Seite der Torlinie verlaufen. Torpfosten 
+                             und Latte müssen quadratisch sein (8 cm). Sie müssen auf den drei vom 
+                             Spielfeld einzusehenden Seiten mit zwei kontrastierenden Farben gestrichen
+                             sein, die sich ebenfalls deutlich vom Hintergrund abheben sollen.`,
+                            `Jedes Tor muss mit einem Netz versehen sein. Dieses muss so aufgehängt
+                             werden, dass ein in das Tor geworfener Ball normalerweise im Tor verbleibt.`
                         ]
                     },
                     {
                         number: "1:3",
                         sections: 
                         [
-                            "Alle <u>Linien<\/u> auf der Spielfläche sind integraler Bestandteil des Bereichs, den sie begrenzen. Die Torlinien zwischen den Torpfosten sind 8 cm breit (Abb. 2a), alle andere Linien sind 5 cm breit.",
-                            "Zwei nebeneinander liegene Bereiche knnen anstatt durch Linien auch durch unterschiedliche Farben voneinander abgegrenzt werden."
+                            `Alle <u>Linien<\/u> auf der Spielfläche sind integraler Bestandteil des 
+                             Bereichs, den sie begrenzen. Die Torlinien zwischen den Torpfosten sind 8 
+                             cm breit (Abb. 2a), alle andere Linien sind 5 cm breit.`,
+                            `Zwei nebeneinander liegene Bereiche knnen anstatt durch Linien auch durch 
+                             unterschiedliche Farben voneinander abgegrenzt werden.`
                         ]
                     },
                     {
                         number: "1:4",
                         sections: 
                         [
-                            "Vor jedem Tor befindet sich der Torraum (Abb. 5). Der Torraum wird wie folgt von der <u>Torraumlinie<\/u> (6-m-Linie) begrenzt:"
+                            `Vor jedem Tor befindet sich der Torraum (Abb. 5). Der Torraum wird wie 
+                             folgt von der <u>Torraumlinie<\/u> (6-m-Linie) begrenzt:`
                         ],
                         subparagraphs:
                         [
                             {
                                 number: "1:4a",
-                                content: "Vor dem Tor wird in 6 m Abstand parallel zur Torlinie eine 3 m lange linie gezogen (gemessen von der hinteren Kante der Torlinie zur vorderen Kante der Torraumlinie)."
+                                content: `Vor dem Tor wird in 6 m Abstand parallel zur Torlinie eine 
+                                          3 m lange linie gezogen (gemessen von der hinteren Kante 
+                                          der Torlinie zur vorderen Kante der Torraumlinie).`
                             },
                             {
                                 number: "1:4b",
-                                content: "Zwei Viertelkreise von 6 m Halbmesser (gemessen von der hinteren Innenkante der Torpfosten) verbinden die 3 m lange Linie mit der Torauslinie (Abb. 1 und 2a)."
+                                content: `Zwei Viertelkreise von 6 m Halbmesser (gemessen von der 
+                                          hinteren Innenkante der Torpfosten) verbinden die 3 m lange 
+                                          Linie mit der Torauslinie (Abb. 1 und 2a).`
                             }
                         ]
                     },
@@ -60,14 +80,18 @@ export const RULES: Rule[] =
                         number: "1:5",
                         sections: 
                         [
-                            "Die <u>Freiwurflinie<\/u> (9-m-Linie) wird gestrichelt und in 3 m Abstand vor der Torraumlinie gezogen. Die Markierungen der freiwurflinie sowie die Zwischenräume messen 15 cm (Abb. 1)."
+                            `Die <u>Freiwurflinie<\/u> (9-m-Linie) wird gestrichelt und in 3 m Abstand 
+                             vor der Torraumlinie gezogen. Die Markierungen der freiwurflinie sowie die 
+                             Zwischenräume messen 15 cm (Abb. 1).`
                         ]
                     },
                     {
                         number: "1:6",
                         sections: 
                         [
-                            "Die <u>7-m-Linie<\/u> ist eine 1 m lange Linie vor dem Tor. Sie verläuft parallel zur Torlinie, gezogen in einem Abstand von 7 m, gemessen von der hinteren Kante der Torlinie zur vorderen Kante der 7-m-Linie (Abb. 1)."
+                            `Die <u>7-m-Linie<\/u> ist eine 1 m lange Linie vor dem Tor. Sie verläuft 
+                             parallel zur Torlinie, gezogen in einem Abstand von 7 m, gemessen von der 
+                             hinteren Kante der Torlinie zur vorderen Kante der 7-m-Linie (Abb. 1).`
                         ]
                     },
                     {
