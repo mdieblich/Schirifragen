@@ -6,7 +6,8 @@
     </div>
   </div>
 
-  <div *ngFor="let rule of rules">  <!-- Schleife für Regeln -->
+  <div *ngFor="let rule of rules">
+    <!-- Schleife für Regeln -->
 
     <div class="row">
       <div class="col-12">
@@ -16,90 +17,43 @@
 
     <div *ngFor="let rulesection of rule.rulesections">
 
-        <div *ngIf="rulesection.caption" class="row">
-            <div class="col-12">
-              <h3 id="1">{{rulesection.caption}}</h3>
-            </div>
-          </div>
-
-        <div *ngFor="let paragraph of rulesection.paragraphs">  <!-- Schleife für Paragraphen -->
-          <div class="row">
-              <div [id]="paragraph.number" class="col-1">{{paragraph.number}}</div>
-              <div class="col-11">  
-                <p *ngFor="let section of paragraph.sections" [innerHTML]="section">
-                  <!-- Schleife für einzelne Abschnitte -->
-                </p> 
-                <ol *ngIf="paragraph.subparagraphs" type="a">
-                  <li *ngFor="let subparagraph of paragraph.subparagraphs" [innerHTML]="subparagraph.content"></li>
-                </ol>
-                <p *ngIf="paragraph.note" >
-                  <i>
-                    <b>Hinweis:</b><br>
-                    <span [innerHTML]="paragraph.note"></span>
-                  </i>
-                </p> 
-                <p *ngIf="paragraph.comment" >
-                  <i>
-                    <b>Kommentar:</b><br>
-                    <span [innerHTML]="paragraph.comment"></span>
-                  </i>
-                </p> 
-              </div>
-            </div>
+      <div *ngIf="rulesection.caption" class="row">
+        <div class="col-12">
+          <h3 id="1">{{rulesection.caption}}</h3>
         </div>
-    </div>
+      </div>
 
-  </div>
-  
-  <div class="row">
-    <div class="col-12">
-      <h1 id="Spielregeln">Spielregeln (alt)</h1>
-    </div>
-  </div>
-
-  Hier weiter entfernen
-
-  <div class="row">
-    <div class="col-12">
-      <h2 id="2">Regel 2 - Spielzeit, Schlusssignal, Time-out</h2>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-12">
-      <h3 id="Schlusssignal">Schlusssignal</h3>
-    </div>
-  </div>
-
-  <div class="row">
-    <div id="2:3" class="col-1">2:3</div>
-    <div class="col-11">
-      <p>Die Spielzeit beginnt mit dem Anpfiff des Anwurfs durch einen Schiedsrichter und endet mit dem automatischen
-        <u>Schlusssignal</u> der öffentlichen Zeitmessanlage oder dem Schlusssignal des Zeitnehmers. Ertönt kein derartiges
-        Signal, pfeift der Schiedsrichter,
-        <u>
-          <b>der Zeitnehmer oder der Delegierte</b>
-        </u>, um anzuzeigen, dass die Spielzeit abgelaufen ist (17:9).</p>
-      <p>
-        <i>
-          <b id="2:3_Kommentar">Kommentar:</b>
-          <br> Sollte keine öffentliche Zeitmessanlage mit automatischem Schlusssignal vorhanden sein, bedient sich der Zeitnehmer
-          einer Tisch- oder Handstoppuhr und beendet das Spiel mit dem Schlusssignal (18:2, Absatz 2).
-        </i>
-      </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div id="2:4" class="col-1">2:4</div>
-    <div class="col-11">
-      <p>Regelwidrigkeiten und unsportliches Verhalten vor oder mit dem Ertönen des Schlusssignals (bei Halbzeit- oder Spielende
-        bzw. zum Ende der Halbzeiten einer Verlängerung) sind zu ahnden, auch wenn die Ausführung des Freiwurfs (nach Regel
-        13:1) oder 7-m-Wurfs nicht vor dem Schlusssignal erfolgen kann.</p>
-      <p>Ertönt das Schlusssignal, wenn ein Frei- oder 7-m-Wurf noch auszuführen ist oder der Ball sich nach einem solchen Wurf
-        noch in der Luft befindet, ist dieser Wurf ebenfalls zu wiederholen.</p>
-      <p>In beiden Fällen beenden die Schiedsrichter das Spiel erst, wenn der Freiwurf oder 7-m-Wurf ausgeführt oder wiederholt
-        wurde und das Ergebnis dieses Wurfes feststeht.</p>
-    </div>
-  </div>
-</div>
+      <div *ngFor="let paragraph of rulesection.paragraphs">
+        <!-- Schleife für Paragraphen -->
+        <div class="row">
+          <div [id]="paragraph.number" class="col-1">{{paragraph.number}}</div>
+          <div class="col-11">
+            <p *ngFor="let section of paragraph.sections" [innerHTML]="section">
+              <!-- Schleife für einzelne Abschnitte -->
+            </p>
+            <ol *ngIf="paragraph.subparagraphs" type="a">
+              <li *ngFor="let subparagraph of paragraph.subparagraphs" [innerHTML]="subparagraph.content"></li>
+            </ol>
+            <p *ngIf="paragraph.note">
+              <i>
+                <b>Hinweis:</b>
+                <br>
+                <span [innerHTML]="paragraph.note"></span>
+              </i>
+            </p>
+            <p *ngIf="paragraph.comment">
+              <i>
+                <b>Kommentar:</b>
+                <br>
+                <span [innerHTML]="paragraph.comment"></span>
+              </i>
+            </p> <!-- paragraph.comment -->
+            <p *ngFor="let postsection of paragraph.postsections" [innerHTML]="postsection">
+              <!-- Schleife für einzelne Abschnitte (postsections) -->
+            </p> <!-- postsections -->
+          </div> <!-- col-11 rechts von Nummer -->
+        </div> <!-- row -->
+      </div> <!-- paragraph-schleife -->
+    </div> <!-- rulesection-schleife -->
+  </div> <!-- rule-schleife -->
+</div> <!-- ontainer rule -->
