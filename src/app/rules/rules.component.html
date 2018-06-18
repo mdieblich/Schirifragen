@@ -19,7 +19,11 @@
 
       <div *ngIf="rulesection.caption" class="row">
         <div class="col-12">
-          <h3 id="1">{{rulesection.caption}}</h3>
+          <h3>{{rulesection.caption}}</h3>
+        </div>
+      </div>
+      <div *ngIf="rulesection.note" class="row">
+        <div class="col-12"  [innerHTML]="rulesection.note">
         </div>
       </div>
 

@@ -619,5 +619,25 @@ export const RULES: Rule[] =
                 ]
             }   // rulesection Spielerverletzung
         ]
-    }   // rule 4
+    },   // rule 4
+    {
+        number: "5",
+        caption: "Der Torwart",
+        rulesections:
+        [
+            {
+                note: "Es ist dem Torwart <b>erlaubt<\/b>:",
+                paragraphs: 
+                [
+                    {
+                        number: "5:1",
+                        sections: 
+                        [
+                            `bei der Abwehr im Torraum den Ball mit allen Körperteilen zu berühren;`
+                        ]
+                    },
+                ]
+            }   // rulesection  erlaubt
+        ]
+    }   // rule 5
 ];
