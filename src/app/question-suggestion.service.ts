@@ -15,11 +15,11 @@ export class QuestionSuggestionService {
     private userService: UserService
   ) { }
 
-  suggestQuestion(): Observable<number> {
+  suggestQuestion(start: number): Observable<number> {
     const maxId: Observable<number> = this.questionService.getMaxId();
     return maxId/*.delay(250)*/.map(
       maxId => {
-        let remainingQuestions: number[] = this.getRemainingQuestions(maxId);
+        let remainingQuestions: number[] = this.getRemainingQuestions(start, maxId);
         if(remainingQuestions.length == 0){
           throw new Error("No more questions");
         }
@@ -28,11 +28,11 @@ export class QuestionSuggestionService {
     );
   }
 
-  private getRemainingQuestions(maxId: number): number[] {
+  private getRemainingQuestions(start:number, maxId: number): number[] {
     const answeredQuestions: Set<number> = this.userService.getAnsweredQuestions();
     let remainingQuestions: number[] = [];
     for(let i=1; i<=maxId; i++){
-      if(!answeredQuestions.has(i)){
+      if(!answeredQuestions.has(i) && i>=start){
         remainingQuestions.push(i);
       }
     }

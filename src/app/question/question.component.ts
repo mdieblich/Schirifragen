@@ -16,6 +16,7 @@ import { UserService } from '../user.service';
 export class QuestionComponent implements OnInit {
 
   @Input() id?: number;
+  start: number = 0;
   question: Question;
   selectedAnswers: boolean[] = [];
   correctAnswers: boolean[] = [];
@@ -32,6 +33,9 @@ export class QuestionComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    this.route.queryParams.subscribe(params => {this.start = params.start; });
+
     if (this.id) {
       this.loadQuestion();
     }
@@ -54,12 +58,12 @@ export class QuestionComponent implements OnInit {
 
   setId(id: number) {
     this.id = id;
-    this.location.go("/question/"+id);
+    this.location.go("/question/"+id+"?start="+this.start);
     this.loadQuestion();
   }
 
   suggestQuestionId(): void {
-    this.suggestionService.suggestQuestion().subscribe(
+    this.suggestionService.suggestQuestion(this.start).subscribe(
       suggestedId => {
         this.setId(suggestedId);
       },
