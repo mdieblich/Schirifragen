@@ -16,7 +16,7 @@ import { UserService } from '../user.service';
 export class QuestionComponent implements OnInit {
 
   @Input() id?: number;
-  start: number = 0;
+  start?: number;
   question: Question;
   selectedAnswers: boolean[] = [];
   correctAnswers: boolean[] = [];
@@ -58,12 +58,17 @@ export class QuestionComponent implements OnInit {
 
   setId(id: number) {
     this.id = id;
-    this.location.go("/question/"+id+"?start="+this.start);
+    if(this.start){
+      this.location.go("/question/"+id+"?start="+this.start);
+    }
+    else{
+      this.location.go("/question/"+id);
+    }
     this.loadQuestion();
   }
 
   suggestQuestionId(): void {
-    this.suggestionService.suggestQuestion(this.start).subscribe(
+    this.suggestionService.suggestQuestion(this.start || 0).subscribe(
       suggestedId => {
         this.setId(suggestedId);
       },
